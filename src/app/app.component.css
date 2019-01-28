@@ -1,0 +1,28 @@
+header {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    box-sizing: border-box;
+}
+main {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+}
+footer {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+}
+@media only screen and (min-width : 1224px){
+
+}
+
+@media only screen and (min-width : 1824px){
+
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+}
