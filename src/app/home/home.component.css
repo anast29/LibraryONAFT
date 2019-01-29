@@ -1,3 +1,5 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
 .main {
     display: flex;
     flex-flow: column wrap;
@@ -64,8 +66,8 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    background: #e4e4e4;
-    padding: 4em 1em;
+    background: snow;
+    padding: 4em 2.5em;
     text-align: center;
 }
 .mobile_structure {
@@ -75,7 +77,7 @@
     height: 100%;
     width: 100%;
     background: url("../../assets/img/lib_logo.png") center no-repeat;
-    background-size: 450px 250px;
+    background-size: 472px 302px;
     padding: 0 !important;
 }
 
@@ -167,6 +169,156 @@
     display: none;
 }
 
+/**About us style*/
+.about {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: snow;
+    padding: 4em 2.5em;
+    text-align: left;
+}
+.about-info {
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 2em;
+    background: snow;
+    text-align: left;
+}
+.about-info h1 {
+    padding-bottom: 0.5em;
+}
+.about-info p {
+    font-size: 18px;
+    padding-bottom: 0.35em;
+}
+.icon-about {
+    padding-bottom: 0.55em !important;
+    margin-bottom: 0 !important;
+    font-size: 15px !important;
+}
+.icon-about i {
+    font-size: 15px;
+    padding-right: 0.75em;
+}
+.icon-link {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: snow;
+    text-align: left;
+}
+.icon-link a {
+    font-size: 28px;
+    padding: 0.25em 1em 0.25em 0;
+    margin-top: 1rem;
+    color: #212529;
+}
+/**About form*/
+.about-form {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background: snow;
+    padding: 0 2em;
+    text-align: left;
+}
+form {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0.5em 0.25em;
+    width: 100%;
+}
+.input-group {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.75em;
+}
+.form-control {
+    border-radius: 5px !important;
+}
+.input-group i {
+    margin-left: -1.5em;
+    color: #9f9fa5;
+    z-index: 1;
+}
+.input-group textarea {
+    height: 205px;
+}
+button.btn.btn-light{
+    transition: 600ms;
+    color: #212529 !important;
+    border: 1px solid #ced4da !important;
+}
+button.btn.btn-light:hover {
+    background: #ced4da;
+}
+
+/**FAQ style*/
+.faq {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background: snow;
+    padding: 4em 2.5em;
+}
+textarea {
+    resize: none;
+}
+.faq h1 {
+    padding-bottom: 1em;
+}
+.questions {
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding-right: 0;
+    padding-left: 0;
+}
+.accordion .card-body {
+    text-align: justify;
+}
+.card-header {
+    position: relative;
+    letter-spacing:1px;
+    word-spacing:3px;
+    color: #555;
+}
+.card-body p {
+    padding: 0;
+    margin: 0;
+    text-indent: 2em;
+}
+.card-header h2 {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+#btnOne:focus ~ #rollOne{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
 @media only screen and (min-width: 1224px)  {
     .title {
         text-align: center;
@@ -215,6 +367,32 @@
     .new_card {
         margin-bottom: 0;
     }
+    .accordion .card {
+        width: 100%;
+        border: 0;
+        margin-bottom: 0;
+        padding: 0
+    }
+    .card-header {
+        width: 100%;
+    }
+    .card-header button.btn.btn-link {
+        text-align: left;
+        color: #212529;
+        font-size: 22px;
+        text-decoration: none;
+        width: 100%;
+    }
+    .card-body ul {
+        margin-bottom: 0;
+    }
+    .roll {
+        transition: 600ms;
+        float: right;
+        font-size: 22px;
+        margin-left: -0.5em;
+    }
+
 }
 @media only screen and (min-width: 1800px) {
     .title {
@@ -260,7 +438,31 @@
     .new_card {
         margin-bottom: 0;
     }
-
+    .accordion .card {
+        width: 100%;
+        border: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .card-header {
+        width: 100%;
+    }
+    .card-header button.btn.btn-link {
+        text-align: left;
+        color: #212529;
+        font-size: 22px;
+        text-decoration: none;
+        width: 100%;
+    }
+    .card-body ul {
+        margin-bottom: 0;
+    }
+    .roll {
+        transition: 600ms;
+        float: right;
+        font-size: 22px;
+        margin-left: -0.5em;
+     }
 
 }
 @media screen and (max-width: 768px) {
@@ -343,9 +545,6 @@
     .mobile_card > img {
         padding: 0 1em;
     }
-    .btn {
-
-    }
     .more_info {
         display: flex;
         flex-flow: column nowrap;
@@ -364,8 +563,6 @@
     .fa-angle-down {
         color: rgb(255, 255, 255);
         font-size: 24px;
-        padding: ;
-
     }
     .desktop_version {
         display: none;
