@@ -1,6 +1,11 @@
+@import "~font-awesome/css/font-awesome.css";
+
 .navbar-dark {
-    background: rgba(17, 34, 22, 0.6);
     padding: 1.5em 1.5em 1.5em 3.5em !important;
+}
+.bg-dark {
+    background: rgba(24, 31, 41,0.7) !important;
+    border-bottom: 1px solid #181f29;
 }
 .navbar-light {
     padding: 0 1.5em 0 5em !important;
@@ -8,6 +13,7 @@
 .navbar-nav .nav-link{
     color: white;
     font-size: 16px;
+    margin-right: 0.75em;
 }
 .div_navbar {
     display: flex;
@@ -45,6 +51,61 @@
 }
 .navbar-toggler-icon {
     color: white;
+}
+.dropdown {
+    overflow: visible;
+}
+.dropdown-toggle:after {
+    border: 0;
+    font-family: 'FontAwesome', serif;
+    content: '\f107';
+    font-weight: 600;
+    vertical-align: 0;
+    margin-left: -0.05em;
+}
+.dropdown-header {
+    padding: 0.25rem 1.25rem;
+    font-size: 15px;
+    color: #212529;
+    text-decoration: none;
+}
+.dropdown-header:hover,
+.dropdown-item:hover{
+    background: rgba(169, 169, 169,0.2);
+}
+.dropdown-item {
+    padding: 0.25rem 1.25rem;
+    font-size: 14px;
+}
+.submenu {
+    padding: 0.25rem 1.25rem;
+    font-size: 14px;
+}
+.dropdown-menu {
+    padding: 0;
+}
+.dropdown-menu .dropdown-menu {
+    transition-delay: 600ms;
+    top: auto;
+    left: 100%;
+    margin-top: -0.2rem !important;
+    transform: translateY(-2rem);
+}
+.dropdown-header + .dropdown-menu {
+    display: none;
+}
+.dropdown-header.submenu::after {
+    font-family: 'FontAwesome', serif;
+    content: '\f105';
+    font-weight: 600;
+    margin-left: 0.5rem;
+    font-size: 15px;
+    float: right;
+    vertical-align: baseline;
+}
+.dropdown-header:hover + .dropdown-menu,
+.dropdown-menu .dropdown-menu:hover {
+    display: block;
 }
 .btn {
     border-radius: 30px;

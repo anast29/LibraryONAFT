@@ -1,0 +1,49 @@
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: rgb(21, 21, 25);
+    padding: 2em 2em !important;
+    color: white;
+}
+.onaftlib {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+}
+
+.main-logo {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    justify-content: flex-start;
+    padding: 0 !important;
+    font-size: 24px;
+}
+.main-logo a {
+    color:white;
+    padding: 0 1em;
+}
+.block {
+    margin-bottom: 0.25em;
+}
+.block a {
+    transition: 600ms;
+    text-decoration: none;
+    color: white;
+}
+.row a {
+    padding-right: 1em;
+}
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    justify-content: center;
+    background: rgb(21, 21, 25);
+    padding: 2em 3em !important;
+    color: white;
+}
