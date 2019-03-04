@@ -3,7 +3,7 @@
     flex-flow: row wrap;
     align-items: flex-start;
     justify-content: space-between;
-    background: rgb(21, 21, 25);
+    background: #020207;
     padding: 2em 2em !important;
     color: white;
 }
