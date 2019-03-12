@@ -610,6 +610,7 @@ textarea {
 }
 
 .card-header {
+    transition: 600ms;
     position: relative;
     letter-spacing: 1px;
     word-spacing: 3px;

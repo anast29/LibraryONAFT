@@ -14,10 +14,11 @@
 }
 
 .navbar-nav .nav-link {
+    position: relative;
     transition: 600ms;
     color: white;
-    font-size: 20px;
-    padding: 0.5em;
+    font-size: 18px;
+    padding: 0.5em 0.75em;
     letter-spacing: 0.05em;
     font-variant: all-small-caps;
 }
@@ -46,32 +47,35 @@
     align-items: center;
 }
 
-.link {
-    transition: 600ms;
-    padding-right: 2em;
-    color: #505050;
-    text-decoration: none;
+.nav-link:hover,
+.dropdown:hover > .nav-link
+{
+    color: #d78737 !important;
 }
-
-.nav-link:hover {
-    color: #ced4da !important;
-}
-
 .nav-border > .nav-link:hover {
     color: #555555 !important;
 }
-
+.nav-link:hover > .dropdown-menu {
+    display: block;
+}
 .dropdown_language {
     display: flex;
     flex-flow: row nowrap;
     justify-content: end;
     align-items: center;
 }
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
 
 #language {
     transition: 600ms;
-    padding-right: 2em;
-    color: #505050;
+    margin-left: 1em;
 }
 
 .dropdown_language i {
@@ -108,11 +112,12 @@
     text-decoration: none;
 }
 .dropdown-menu h6{
-    padding: 0.35rem 1rem;
+    padding: 0.25rem 1rem;
     font-size: 14px;
     color:#9f9fa5;
     font-weight: 600;
 }
+
 .dropdown-header:hover,
 .dropdown-item:hover {
     background: rgba(169, 169, 169, 0.2);
@@ -127,13 +132,31 @@
     padding: 0.25rem 1.25rem;
     font-size: 15px;
 }
-
-
+.dropdown-name:hover{
+    background: none;
+}
+.dropdown-menu {
+    transition: 600ms;
+    position: absolute;
+    border-radius: 0 !important;
+    margin:  0;
+    padding: 0.75rem 0 !important;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid white;
+    top:-8px;
+    left: 20%;
+    margin-left: -8px;
+}
 .dropdown-menu .dropdown-menu {
     transition-delay: 600ms;
     top: auto;
     left: 100%;
-    margin-top: -0.2rem !important;
     transform: translateY(-2rem);
 }
 
@@ -179,6 +202,9 @@ input {
 }
 
 @media only screen and (min-width: 1800px) {
+    .nav {
+        height: 124px !important;
+    }
     .navbar-nav .nav-link {
         font-size: 20px;
         padding: 0.5em 0.75em;

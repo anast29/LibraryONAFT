@@ -1,96 +1,108 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a href="http://library.onaft.edu.ua/elc/" target="_blank" class="link">Електроний каталог</a>
-  <a href="//card-file.onaft.edu.ua/jspui/?locale=uk" target="_blank" class="link">Електроний архів(репозитарій)</a>
-  <div class="justify-content-end div_navbar">
-  <ul class="navbar-nav dropdown_language mr-auto">
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="language" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <i class="fas fa-globe-americas"></i>
-      Українська
-    </a>
-    <div class="dropdown-menu" aria-labelledby="language">
-      <a class="dropdown-item" href="#">English</a>
-      <a class="dropdown-item" href="#">Русский</a>
-    </div>
-  </li>
-  </ul>
-  </div>
-</nav>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#"><img src="../../assets/img/logo.png" width="96px" height="66px"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="resource" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Ресурси
-        </a>
-        <div class="dropdown-menu"  aria-labelledby="resource" >
-          <a class="dropdown-header" href="http://library.onaft.edu.ua/elc/" target="_blank">Електроний каталог</a>
-          <a class="dropdown-header" href="//card-file.onaft.edu.ua/jspui/?locale=uk" target="_blank">Електроний архів (репозитарій)</a>
-          <a class="dropdown-header" href="http://kci.onaft.edu.ua/" target="_blank">Центр наукової періодики</a>
-          <a class="dropdown-header" href="#" target="_blank">Патенти</a>
+    <a class="navbar-brand" routerLink="/"><img src="../../assets/img/logo.png" width="96px" height="66px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarToggler" data-hover="dropdown"
+         data-animations="fadeInUp ">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="resource" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false">
+                    Ресурси
+                </a>
 
-               <!--<a class="dropdown-header" href="http://library.onaft.edu.ua/plus/Mizhnar_styli_posylannya.pdf">Міжнародні стилі цитування<br> та посилання</a>-->
-          <!--<a class="dropdown-header submenu" style="padding-top: 0.5rem;" href="#">Бібліотека</a>-->
-          <!--<div class="dropdown-menu">-->
-            <!--<a class="dropdown-item" style="padding-top: 0.55rem;" href="#">Положенна про НТБ ОНАХТ</a>-->
-            <!--<a class="dropdown-item" href="../../assets/pdf/DSTY-GOST/Bibl_opis_onovl.pdf" target="_blank">Правила користування</a>-->
-            <!--<a class="dropdown-item" href="#" target="_blank">Звіт про роботу за 2017 рік</a>-->
-            <!--<a class="dropdown-item" style="padding-bottom: 0.55rem;" href="#" target="_blank">Правила користування НТБ</a>-->
-          <!--<a class="dropdown-item" href="http://library.onaft.edu.ua/plus/Mizhnar_styli_posylannya.pdf">Порядок замовлення літератури</a>-->
-          <!--</div>-->
+                <div class="dropdown-menu" aria-labelledby="resource">
+                    <div class="triangle"></div>
+                    <a class="dropdown-item" href="http://library.onaft.edu.ua/elc/" target="_blank">Електроний
+                        каталог</a>
+                    <a class="dropdown-item" href="https://card-file.onaft.edu.ua/" target="_blank">Електроний архів
+                        (репозитарій)</a>
+                    <a class="dropdown-item" href="http://kci.onaft.edu.ua/" target="_blank">Центр наукової
+                        періодики</a>
+                    <a class="dropdown-item" routerLink="/patent">Патенти</a>
+                </div>
+            </li>
 
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="science" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Рекомендації
-        </a>
-        <div class="dropdown-menu" aria-labelledby="science">
-          <h6 class="dropdown-header">Вченим</h6>
-          <a class="dropdown-item" href="#">Енциклопедія вчених</a>
-          <a class="dropdown-item" href="#">Ювіляри</a>
-          <h6 class="dropdown-header">Дослідникам</h6>
-          <a class="dropdown-header" href="http://library.onaft.edu.ua/plus/Mizhnar_styli_posylannya.pdf">Cтилі цитування</a>
-          <a class="dropdown-header submenu" style="padding-top: 0.5rem; padding-bottom: 0.5rem;" href="#">Законодавча база</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="https://zakon1.rada.gov.ua/laws" target="_blank">Законодавство України</a>
-            <a class="dropdown-item" href="http://www.library.univ.kiev.ua/ukr/for_lib/legal-pop.php3" target="_blank">  Нормативно-правова база<br> діяльності бібліотек ВНЗ (популяр.)</a>
-            <a class="dropdown-item" href="http://www.library.univ.kiev.ua/ukr/for_lib/legal-2018.php3" target="_blank">  Нормативно-правова база<br> діяльності бібліотек ВНЗ (2018 р.)</a>
-            <a class="dropdown-item" style="padding-bottom: 0.55rem;" href="http://www.library.univ.kiev.ua/ukr/about/law.php3" target="_blank">Перелік законодавчих<br>  та нормативних документів </a>
-          </div>
-          <a class="dropdown-header submenu" href="#">ДСТУ/ГОСТ</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" style="padding-top: 0.55rem;" href="#">Правила складання бібліографічного опису</a>
-            <a class="dropdown-item" href="../../assets/pdf/DSTY-GOST/Bibl_opis_onovl.pdf" target="_blank">Приклади оформлення бібліографічного опису</a>
-            <a class="dropdown-item" href="#" target="_blank">Правила складання списку бібліографічних посилань</a>
-            <a class="dropdown-item" href="#" target="_blank">Приклади оформлення списку бібліографічних посилань<br> в наукових виданнях</a>
-            <a class="dropdown-item" href="#" target="_blank">ДСТУ ГОСТ</a>
-            <a class="dropdown-item" style="padding-bottom: 0.55rem;" href="http://www.library.univ.kiev.ua/ukr/about/dstu.html" target="_blank">Основні стандарти </a>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Видання</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="books" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Про бібліотеку
-        </a>
-        <div class="dropdown-menu" aria-labelledby="books">
-          <a class="dropdown-item" href="#">Регламент</a>
-          <a class="dropdown-item" href="#">Правила користування</a>
-          <a class="dropdown-item" href="#">Історія бібліотеки</a>
-          <a class="dropdown-item" href="#">Фотогалерея</a>
-          <a class="dropdown-item" href="#">Виставки</a>
-        </div>
-      </li>
-      <li class="nav-item nav-border">
-        <a class="nav-link"  href="#"><i class="far fa-user"></i> Авторизуватись</a>
-      </li>
-    </ul>
-  </div>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="science" data-hover="dropdown" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Рекомендації
+                </a>
+                <div class="dropdown-menu" aria-labelledby="science">
+                    <div class="triangle"></div>
+                    <h6 class="dropdown-header dropdown-name">Вчені</h6>
+                    <a class="dropdown-item" routerLink="/encyclopedia_of_scientists">Енциклопедія вчених</a>
+                    <a class="dropdown-item" routerLink="/jubilee">Ювіляри</a>
+                    <h6 class="dropdown-header dropdown-name">Дослідникам</h6>
+                    <a class="dropdown-header" href="http://library.onaft.edu.ua/plus/Mizhnar_styli_posylannya.pdf"
+                       target="_blank">Cтилі цитування</a>
+                    <a class="dropdown-header submenu" href="" target="_blank">Законодавча база</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="https://zakon1.rada.gov.ua/laws" target="_blank">Законодавство
+                            України</a>
+                        <a class="dropdown-item" href="http://www.library.univ.kiev.ua/ukr/for_lib/legal-pop.php3"
+                           target="_blank"> Нормативно-правова база<br> діяльності бібліотек ВНЗ (популяр.)</a>
+                        <a class="dropdown-item" href="http://www.library.univ.kiev.ua/ukr/for_lib/legal-2018.php3"
+                           target="_blank"> Нормативно-правова база<br> діяльності бібліотек ВНЗ (2018 р.)</a>
+                        <a class="dropdown-item" href="http://www.library.univ.kiev.ua/ukr/about/law.php3"
+                           target="_blank">Перелік законодавчих<br> та нормативних документів </a>
+                    </div>
+                    <a class="dropdown-header submenu" href="#">ДСТУ/ГОСТ</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Правила складання бібл. опису</a>
+                        <a class="dropdown-item" href="../../assets/pdf/DSTY-GOST/Bibl_opis_onovl.pdf" target="_blank">Приклади
+                            оформлення бібл. опису</a>
+                        <a class="dropdown-item" href="#" target="_blank">Правила складання списку бібл. посилань</a>
+                        <a class="dropdown-item" href="#" target="_blank">Приклади оформлення списку бібл. посилань</a>
+                        <a class="dropdown-item" href="#" target="_blank">ДСТУ ГОСТ</a>
+                        <a class="dropdown-item" href="http://www.library.univ.kiev.ua/ukr/about/dstu.html"
+                           target="_blank">Основні стандарти </a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/books">Видання</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="books" data-hover="dropdown" data-toggle="dropdown">
+                    Про бібліотеку
+                </a>
+                <div class="dropdown-menu" aria-labelledby="books">
+                    <div class="triangle"></div>
+                    <a class="dropdown-item" href="../../assets/pdf/Regulations/ruls.pdf" target="_blank">Правила
+                        користування</a>
+                    <a class="dropdown-header submenu" href="" target="_blank">Регламент</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../../assets/pdf/Regulations/polojeniya.pdf" target="_blank">Положення
+                            про науково технічну<br> бібліотеку ОНАХТ</a>
+                        <a class="dropdown-item" href="../../assets/pdf/Regulations/ZVIT2018.pdf" target="_blank">Звіт
+                            про роботу за 2018 рік</a>
+                    </div>
+                    <a class="dropdown-item" href="../../assets/pdf/library_history.pdf" target="_blank">Історія
+                        бібліотеки</a>
+                    <a class="dropdown-item" routerLink="/photo">Фотогалерея</a>
+                    <a class="dropdown-item" href="/exhibition" target="_blank">Виставки</a>
+                </div>
+            </li>
+            <li class="nav-item nav-border">
+                <a class="nav-link" href="#"><i class="far fa-user"></i> Авторизуватись</a>
+            </li>
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="language" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-globe-americas"></i>
+                    UA
+                </a>
+                <div class="dropdown-menu" aria-labelledby="language">
+                    <a class="dropdown-item" href="#">EN</a>
+                    <a class="dropdown-item" href="#">RU</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
 </nav>

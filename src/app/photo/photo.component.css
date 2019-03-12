@@ -1,0 +1,35 @@
+.block {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 2em 5em;
+    min-height: 100vh;
+}
+.container-fluid {
+    padding: 1em 5em;
+}
+.carousel {
+    margin-top: 20px;
+}
+.item .thumb {
+    width: 25%;
+    cursor: pointer;
+    float: left;
+}
+.item .thumb img {
+    width: 100%;
+    margin: 2px;
+}
+.item img {
+    width: 100%;
+}
+@media screen and (min-width: 1800px) {
+    .block {
+        /*min-height: calc(100vh - 360px);*/
+    }
+    .display-4{
+        font-size: 4rem;
+    }
+}
