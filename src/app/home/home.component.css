@@ -150,6 +150,10 @@
     text-decoration: none;
 }
 
+.more_info {
+    display: none;
+}
+
 /**Structure info*/
 .structure {
     position: relative;
@@ -448,6 +452,9 @@
 }
 
 /**About us style*/
+.mob_version {
+    display: none;
+}
 .about {
     position: relative;
     display: flex;
@@ -880,18 +887,36 @@ textarea {
         margin-left: -2em;
         font-size: 1.15rem;
     }
-    .card-header button.btn.btn-link  {
+
+    .card-header button.btn.btn-link {
         font-size: 28px;
     }
+
     .card-body h3 {
         font-size: 2rem !important;
     }
+
     .card-body p {
         font-size: 18px;
     }
 }
 
 @media screen and (max-width: 768px) {
+    /**Start info */
+    .main {
+        padding: 2em 15px !important;
+    }
+
+    .collapse {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .display-4 {
+        font-size: 2em;
+        text-align: center;
+    }
+
     .display-3 {
         font-size: 2em;
         text-align: center;
@@ -899,26 +924,39 @@ textarea {
 
     .title {
         text-align: center;
+        margin-bottom: 0;
     }
 
     .block_space {
-        padding: 0.5em 0.25em;
+        padding: 0.5em 0;
     }
 
     .news {
-        padding: 1em 0.75em;
+        padding: 2em 0.75em;
+        height: 350px;
     }
 
     .news > .lead {
-        font-size: 12px;
-    }
-
-    .news > .main_title {
         font-size: 14px;
     }
 
-    .n_last {
-        margin: 0 !important;
+    .news > .main_title {
+        font-size: 22px;
+        line-height: 1.7em;
+    }
+
+    .news_info {
+        height: 65px;
+        width: 45px;
+    }
+
+    .day {
+        font-size: 16px;
+    }
+
+    .month,
+    .year {
+        font-size: 9px;
     }
 
     .structure {
@@ -929,91 +967,149 @@ textarea {
         display: none;
     }
 
-    .mobile_structure {
-        position: relative;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        background: #e4e4e4;
-        padding: 2em 0;
-        text-align: center;
-    }
-
-    .display-4 {
-        font-size: 2em;
-        text-align: center;
-    }
-
-    .structure_text {
-        font-size: 14px;
-    }
-
-    .mobile_card {
-        position: relative;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: start;
-        align-items: start;
-        background: 0;
-        text-align: left;
-        font-size: 14px;
-        border: 0;
-        border-radius: 0;
-        box-sizing: border-box;
-        padding: 0.25em 0;
-        color: #000000;
-    }
-
-    .mobile_card > h4 {
-        font-size: 18px;
-        display: inline-flex;
-    }
-
-    .mobile_card > img {
-        padding: 0 1em;
-    }
-
     .more_info {
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
-        padding: 1em 0.25em 0;
+        align-items: center;
+        padding: 0.25em 0.25em;
         text-align: center;
-    }
-
-    .mobile_btn {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        background: rgba(258, 258, 258, 0.3);
-        border-radius: 100%;
-        text-align: center;
-    }
-
-    .more_info > .fa-angle-down {
-        color: rgb(255, 255, 255);
-        font-size: 24px;
     }
 
     .desktop_version {
         display: none;
     }
 
+    .mobile_btn {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mobile_btn:active,
+    .mobile_btn:focus {
+        outline-style: none;
+        outline-width: 0 !important;
+        outline-color: rgba(0, 0, 0, 0) !important;
+    }
+
+    .mobile_btn::-moz-focus-inner {
+        border: 0 !important;
+    }
+
+    .mobile_btn > .fa-angle-down,
+    .mobile_btn > .fa-angle-up {
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+    }
+
+    /**Section Structure for mobile devices*/
+    /*.mobile_structure {*/
+    /*position: relative;*/
+    /*display: flex;*/
+    /*flex-flow: column nowrap;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*background: #e4e4e4;*/
+    /*padding: 2em 0;*/
+    /*text-align: center;*/
+    /*}*/
+    /*.structure_text {*/
+    /*font-size: 14px;*/
+    /*}*/
+    /*.mobile_card {*/
+    /*position: relative;*/
+    /*display: flex;*/
+    /*flex-flow: row nowrap;*/
+    /*justify-content: start;*/
+    /*align-items: start;*/
+    /*background: 0;*/
+    /*text-align: left;*/
+    /*font-size: 14px;*/
+    /*border: 0;*/
+    /*border-radius: 0;*/
+    /*box-sizing: border-box;*/
+    /*padding: 0.25em 0;*/
+    /*color: #000000;*/
+    /*}*/
+    /*.mobile_card > h4 {*/
+    /*font-size: 18px;*/
+    /*display: inline-flex;*/
+    /*}*/
+    /*.mobile_card > img {*/
+    /*padding: 0 1em;*/
+    /*}*/
+
+    /**Section About for mobile devices*/
+    .mob_version {
+        display: block;
+    }
     .col-sm-12 {
         padding-right: 0 !important;
         padding-left: 0 !important;
     }
 
-    .about {
-        justify-content: center;
-        padding: 2em 1.5em;
+    .row {
+        margin: 0 !important;
     }
 
+    .about {
+        padding: 2.25em 0;
+    }
+
+    .about-info {
+        justify-content: center;
+        padding: 0 15px !important;
+    }
+
+    .about-form {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+
+    .icon-about {
+        font-size: 12px !important;
+    }
+
+    .icon-about i {
+        font-size: 12px !important;
+        padding-right: 0.25em;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+
+    .icon-link {
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        text-align: center;
+        width: 50%;
+        margin: 0.5em auto;
+    }
+
+    .icon-link a {
+        font-size: 24px;
+    }
+
+    .input-group i {
+        margin-left: -1.5em;
+    }
+
+    .input-group textarea {
+        height: 250px;
+    }
+    /**Section FAQ for mobile devices*/
     .faq {
         padding: 2em 1.5em;
     }
-
+    .faq h1 {
+        padding-bottom: 0.5em;
+    }
     .accordion {
         padding-left: 0;
         padding-right: 0;
@@ -1024,12 +1120,12 @@ textarea {
     }
 
     .card-header {
-        padding: 0.75em 0.5em;
+        padding: 0.75em 1em;
     }
 
     .card-header button.btn.btn-link {
         white-space: normal;
-        font-size: 14px;
+        font-size: 17px;
     }
 
     .roll {

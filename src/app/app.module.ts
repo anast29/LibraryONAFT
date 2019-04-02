@@ -1,6 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-
+import { Component } from '@angular/core';
 import {AppComponent} from './app.component';
 import {HeaderComponent} from './header/header.component';
 import {RouterModule, Routes} from '@angular/router';
@@ -13,6 +13,7 @@ import {PatentComponent} from './patent/patent.component';
 import {JubileeComponent} from './jubilee/jubilee.component';
 import {ExhibitionComponent} from './exhibition/exhibition.component';
 import {HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 
 const rout: Routes = [
     {path: '', component: HomeComponent},
@@ -35,11 +36,12 @@ const rout: Routes = [
         PhotoComponent,
         PatentComponent,
         JubileeComponent,
-        ExhibitionComponent,
-        HttpClientModule
+        ExhibitionComponent
     ],
     imports: [
         BrowserModule,
+        FormsModule,
+        HttpClientModule,
         RouterModule.forRoot(rout)
     ],
     providers: [],

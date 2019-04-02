@@ -24,8 +24,6 @@ footer {
     background-blend-mode: multiply;
     -webkit-background-size: cover;
     background-size: cover;
-    filter: blur(4px);
-    -webkit-filter: blur(4px);
     z-index:0;
 }
 

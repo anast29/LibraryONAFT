@@ -9,7 +9,7 @@ export class HttpService {
 
   constructor(private httpClient: HttpClient) { }
 
-    public get(data) {
-        return this.httpClient.get('localhost:6000').subscribe(data);
+    public get(url) {
+        return this.httpClient.get(url);
     }
 }

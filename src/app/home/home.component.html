@@ -1,5 +1,5 @@
 <!-- Main info about site-->
-<div class="container-fluid main col-12">
+<div class="container-fluid main col-12 col-sm-12">
     <h1 class="display-3 col-12">Науково-технічна бібліотека</h1>
     <p class="lead title col-12">Одеської національної академії харчових технологій</p>
     <hr class="my-4">
@@ -29,9 +29,9 @@
             <div class="block_space col-lg-4 col-md-6 desktop_version">
                 <div class="news n_last">
                     <div class="news_info">
-                        <span class="day">12</span>
-                        <span class="month">Aug</span>
-                        <span class="year">2016</span>
+                        <span class="day">5</span>
+                        <span class="month">Грудня</span>
+                        <span class="year">2018</span>
                     </div>
                     <h6 class="main_title mb-0">Шановні науковці!</h6>
                     <p class="lead">
@@ -51,9 +51,9 @@
             <div class="block_space col-lg-4 col-md-6 desktop_version">
                 <div class="news">
                     <div class="news_info">
-                        <span class="day">12</span>
-                        <span class="month">Aug</span>
-                        <span class="year">2016</span>
+                        <span class="day">30</span>
+                        <span class="month">Жовтня</span>
+                        <span class="year">2018</span>
                     </div>
                     <h6 class="main_title mb-0">Корисна інформація</h6>
                     <p class="lead">
@@ -68,59 +68,61 @@
                     </div>
                 </div>
             </div>
-        </div>
+
         <!-- END  main info-->
 
-        <!--&lt;!&ndash;Mobile version&ndash;&gt;-->
-        <!--<div class="more_info col-12 justify-content-center">-->
-        <!--<a class="btn col-1 mobile_btn" data-toggle="collapse" href="#collapse" role="button" aria-expanded="false"-->
-        <!--aria-controls="collapseExample">-->
-        <!--<i class="fas fa-angle-down"></i>-->
-        <!--</a>-->
-        <!--</div>-->
-        <!--<div class="collapse col-sm-12" id="collapse">-->
-        <!--<div class="block_space col-sm-12">-->
-        <!--<div class="news n_last">-->
-        <!--<p class="news_title"><i class="far fa-file-alt"></i></p>-->
-        <!--<p class="lead font-weight-bold main_title">Шановні науковці!</p>-->
-        <!--<p class="lead">-->
-        <!--Звертаємо вашу увагу, що з 1 грудня 2018 року науковці ОНАХТ можуть скористатися можливостями-->
-        <!--наукометричних баз Web of Science та Scopus за посиланнями:<br>-->
-        <!--Web of Science: <a href=""> webofscience.com</a><br>-->
-        <!--Scopus: <a href="">scopus.com</a><br>-->
-        <!--У разі виникнення труднощів з налаштуванням віддаленого доступу звертайтесь в А-140,-->
-        <!--за телефоном 15-52 або на електронну пошту index@onaft.edu.ua-->
-        <!--</p>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class="block_space col-lg-3 col-md-3 col-sm-12">-->
-        <!--<div class="news">-->
-        <!--<p class="news_title"><i class="far fa-file-alt"></i></p>-->
-        <!--<p class="lead font-weight-bold main_title">Корисна інформація</p>-->
-        <!--<p class="lead">-->
-        <!--Ресурс для оформлення посилань згідно ДСТУ 8302:2015 розроблений співробітниками-->
-        <!--Координаційного центру видання наукової періодики ОНАХТ.-->
-        <!--Також, крім автоматичного оформлення літератури на ресурсі ще можлива автоматична-->
-        <!--транслітерація та завантаження отриманного результату у файл у форматі *.docx.<br>-->
-        <!--Посилання: <a href="">4ref.onaft.edu.ua</a>-->
-        <!--</p>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class="block_space col-lg-3 col-md-3 col-sm-12">-->
-        <!--<div class="news n_last">-->
-        <!--<p class="news_title"><i class="far fa-file-alt"></i></p>-->
-        <!--<p class="lead font-weight-bold main_title">Шановні науковці!</p>-->
-        <!--<p class="lead">-->
-        <!--Звертаємо вашу увагу, що з 1 грудня 2018 року науковці ОНАХТ можуть скористатися можливостями-->
-        <!--наукометричних баз Web of Science та Scopus за посиланнями:<br>-->
-        <!--Web of Science: <a href=""> webofscience.com</a><br>-->
-        <!--Scopus: <a href="">scopus.com</a><br>-->
-        <!--У разі виникнення труднощів з налаштуванням віддаленого доступу звертайтесь в А-140,-->
-        <!--за телефоном 15-52 або на електронну пошту index@onaft.edu.ua-->
-        <!--</p>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
+        <!--Mobile version-->
+        <div class="more_info col-sm-12">
+            <a class="btn col-1 col-sm-12 mobile_btn" data-toggle="collapse" href="#collapse" role="button" aria-expanded="false"
+               aria-controls="collapseExample">
+                <i class="fas fa-angle-down"></i>
+            </a>
+        </div>
+        <div class="collapse col-sm-12" id="collapse" [ngStyle]="{'padding-left':'0','padding-right': '0'}">
+                <div class="block_space col-sm-12">
+                    <div class="news">
+                        <div class="news_info">
+                            <span class="day">5</span>
+                            <span class="month">Грудня</span>
+                            <span class="year">2018</span>
+                        </div>
+                        <h6 class="main_title mb-0">Шановні науковці!</h6>
+                        <p class="lead">
+                            З 1 грудня 2018 року науковці ОНАХТ можуть скористатися можливостями
+                            наукометричних баз Web of Science (<a href="">webofscience.com</a>) та
+                            Scopus (<a href="">scopus.com</a>).<br>
+                            У разі виникнення труднощів з налаштуванням віддаленого доступу звертайтесь в А-140,
+                            за телефоном 15-52 або на електронну пошту index@onaft.edu.ua
+                        </p>
+                        <div class="logo">
+                            <a href="mailto:index@onaft.edu.ua?subject=Scopus and WOS" class="date"><i
+                                    class="fas fa-at"></i>index@onaft.edu.ua</a>
+                            <span class="date"><i class="fas fa-phone"></i>15-52</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="block_space col-sm-12">
+                    <div class="news">
+                        <div class="news_info">
+                            <span class="day">30</span>
+                            <span class="month">Жовтня</span>
+                            <span class="year">2018</span>
+                        </div>
+                        <h6 class="main_title mb-0">Корисна інформація</h6>
+                        <p class="lead">
+                            Ресурс для оформлення посилань ONAFT4ref згідно ДСТУ 8302:2015 розроблений співробітниками
+                            Координаційного центру видання наукової періодики ОНАХТ.
+                            Також, крім автоматичного оформлення літератури на ресурсі ще можлива автоматична
+                            транслітерація та завантаження отриманного результату у файл у форматі *.docx.<br>
+                        </p>
+                        <div class="logo">
+                            <!--<span class="date"><i class="far fa-calendar"></i>20.12.19</span>-->
+                            <a class="date"><i class="fas fa-link"></i>4ref.onaft.edu.ua</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <!-- END mobile main info-->
@@ -336,14 +338,20 @@
 
 
 <!--About us section-->
-<div class="container-fluid about">
+<div class="container-fluid about col-12 col-sm-12">
     <div class="row">
         <div class="about-info col-lg-6 col-md-6 col-sm-12">
             <h1 class="display-4">Віртуальна довідка</h1>
-            <p class="lead text-justify">
-                Якщо у вас виникли питання, заохочення та пропозиції щодо роботи бібіліотеки, зверніться за наведенною
-                формою до співробітника академії. Для цього необхідно заповнити наведені поля та відправити ваше повідомлення.
-                За більш детальною інформацією звертайтесь до співробітників та адміністрації науково-технічної бібліотеки ОНАХИТ.
+            <p class="lead text-justify desktop_version">
+                Якщо у вас виникли питання, заохочення та пропозиції, щодо роботи бібіліотеки, зверніться за наведенною
+                формою до співробітника бібліотеки. Для цього необхідно заповнити наведені поля та відправити ваше
+                повідомлення.
+                За більш детальною інформацією звертайтесь до співробітників та адміністрації науково-технічної
+                бібліотеки ОНАХТ.
+            </p>
+            <p class="lead text-justify mob_version">
+                Якщо у вас виникли питання, щодо роботи бібіліотеки, зверніться за наведенною
+                формою до співробітника бібліотеки.
             </p>
             <div class="icon-about">
                 <p class="lead text-justify"><i class="fas fa-map-marker-alt"></i> Україна, 65039,
@@ -388,10 +396,10 @@
 
 
 <!--FAQ section-->
-<div class="container-fluid faq col-12">
+<div class="container-fluid faq col-12 col-sm-12">
     <h1 class="display-4">Питання-Відповідь</h1>
     <div class="container-fluid col-12 questions">
-        <div class="accordion col-12" id="accordionExample">
+        <div class="accordion col-12 col-sm-12" id="accordionExample">
             <!--Card 1 Як стати читачем?-->
             <div class="card">
                 <div class="card-header" id="headingOne">

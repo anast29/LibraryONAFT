@@ -1,20 +1,31 @@
 .patents {
     background: #fff;
     color: #212529;
-    padding: 2em 1.75em;
+    padding: 1.5em 1.75em 1.5em 0;
     box-sizing: border-box;
 }
-
+.breadcrumb {
+    padding-left: 3.75em !important;
+}
 .patents h1 {
     margin-bottom: 0.5em;
 }
 
 .menu-title {
-    font-size: 22px;
-    padding: 1em 0.25em;
-    border: 5px solid #f1f1f1;
+    position: sticky;
+    top:0;
+    bottom: 0;
+    font-size: 20px;
+    padding: 1em 0;
+    border-right: 5px solid #f1f1f1;
+    border-bottom: 5px solid #f1f1f1;
+    border-top: 5px solid #f1f1f1;
+    height:100%;
 }
-
+.menu-title h2{
+    padding: 0.5em 0;
+    color: #555555;
+}
 .nav-link {
     border-radius: 0;
     color: #555555;
@@ -22,10 +33,14 @@
     align-items: center;
     justify-content: flex-start;
     display: flex;
-}
+    padding: 0.5em 1.75em;
 
+}
+.nav-link:last-child {
+    border-bottom: none;
+}
 .fa-search, .fa-award {
-    font-size: 18px !important;
+    font-size: 16px !important;
     padding-right: 0.4em;
 }
 
@@ -34,6 +49,7 @@
 }
 
 .main-content {
+    position: relative;
     padding: 0 1.75em;
     text-align: justify;
 }
@@ -72,12 +88,16 @@ ol li {
         min-height: calc(100vh - 360px);
     }
 
+    .menu-title {
+        font-size: 24px !important;
+    }
+
     .display-4 {
         font-size: 4rem;
     }
 
-    .menu-title {
-        font-size: 24px;
+    .fa-search, .fa-award {
+        font-size: 18px !important;
     }
 
     p, ol {

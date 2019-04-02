@@ -1,3 +1,35 @@
-<p>
-  encyclopedia works!
-</p>
+<div class="main_content">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a routerLink="/">Головна</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Енциклопедія вчених</li>
+        </ol>
+    </nav>
+    <h1 class="display-4 text-center">Енциклопедія вчених</h1>
+    <p class="lead text-center" [ngStyle]="{'font-size':'22px'}">Довідкова інформація про видатних вчених Одеської національної академії харчових технологій</p>
+    <div class="container-fluid" [ngStyle]="{'margin-top': '2em'}">
+        <div class="row">
+            <div *ngFor="let scientist of scientists"
+                    class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover card shadow-lg ">
+                <img [attr.src]="scientist?.img"
+                     class="img_content shadow-1">
+                <div class="pt-3">
+                    <h4 class="font-weight-normal text-center pl-3 pr-3">
+                        scientist?.name
+                    </h4>
+                    <p class="text-center pl-3 pr-3" [ngStyle]="{'font-size':'18px'}">
+                        (scientist?.birthday - scientist?.deathday)
+                    </p>
+                    <p class="text-justify pl-3 pr-3" >
+                        scientist?.description</p>
+                </div>
+                <div class="align-content-star" [ngStyle]="{'width':'100%'}">
+                    <a href="#0"
+                       class="text-left text-uppercase d-inline-block lts-2px styled-link pt-3 pl-3 pr-3">
+                        Детальніше<i class="fas fa-angle-double-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

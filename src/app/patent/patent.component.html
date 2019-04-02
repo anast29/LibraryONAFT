@@ -1,6 +1,12 @@
 <div class="col-12 patents">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a routerLink="/">Головна</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Патенти</li>
+        </ol>
+    </nav>
     <div class="row">
-        <div class="col-3 menu-title">
+        <aside class="col-3 menu-title">
             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                 <h2 class="text-center">Категорія</h2>
                 <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
@@ -8,9 +14,9 @@
                 <a *ngFor="let patent of patents; let i = index;"
                    class="nav-link" [attr.id]="'v-pills-'+i+'-tab'" data-toggle="pill" [attr.href]="'#v-pills-'+i"
                    role="tab"
-                   [attr.aria-controls]="'v-pills-'+i" aria-selected="false"><i class="fas fa-award"></i> {{patent}}</a>
+                   [attr.aria-controls]="'v-pills-'+i" aria-selected="false"><i class="fas fa-award"></i> {{patent?.year}}</a>
             </div>
-        </div>
+        </aside>
         <div class="main-content col-9">
             <div class="tab-content" id="v-pills-tabContent">
                 <!--Patents search-->
@@ -231,15 +237,15 @@
                 </div>
                 <!--END Patents search-->
                 <!--Patents for years-->
-                <div *ngFor="let value of values; let i = index;"
-                     class="tab-pane fade" [attr.id]="'v-pills-'+i" role="tabpanel"
-                     [attr.aria-labelledby]="'v-pills-'+i+'-tab'">
-                    <h3 class="display-4 text-center">Патенти</h3>
-                    <p class="name-patent text-center">{{value}}</p>
-                    <ol>
-                        <li *ngFor="let patent of patents;">{{patent}} (<a href="#">{{i}}</a>)</li>
-                    </ol>
-                </div>
+                <!--<div *ngFor="let info of patent?.info; let i = index;"-->
+                     <!--class="tab-pane fade" [attr.id]="'v-pills-'+i" role="tabpanel"-->
+                     <!--[attr.aria-labelledby]="'v-pills-'+i+'-tab'">-->
+                    <!--<h3 class="display-4 text-center">Патенти</h3>-->
+                    <!--<p class="name-patent text-center">{{patent?.year}}</p>-->
+                    <!--<ol>-->
+                        <!--<li *ngFor="let patent of patents;">{{info?.references}} (<a href="#">{{info?.pdf}}</a>)</li>-->
+                    <!--</ol>-->
+                <!--</div>-->
                 <!--END Patents for years-->
 
             </div>

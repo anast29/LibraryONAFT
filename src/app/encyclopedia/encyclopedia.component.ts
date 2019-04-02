@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpService} from '../http.service';
+import {Scientists} from '../scientists';
 
 @Component({
   selector: 'app-encyclopedia',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EncyclopediaComponent implements OnInit {
 
-  constructor() { }
+  constructor( private httpservice: HttpService) { }
 
+  scientists: Scientists;
   ngOnInit() {
+    this.httpservice.get('http://192.168.1.39:8000/patents/').subscribe((data: Scientists) => this.scientists = data);
   }
 
 }

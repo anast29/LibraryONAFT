@@ -8,3 +8,22 @@ body {
     /*letter-spacing: 0.05em;*/
     /*font-family: 'Montserrat', sans-serif;*/
 }
+.breadcrumb {
+    background: none;
+    margin-bottom: 0 !important;
+    padding: 1em 0 1em 2em !important;
+    font-size: 18px;
+}
+.breadcrumb-item a{
+    color:#d78737;
+    text-decoration: none;
+}
+.breadcrumb-item a:hover {
+    color: #d7702b;
+}
+
+@media screen and (min-width: 1800px){
+    .breadcrumb {
+        font-size: 20px !important;
+    }
+}
