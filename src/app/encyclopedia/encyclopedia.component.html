@@ -1,35 +1,77 @@
 <div class="main_content">
-    <nav aria-label="breadcrumb">
+    <nav aria-label="breadcrumb" class=" breadcrumb-list">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a routerLink="/">Головна</a></li>
             <li class="breadcrumb-item active" aria-current="page">Енциклопедія вчених</li>
         </ol>
     </nav>
+    <nav aria-label="breadcrumb" class="breadcrumb-bio">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a routerLink="/">Головна</a></li>
+            <li class="breadcrumb-item"><button (click)="returnPage()">Енциклопедія вчених</button></li>
+            <li class="breadcrumb-item active" aria-current="page">{{name}}</li>
+        </ol>
+    </nav>
     <h1 class="display-4 text-center">Енциклопедія вчених</h1>
-    <p class="lead text-center" [ngStyle]="{'font-size':'22px'}">Довідкова інформація про видатних вчених Одеської національної академії харчових технологій</p>
-    <div class="container-fluid" [ngStyle]="{'margin-top': '2em'}">
-        <div class="row">
-            <div *ngFor="let scientist of scientists"
-                    class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover card shadow-lg ">
-                <img [attr.src]="scientist?.img"
-                     class="img_content shadow-1">
-                <div class="pt-3">
-                    <h4 class="font-weight-normal text-center pl-3 pr-3">
-                        scientist?.name
-                    </h4>
-                    <p class="text-center pl-3 pr-3" [ngStyle]="{'font-size':'18px'}">
-                        (scientist?.birthday - scientist?.deathday)
-                    </p>
-                    <p class="text-justify pl-3 pr-3" >
-                        scientist?.description</p>
-                </div>
-                <div class="align-content-star" [ngStyle]="{'width':'100%'}">
-                    <a href="#0"
-                       class="text-left text-uppercase d-inline-block lts-2px styled-link pt-3 pl-3 pr-3">
-                        Детальніше<i class="fas fa-angle-double-right"></i>
-                    </a>
+    <p class="lead text-center title" [ngStyle]="{'font-size':'22px'}">Довідкова інформація про видатних вчених Одеської
+        національної академії харчових технологій</p>
+    <aside class="vertical">
+        <i class="fas fa-search"></i>
+        <div *ngFor="let letter of letters">
+            <a pageScroll="" class="nav-letter" href="#{{letter}}"> {{letter}}</a>
+        </div>
+    </aside>
+    <div *ngFor="let letter of letters" class="letter_card container-fluid col-12">
+        <span>{{letter}}</span>
+        <div class="row" [attr.id]="letter">
+            <div *ngFor="let scientist of scientists" class="contents">
+                <div *ngIf="scientist?.name.charAt(0)===letter"
+                     class="my-2 shadow-1 blue-hover card shadow-lg">
+                    <div class="top-card pl-2 pr-2">
+                        <img class="img_content shadow-1" [attr.src]="scientist?.image" alt="?">
+
+                        <div class="top-text">
+                            <h5 class="font-weight-normal text-center">
+                                {{scientist?.name}}
+                            </h5>
+                            <p class="text-center birthday" [ngStyle]="{'font-size':'18px'}">
+                                ({{scientist?.birthday}} - {{scientist?.deathday}})
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bottom-txt">
+                        <p class="pl-2 pr-2" >
+                            {{addSubstr(scientist?.short_description)}}</p>
+                    </div>
+                    <div class="py-2" [ngStyle]="{'width':'100%'}">
+                        <button (click)="viewBio(); img = scientist?.image; name = scientist?.name; birth_day = scientist?.birthday;
+                        death_day = scientist?.deathday; short_desc = scientist?.short_description; bio = scientist?.bio;
+                        works = scientist?.works"
+                                class="text-left text-uppercase bottom-nav lts-2px styled-link pt-1 pl-3 pr-3">
+                            Детальніше
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="bio col-12 pl-3 pr-3 my-4">
+        <div class="bio-profile col-12">
+            <img [attr.src]="img" class="bio-img shadow-13" alt="?">
+            <div class="bio-name col-9">
+                <h2>{{name}}</h2>
+                <span>({{birth_day}} - {{death_day}})</span>
+                <p class="text-center">{{short_desc}}</p>
+            </div>
+        </div>
+        <div class="line"></div>
+        <h2>Біографія</h2>
+        <div class="bio-txt col-12" [innerHTML]="bio">
+        </div>
+        <div class="line"></div>
+        <h2>Основні роботи</h2>
+        <div class="works-txt col-12" [innerHTML]="works">
+        </div>
+
     </div>
 </div>

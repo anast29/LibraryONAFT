@@ -262,7 +262,9 @@
 /**Hexagon*/
 .rotate-hexagon {
     cursor: pointer;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    perspective: 1000px;
+    -moz-perspective: 1000px;
+    -webkit-perspective: 1000px;
 }
 
 .hexagon {
@@ -272,16 +274,18 @@
     margin: 67.28px 0.15em;
     z-index: 2;
     transition: transform 0.8s;
+    -moz-transition: transform 0.8s;
+    -webkit-transition: transform 0.8s;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
     cursor: pointer;
     color: white;
     transform: rotateY(0deg);
-    /*box-shadow: 0 0 10px rgba(0,0,0,0.6);*/
+    -moz-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
     background: #020207;
-    /*#252527#151519;*/
-    /*border-left: double 7px #151519;*/
-    /*border-right: double 7px #151519;*/
     box-shadow: 0 0 125px rgba(129, 127, 127, 0.65);
+    -moz-box-shadow: 0 0 125px rgba(129, 127, 127, 0.65);
 }
 
 .front-hexagon, .back-hexagon {
@@ -294,11 +298,12 @@
     width: 240.0000px;
     height: 138.5641px;
     backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1000;
-
 }
 
 .hexTop,
@@ -310,10 +315,13 @@
     overflow: hidden;
     -webkit-transform: scaleY(0.5774) rotate(-45deg);
     -ms-transform: scaleY(0.5774) rotate(-45deg);
+    -moz-transform:  scaleY(0.5774) rotate(-45deg);
     transform: scaleY(0.5774) rotate(-45deg);
     background: inherit;
     left: 35.15px;
     box-shadow: 0 0 20px rgba(129, 127, 127, 0.65);
+    -moz-box-shadow: 0 0 20px rgba(129, 127, 127, 0.65);
+    -webkit-box-shadow: 0 0 20px rgba(129, 127, 127, 0.65);
 }
 
 /*counter transform the bg image on the caps*/
@@ -326,8 +334,10 @@
     -webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-69.2820px);
     -ms-transform: rotate(45deg) scaleY(1.7321) translateY(-69.2820px);
     transform: rotate(45deg) scaleY(1.7321) translateY(-69.2820px);
+    -moz-transform:rotate(45deg) scaleY(1.7321) translateY(-69.2820px);
     -webkit-transform-origin: 0 0;
     -ms-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
     transform-origin: 0 0;
     background: inherit;
 }
@@ -347,12 +357,14 @@
     left: 0;
     width: 240.0000px;
     height: 138.5641px;
-    z-index: 2;
+    z-index: 10;
     background: inherit;
 }
 
 .rotate-hexagon:hover .hexagon {
     transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
 }
 
 .hexagone-img {
@@ -368,8 +380,7 @@
     font-weight: 400;
     font-variant: all-petite-caps;
     line-height: 1em;
-    font-size: 1.25rem;
-    /*font-family: 'Montserrat', sans-serif;*/
+    font-size: 1.15rem;
 }
 
 .hexagon h4:after {
@@ -418,25 +429,26 @@
     text-align: left;
 }
 
-.back-hexagon {
-    align-items: baseline;
-}
-
 .front-hexagon-logo {
     display: flex;
     flex-flow: row wrap;
     align-items: baseline;
-    /*justify-content: space-around;*/
     padding: 0.25em 1.25em;
     width: 100%;
 }
-
-.back-hexagon {
-    padding: 0 1em;
+.front-hexagon {
+    transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
 }
-
 .back-hexagon {
+    align-items: baseline;
+    padding: 0 1em;
     transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    z-index: 1000;
+    background: inherit;
 }
 
 .back-hexagon span {
@@ -540,7 +552,7 @@
     position: relative;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: stretch;
     padding: 0 2em;
     text-align: left;
@@ -549,7 +561,7 @@
 form {
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: stretch;
     padding: 0.5em 0.25em 0;
     width: 100%;

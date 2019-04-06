@@ -90,3 +90,34 @@ p {
         font-size: 4rem;
     }
 }
+@media screen and (max-width: 768px) {
+    .main_content {
+        padding: 1.5em 0.5em;
+    }
+    .row {
+        margin: 0 !important;
+    }
+
+    .display-4 {
+        font-size: 2em;
+    }
+    .title, h4 {
+        font-size: 18px !important;
+    }
+    .display-4:after {
+        width: 50px;
+        height: 2px;
+        background: #d78737;
+        margin: 0.5em auto;
+    }
+    p {
+        text-indent: 0.5em;
+        font-size: 16px;
+    }
+
+    .breadcrumb {
+        padding-left: 0 !important;
+        font-size: 16px;
+    }
+
+}

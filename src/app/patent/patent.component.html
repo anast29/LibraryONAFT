@@ -6,8 +6,10 @@
         </ol>
     </nav>
     <div class="row">
-        <aside class="col-3 menu-title">
-            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <aside class="col-md-3 col-lg-3 menu-title">
+            <button class="mob_open" (click)="openNav()"><i class="fas fa-angle-double-right"></i></button>
+            <div class="nav flex-column nav-pills sidenav" id="aside">
+                <button class="closebtn" (click)="closeNav()">&times;</button>
                 <h2 class="text-center">Категорія</h2>
                 <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
                    aria-controls="v-pills-home" aria-selected="true"><i class="fas fa-search"></i> Патентний пошук</a>
@@ -17,7 +19,7 @@
                    [attr.aria-controls]="'v-pills-'+i" aria-selected="false"><i class="fas fa-award"></i> {{patent?.year}}</a>
             </div>
         </aside>
-        <div class="main-content col-9">
+        <div class="main-content col-md-9 col-lg-9">
             <div class="tab-content" id="v-pills-tabContent">
                 <!--Patents search-->
                 <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"

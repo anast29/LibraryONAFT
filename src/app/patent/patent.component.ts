@@ -18,6 +18,30 @@ export class PatentComponent implements OnInit {
 
     ngOnInit() {
         this.httpService.get('http://192.168.1.39:8000/patents/').subscribe((data: Patent) => this.patents = data);
+        if (window.pageYOffset > document.body.scrollTop) {
+            document.getElementById('aside').style.top = '0';
+        }
+        const h_hght = 80; // высота шапки
+        const h_mrg = 0;     // отступ когда шапка уже не видна
+        $(function() {
+            $(window).scroll(function() {
+                const top = $(this).scrollTop();
+                const elem = $('#aside');
+                if (top + h_mrg < h_hght) {
+                    elem.css('top', (h_hght - top));
+                } else {
+                    elem.css('top', h_mrg);
+                }
+            });
+        });
+    }
+
+    openNav() {
+        document.getElementById('aside').style.width = '250px';
+    }
+
+       closeNav() {
+        document.getElementById('aside').style.width = '0';
     }
 
 }

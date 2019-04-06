@@ -14,6 +14,8 @@ import {JubileeComponent} from './jubilee/jubilee.component';
 import {ExhibitionComponent} from './exhibition/exhibition.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import {NgxPageScrollCoreModule} from 'ngx-page-scroll-core';
+import {NgxPageScrollModule} from 'ngx-page-scroll';
 
 const rout: Routes = [
     {path: '', component: HomeComponent},
@@ -42,7 +44,9 @@ const rout: Routes = [
         BrowserModule,
         FormsModule,
         HttpClientModule,
-        RouterModule.forRoot(rout)
+        RouterModule.forRoot(rout),
+        NgxPageScrollCoreModule.forRoot({duration: 1000}),
+        NgxPageScrollModule
     ],
     providers: [],
     bootstrap: [AppComponent]
