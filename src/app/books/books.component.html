@@ -1,24 +1,207 @@
 <div class="main_content container-fluid">
-  <nav aria-label="breadcrumb" class=" breadcrumb-list">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a routerLink="/">Головна</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Видання</li>
-    </ol>
-  </nav>
-  <h1 class="display-3 text-center">Видання</h1>
-    <div class="card-container">
-      <div class="card u-clearfix">
-        <div class="card-body">
-          <span class="card-number card-circle subtle">01</span>
-          <span class="card-author subtle">John Smith</span>
-          <h2 class="card-title">New Brunch Recipe</h2>
-          <span class="card-description subtle">These last few weeks I have been working hard on a new brunch recipe for you all.</span>
-          <div class="card-read">Read</div>
-          <span class="card-tag card-circle subtle">C</span>
+    <nav aria-label="breadcrumb" class=" breadcrumb-list">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a routerLink="/">Головна</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Видання</li>
+        </ol>
+    </nav>
+    <h1 class="text-center">Видання</h1>
+    <ul class="nav nav-pills" id="myTab" role="tablist">
+        <li class="nav-item active">
+            <a class="nav-link active" id="resource-library" data-toggle="pill" href="#resource-view" role="tab"
+               aria-controls="resource-view" aria-selected="true">Ресур НТБ</a>
+        </li>
+        |
+        <li class="nav-item">
+            <a class="nav-link" id="books-scientists" data-toggle="pill" href="#books-view" role="tab"
+               aria-controls="books-view" aria-selected="true">Книги вчених</a>
+        </li>
+        |
+        <li class="nav-item">
+            <a class="nav-link" id="new-books" data-toggle="pill" href="#new-books-view" role="tab"
+               aria-controls="new-books-view" aria-selected="true">Нові надходження</a>
+        </li>
+        |
+        <li class="nav-item">
+            <a class="nav-link" id="propose-liter" data-toggle="pill" href="#propose-liter-view" role="tab"
+               aria-controls="propose-liter-view" aria-selected="true">Рекомендована літ.</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="pills-tabContent">
+        <!--Resource library block-->
+        <div class="row tab-pane fade show active" id="resource-view" role="tabpanel"
+             aria-labelledby="resource-library">
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://library.onaft.edu.ua/izdaniya_bib/onaft_vynahidnyk/onaft_vynahidnyk.png" alt=""
+                         class="card-media"/>
+                    <div class="card-body">
+                        <span class="card-author subtle">Науково-технічна бібілотека ОНАХТ</span>
+                        <h2 class="card-title">ОНАХТ – винахідник</h2>
+                        <span class="card-description">ОНАХТ – винахідник : бібліографічний покажчик винаходів співробітників / Одес. нац. акад. харч. технологій. Наук.-техн. б-ка ; уклад.: Т. Є. Мазепа, Л. П. Лобакова, О. А. Златіна, А. М. Хамутинська ; за ред. І. І. Зінченко. – Одеса, 2018. – 477 с. – (Сер. «Наукові публікації»).</span>
+                        <a href="" class="card-read">Завантажити</a>
+                    </div>
+                </div>
+                <div class="card-shadow"></div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://library.onaft.edu.ua/izdaniya_bib/2017.png" alt=""
+                         class="card-media"/>
+                    <div class="card-body">
+                        <span class="card-author subtle">Науково-технічна бібілотека ОНАХТ</span>
+                        <h2 class="card-title">Сторінки друку - 2017</h2>
+                        <span class="card-description">Сторінки друку – 2017 : бібліографічний покажчик наукових праць співробітників / Одес. нац. акад. харч. технологій, Наук.-техн. б-ка ; уклад.: Т. Є. Мазепа, О. А. Златіна, Л. П. Лобакова, А. М. Хамутинська. – Одеса, 2018. – 383 с. – (Сер. «Наукові публікації»).</span>
+                        <a href="https://library.onaft.edu.ua/liter_for_dipl_stud/infoposhyk.pdf" class="card-read" download>Завантажити</a>
+                    </div>
+                </div>
+                <div class="card-shadow"></div>
+            </div>
         </div>
-        <img src="https://s15.postimg.cc/temvv7u4r/recipe.jpg" alt="" class="card-media" />
-      </div>
-      <div class="card-shadow"></div>
+
+        <!--Books scientists block-->
+        <div class="row tab-pane fade" id="books-view" role="tabpanel" aria-labelledby="books-scientists">
+            <div class="card-container-books">
+                <div class="card">
+                    <img src="https://library.onaft.edu.ua/images/receipts/258.jpg" alt=""
+                         class="card-media-books"/>
+                    <div class="card-body">
+                        <span class="card-author subtle">Книги вчених ОНАХТ</span>
+                        <h2 class="card-title">50 лекцій з фізики для закладів вищої технічної освіти</h2>
+                        <span class="card-description subtle">Роганков В. Б. 50 лекцій з фізики для закладів вищої технічної освіти: підручник /В. Б. Роганков; МОН України, Одеська національна академія харчових технологій. – Київ:Освіта України, 2019. – 412 с. – ОНАХТ. – ISBN 978-617-7366-63-7.</span>
+                        <p class="short-description">
+                            У книзі автор підкреслює взаємозв’язок найрізноманітніших розділів фізики і хімії та виявляє
+                            загальну структуру їх описування, яка може бути відображена рівнями класичної механіки. Саме
+                            через це у даному курсі лекцій докладно розглянуто різноманітні аналогії між фізичними
+                            величинами та законами, які пов’язують їх. Крім того, у курсі поданий поглиблений виклад
+                            розділів, що стосуються вивчення конденсованого стану. Зокрема, висвітлено основи сучасного
+                            методу вивчення систем великої кількості взаємодіючих частинок (методу молекулярної
+                            динаміки). Курс дає змогу побачити, як основні результати класичної або квантової механіки,
+                            електрики й магнетизму дозволяють вивчити досить складні об’єкти, важливі для науки й
+                            практики.<br>
+
+                            Для закладів вищої технічної освіти.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-shadow"></div>
+            </div>
+            <div class="card-container-books">
+                <div class="card">
+                    <img src="https://library.onaft.edu.ua/images/receipts/253.jpg" alt=""
+                         class="card-media-books"/>
+                    <div class="card-body">
+                        <span class="card-author subtle">Книги вчених ОНАХТ</span>
+                        <h2 class="card-title"> Компресори об'ємного стиснення</h2>
+                        <span class="card-description subtle">Мілованов, В. І. Компресори об'ємного стиснення : підручник / В. І. Мілованов, Н. І. Водяницька, В. Д. Мельников. - Одеса : Зовнішрекламсервіс, 2015. - 332 с. : табл., рис. - Бібліогр.: с. 324-325. - ISBN 966-8212-10-6.</span>
+                        <p class="short-description">
+                            У підручнику, створеному викладачами Навчально-учбового інституту холоду, кріотехнологій та
+                            екоенергетики ім. проф. В. С. Мартиновського Одеської національної академії харчових
+                            технологій, описані теорія, розрахунок і монтаж поршневих, ротаційних та спеціальних типів
+                            компресорів об’ємного стиснення, що використовуються в різних галузях народного
+                            господарства, для студентів машинобудівних, енергетичних та технологічних вищих учбових
+                            закладів.<br>
+                            Матеріали підручника можуть бути корисними для інженерно-технічних працівників, викладачів,
+                            студентів та аспірантів.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-shadow"></div>
+            </div>
+        </div>
+
+        <!--New books block-->
+        <div class="row tab-pane fade" id="new-books-view" role="tabpanel" aria-labelledby="new-books">
+            <div class="card-container-books">
+                <div class="card">
+                    <img src="https://library.onaft.edu.ua/images/receipts2/439.jpg" alt=""
+                         class="card-media-books"/>
+                    <div class="card-body">
+                        <span class="card-author subtle">Надходження за 2018-2019 р.</span>
+                        <h2 class="card-title">Загальна екологія</h2>
+                        <span class="card-description subtle">Соломенко, Людмила Іванівна. Загальна екологія [Текст] : підручник / Л. І. Соломенко, В. М. Боголюбов,А. М. Волох ; Нац. ун-т біоресурсів і природокористування України. – 2-гевид., випр. і допов. – Херсон : ОЛДІ-ПЛЮС, 2018. – 352 с. – ISBN 978-966-289-218-5.</span>
+                        <p class="short-description">
+                            У підручнику розглянуто найважливіші теоретичні питання і розділи з навчальної дисципліни
+                            "Загальна екологія": аутекологія, демекологія, синекологія, основи біосферології та елементи
+                            еволюційного вчення і прикладної екології. Вміщено практичні заняття та короткий
+                            термінологічний словник, які сприятимуть глибшому осмисленню теоретичного матеріалу,
+                            виробленню навичок його практичного застосування.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-shadow"></div>
+            </div>
+            <div class="card-container-books">
+                <div class="card">
+                    <img src="https://library.onaft.edu.ua/images/receipts2/437.jpg" alt=""
+                         class="card-media-books"/>
+                    <div class="card-body">
+                        <span class="card-author subtle">Надходження за 2018-2019 р.</span>
+                        <h2 class="card-title">Бухгалтерський облік</h2>
+                        <span class="card-description subtle">Бухгалтерський облік [Текст] : навч. посіб. / Т. В. Давидюк, О. В.Манойленко, Т. І. Ломаченко, А. В. Резніченко ; Нац. техн. ун-т Харків.політехн. ін-т. – Харків : Гельветика, 2016. – 392 с. – Бібліогр.: с. 386-391. –ISBN 978-966-916-097-3.</span>
+                        <p class="short-description">
+                            Навчальний посібник підготовлено відповідно до програми дисциплін «Бухгалтерський облік
+                            (основи)», «Фінансовий облік І», «Фінансовий облік ІІ» і спрямований на вироблення у
+                            студентів навичок щодо ведення бухгалтерського обліку на підприємстві. Він гармонійно
+                            поєднує завдання теоретичного та практичного характеру. Для полегшення опанування матеріалу
+                            контрольні запитання та завдання представлені таким чином, щоб орієнтувати студента на
+                            самостійну перевірку якості засвоєння матеріалу, робити більш ефективним його спілкування з
+                            викладачем, націлюючи і на відповіді з конкретних питань, і на та творче мислення.
+                            <br>
+                            У посібнику висвітлено теоретичні основи бухгалтерського обліку в умовах впровадження
+                            національних Положень (стандартів) бухгалтерського обліку. Дана характеристика
+                            бухгалтерського обліку, його сутність, функції в системі управління економікою; предмет і
+                            метод бухгалтерського обліку.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-shadow"></div>
+            </div>
+        </div>
+
+        <!--Propose literature block-->
+        <div class="row tab-pane fade" id="propose-liter-view" role="tabpanel" aria-labelledby="propose-liter">
+            <div class="card-container-books">
+                <div class="card">
+                    <img src="https://library.onaft.edu.ua/liter_for_dipl_stud/infoposhyk.png" alt=""
+                         class="card-media-books"/>
+                    <div class="card-body">
+                        <span class="card-author subtle">Рекомендована література для аспірантів та дипломників</span>
+                        <div class="card-description-books mt-3 my-3">  Шаравара Т.О. Інформаційний пошук і робота з бібліотечними ресурсами: навч. посіб./Шаравара Т.О.-К.: Видавництво Ліра-К, 2017.-256с.</div>
+                        <p class="short-description">
+                            Посібник призначений для здобувачів вищої освіти, які навчаються в аспірантурі (з різних
+                            спеціальностей), з метою одержання практичних навичок у роботі з різноманітними джерелами.
+                        </p>
+                        <a href="" class="card-read">Зміст книги</a>
+                    </div>
+                </div>
+                <div class="card-shadow"></div>
+            </div>
+            <div class="card-container-books">
+                <div class="card">
+                    <img src="https://library.onaft.edu.ua/liter_for_dipl_stud/osnovi%20naukdosCover.png" alt=""
+                         class="card-media-books"/>
+                    <div class="card-body">
+                        <span class="card-author subtle">Рекомендована література для аспірантів та дипломників</span>
+                        <div class="card-description-books mt-3 my-3"> Палеха Ю.І., Леміш Н.О. Основи науково-дослідної роботи [Текст] : навч. посіб. – Київ : Ліра- К, 2016. – 336 с. – Библиогр.: с. 302-311. МОН. – 978-966-2609-31-8.</div>
+                        <p class="short-description">
+                            У посібнику всебічно розглянуто основні засади науково-дослідної роботи. Наука подана як
+                            система уявлень про дійсність, висвітлено питання організації наукової діяльності, наведено
+                            структуру та класифікацію наук, розкрито основи методології науково-дослідної роботи,
+                            проаналізовано організацію наукових досліджень та їх інформаційне забезпечення, розглянуті
+                            питання підведення підсумків наукових досліджень, виокремлено організаційні аспекти наукової
+                            діяльності, вимоги до підготовки й оформлення курсових, дипломних та магістерських робіт.
+                            <br>
+                            Для керівників та працівників наукових установ, студентів вищих навчальних закладів,
+                            викладачів, аспірантів, усіх тих, хто займається науково-дослідною роботою.
+                        </p>
+                        <a href="" class="card-read">Зміст книги</a>
+                    </div>
+                </div>
+                <div class="card-shadow"></div>
+            </div>
+        </div>
     </div>
 
 </div>
