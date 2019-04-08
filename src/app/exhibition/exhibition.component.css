@@ -18,20 +18,40 @@ h1 {
     margin-bottom: 2rem;
 }
 
-.carousel {
-    width: 75%;
-    margin: 0 auto;
+.nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
-.carousel-inner {
-    display: flex;
-    justify-content: center;
+.nav .nav-link {
+    font-family: montserrat, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: #212529;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    border-radius: 0;
 }
+
+.nav .nav-link.active {
+    color: #d78737;
+    border-bottom: 2px solid #d78737;
+}
+
+.nav .nav-link:hover {
+    transition: 0.5s;
+    color: #d7702b;
+}
+
 
 .row {
     box-sizing: border-box;
 }
-
+.tab-content {
+    margin: 1.75em 0;
+}
 .align-content {
     padding: 0.5em;
     box-sizing: border-box;
@@ -44,7 +64,7 @@ h1 {
     background-blend-mode: multiply;
     height: 425px;
     border-radius: 0;
-    padding: 2em 0.75em 0;
+    padding: 2em 0.25em 0;
 }
 .title-align {
     display: flex;
@@ -55,13 +75,23 @@ blockquote, h2 {
     margin: 0;
     background: none;
     color: white;
-    padding: 30px 30px 30px 90px;
+    padding: 30px 30px 30px 80px;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
 }
 h2 {
     font-weight: 600;
     padding: 0 30px 30px 30px;
+}
+.subtle {
+    font-family: montserrat, sans-serif;
+    color: #e4e4e4;
+    font-weight: 600;
+    font-size: 18px;
+    width: 70%;
+    margin-left: 10%;
+    padding-left: 0.5em;
+    border-left: 5px solid #d78737;
 }
 .fa-book-open {
     color: #d7702b;
@@ -85,7 +115,7 @@ blockquote:before{
 
 blockquote p {
     margin: 0 0 16px;
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: .05em;
     line-height: 1.4;
     font-weight: 800;
@@ -93,4 +123,13 @@ blockquote p {
 
 blockquote cite {
     font-style: italic;
+}
+
+@media screen and (min-width: 1800px) {
+    h1 {
+      font-size: 4rem;
+    }
+    blockquote p {
+        font-size: 22px;
+    }
 }
