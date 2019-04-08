@@ -1,0 +1,96 @@
+.main_content {
+    background: #fff;
+    color: #212529;
+    padding: 1.5em 1.75em;
+    box-sizing: border-box;
+    min-height: calc(100vh - 360px);
+}
+
+.breadcrumb {
+    font-family: montserrat, sans-serif;
+}
+
+h1 {
+    font-family: montserrat, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.carousel {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    box-sizing: border-box;
+}
+
+.align-content {
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+.card {
+    position: relative;
+    background: url("https://library.onaft.edu.ua/thematic_exhibitions/DSC_5148.JPG") rgba(0, 0, 0, 0.7) no-repeat top;
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 425px;
+    border-radius: 0;
+    padding: 2em 0.75em 0;
+}
+.title-align {
+    display: flex;
+    flex-flow: column wrap;
+}
+blockquote, h2 {
+    position: relative;
+    margin: 0;
+    background: none;
+    color: white;
+    padding: 30px 30px 30px 90px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+h2 {
+    font-weight: 600;
+    padding: 0 30px 30px 30px;
+}
+.fa-book-open {
+    color: #d7702b;
+    font-size: 2rem;
+}
+blockquote:before{
+    content: "\201C";
+    font-family: serif;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: white;
+    background: #d7702b;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 50px;
+    line-height: 1.35;
+    text-align: center;
+}
+
+blockquote p {
+    margin: 0 0 16px;
+    font-size: 22px;
+    letter-spacing: .05em;
+    line-height: 1.4;
+    font-weight: 800;
+}
+
+blockquote cite {
+    font-style: italic;
+}

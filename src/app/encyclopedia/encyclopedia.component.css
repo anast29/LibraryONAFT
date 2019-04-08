@@ -249,6 +249,9 @@ h2 {
     .display-4 {
         font-size: 4rem;
     }
+    h1 {
+        font-size: 4rem;
+    }
     .card {
         height: 325px;
     }

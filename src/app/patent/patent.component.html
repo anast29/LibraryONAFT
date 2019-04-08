@@ -239,15 +239,15 @@
                 </div>
                 <!--END Patents search-->
                 <!--Patents for years-->
-                <!--<div *ngFor="let info of patent?.info; let i = index;"-->
-                     <!--class="tab-pane fade" [attr.id]="'v-pills-'+i" role="tabpanel"-->
-                     <!--[attr.aria-labelledby]="'v-pills-'+i+'-tab'">-->
-                    <!--<h3 class="display-4 text-center">Патенти</h3>-->
-                    <!--<p class="name-patent text-center">{{patent?.year}}</p>-->
-                    <!--<ol>-->
-                        <!--<li *ngFor="let patent of patents;">{{info?.references}} (<a href="#">{{info?.pdf}}</a>)</li>-->
-                    <!--</ol>-->
-                <!--</div>-->
+                    <div *ngFor=" let patent of patents; let i = index;"
+                         class="tab-pane fade" [attr.id]="'v-pills-'+i" role="tabpanel"
+                         [attr.aria-labelledby]="'v-pills-'+i+'-tab'">
+                        <h3 class="display-4 text-center">Патенти</h3>
+                        <p class="name-patent text-center">{{patent?.year}}</p>
+                        <ol>
+                            <li *ngFor="let info of patent?.info;" [innerHTML]="info?.references + ' (<a href='+info?.pdf_file+'>Зміст патенту</a>)'"></li>
+                        </ol>
+                    </div>
                 <!--END Patents for years-->
 
             </div>
