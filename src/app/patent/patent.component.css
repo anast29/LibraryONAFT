@@ -31,8 +31,7 @@
     color: #555555;
 }
 
-.nav-link,
-.tab-content a{
+.nav-link{
     border-radius: 0;
     color: #555555;
     border-bottom: 1px solid #f1f1f1;
