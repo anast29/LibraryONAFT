@@ -62,10 +62,10 @@ h1 {
     position: relative;
 }
 .card-container {
-    flex: 1 0 45%;
+    flex: 0 0 45%;
 }
 .card-container-books {
-    flex: 1 0 100%;
+    flex: 0 0 100%;
 }
 .tab-pane.active {
     display: flex;

@@ -7,28 +7,12 @@
     </nav>
     <h1 class="text-center">Ювіляри</h1>
     <div class="container-fluid" [ngStyle]="{'margin-top': '2em'}">
-        <!--<div class="row">-->
-        <!--<div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover card">-->
-        <!--<img src="../../assets/img/ban.jpg"-->
-        <!--class="img_content shadow-1">-->
-        <!--<div class="pt-3">-->
-        <!--<h4 class="font-weight-normal text-center">-->
-        <!--Алейников Владислав Іванович-->
-        <!--</h4>-->
-        <!--<p class="text-center" [ngStyle]="{'font-size':'18px'}">(1930 – 2008)</p>-->
-        <!--<p class="text-justify" >-->
-        <!--Доктор технічних наук, доцент кафедр технології гідролізних виробництв, технології-->
-        <!--хлібопекарських і кондитерських виробництв, провідний науковий співробітник НІСу кафедри-->
-        <!--технології молока та сушки харчових продуктів. </p>-->
-        <!--</div>-->
-        <!--</div>-->
         <div class="row">
-            <div *ngFor="let scientist of scientists" class="contents">
+            <ng-container *ngFor="let scientist of scientists">
                 <div *ngIf="searchDate(scientist?.birthday)%5 === 0"
                    class="my-2 shadow-1 blue-hover card shadow-lg">
                     <div class="top-card pl-2 pr-2">
                         <img class="img_content shadow-1" [attr.src]="scientist?.image" alt="?">
-
                         <div class="top-text">
                             <h5 class="font-weight-normal text-center">
                                 {{scientist?.name}}
@@ -43,7 +27,7 @@
                             {{scientist?.short_description}}</p>
                     </div>
                 </div>
-            </div>
+            </ng-container>
         </div>
     </div>
 </div>

@@ -18,8 +18,7 @@
         </li>
     </ul>
     <div class="tab-content" id="pills-tabContent">
-        <div class="container-fluid justify-content-center tab-pane fade show active" id="thematic-exhibition" role="tabpanel"
-             aria-labelledby="thematic">
+        <div class="container-fluid justify-content-center tab-pane fade show active" id="thematic-exhibition" role="tabpanel"  aria-labelledby="thematic">
             <div class="row">
                 <div class="align-content col-3">
                     <div class="card justify-content-end"
@@ -302,9 +301,26 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid justify-content-center tab-pane fade show active" id="virtual-exhibition" role="tabpanel"
+        <div class="container-fluid justify-content-center tab-pane fade" id="virtual-exhibition" role="tabpanel"
              aria-labelledby="virtual">
+            <div class="row">
+                <ng-container *ngFor="let exhibition of exhibitions">
+                    <div class="card-container">
+                        <div class="card-virtual">
+                            <div [ngStyle]="{'background-image':'url('+exhibition?.image+')'}"
+                                 class="card-media"></div>
+                            <div class="card-body">
+                                <div class="card-description my-3" [innerHTML]="exhibition?.title"></div>
+                                <div class="short-description" [innerHTML]="exhibition?.description"></div>
+                                <div class="my-3">
+                                    <a [attr.href]="exhibition?.pdf_file" target="_blank" class="card-read">Дивитись</a>
+                                </div>
 
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
         </div>
 
     </div>

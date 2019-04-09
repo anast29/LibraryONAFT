@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpService} from '../http.service';
+import {Exhibition} from '../../exhibition';
 
 @Component({
   selector: 'app-exhibition',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExhibitionComponent implements OnInit {
 
-  constructor() { }
+  exhibitions: Exhibition;
+
+  constructor(private http: HttpService) { }
 
   ngOnInit() {
+    this.http.get('http://192.168.1.39:8000/virtualexhibition/').subscribe((data: Exhibition) => this.exhibitions = data);
   }
 
 }
