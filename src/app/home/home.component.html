@@ -1,158 +1,42 @@
 <!-- Main info about site-->
 <div class="container-fluid main col-12 col-sm-12">
     <h1 class="display-3 col-12">Науково-технічна бібліотека</h1>
-    <p class="lead title col-12">Одеської національної академії харчових технологій</p>
+    <p class="lead title">Одеської національної академії харчових технологій</p>
     <hr class="my-4">
-
     <div class="container-fluid content col-12">
         <ul class="timeline">
-            <li class="event" data-date="01/04/2019">
-                <h3>Шановні користувачі бібліотеки!</h3>
-                <p> Звертаємо Вашу увагу, що з 1 по 12 квітня 2019 року в інформаційно-бібліографічному відділі
-                    Науково-технічної бібліотеки (А-229) проводитиметься День інформації. Вашій увазі будуть
-                    представлені видання, які надійшли до бібліотеки у 2018–2019 роках.</p>
+            <ng-container *ngFor="let item of news ">
+            <li class="event" [attr.data-date]="item?.add_date">
+                <h3>{{item?.title}}</h3>
+                <div [innerHTML]="item?.content"></div>
             </li>
-            <li class="event" data-date="02/04/2019">
-                <h3>Шановні користувачі!</h3>
-                <p>Інформуємо, що у читальних залах #libONAFT Ви маєте можливість скористатись послугою індивідуального
-                    обслуговування.
-                    Один раз на місяць Ви зможете отримувати електронного листа із переліком актуальних книжкових
-                    надходжень із заявленої Вами теми.
-                    Для запису на індивідуальне обслуговування, зверніться до працівників НТБ у читальних залах, залиште
-                    свої контактні дані та перелік тем, які Вас цікавлять.</p>
-            </li>
-            <li class="event" data-date="03/04/2019">
-                <h3>Шановні науковці!</h3>
-                <p>Звертаємо вашу увагу, що з 1 грудня 2018 року науковці ОНАХТ можуть скористатися можливостями
-                    наукометричних баз Web of Science та Scopus за посиланнями:
-                    Web of Science webofscience.com
-                    Scopus scopus.com
-                    У разі виникнення труднощів з налаштуванням віддаленого доступу звертайтесь в А-140, за телефоном
-                    15-52 або на електронну пошту index@onaft.edu.ua</p>
-            </li>
+            </ng-container>
+            <!--<li class="event" data-date="02/04/2019">-->
+                <!--<h3>Шановні користувачі!</h3>-->
+                <!--<p>Інформуємо, що у читальних залах #libONAFT Ви маєте можливість скористатись послугою індивідуального-->
+                    <!--обслуговування.-->
+                    <!--Один раз на місяць Ви зможете отримувати електронного листа із переліком актуальних книжкових-->
+                    <!--надходжень із заявленої Вами теми.-->
+                    <!--Для запису на індивідуальне обслуговування, зверніться до працівників НТБ у читальних залах, залиште-->
+                    <!--свої контактні дані та перелік тем, які Вас цікавлять.</p>-->
+            <!--</li>-->
+            <!--<li class="event" data-date="03/04/2019">-->
+                <!--<h3>Шановні науковці!</h3>-->
+                <!--<p>Звертаємо вашу увагу, що з 1 грудня 2018 року науковці ОНАХТ можуть скористатися можливостями-->
+                    <!--наукометричних баз Web of Science та Scopus за посиланнями:-->
+                    <!--Web of Science webofscience.com-->
+                    <!--Scopus scopus.com-->
+                    <!--У разі виникнення труднощів з налаштуванням віддаленого доступу звертайтесь в А-140, за телефоном-->
+                    <!--15-52 або на електронну пошту index@onaft.edu.ua</p>-->
+            <!--</li>-->
         </ul>
-        <!--<div class="block_space col-lg-4 col-md-6">-->
-        <!--<div class="news">-->
-        <!--<div class="news_info">-->
-        <!--<span class="day">1</span>-->
-        <!--<span class="month">Березня</span>-->
-        <!--<span class="year">2019</span>-->
-        <!--</div>-->
-        <!--<h6 class="main_title mb-0">Шановні колеги!</h6>-->
-        <!--<p class="lead">-->
-        <!--Запрошуємо Вас взяти участь у семінарах від #CenSciONAFT, #LibONAFT,-->
-        <!--які відбудуться у період з 12-21 березня в аудиторії А-316 #INFOhub_LibONAFT.-->
-        <!--Початок всіх семінарів о 14:30.-->
-        <!--</p>-->
-        <!--<div class="logo">-->
-        <!--<a href="mailto:index@onaft.edu.ua?subject=Scopus and WOS" class="date"><i-->
-        <!--class="fas fa-at"></i>index@onaft.edu.ua</a>-->
-        <!--<span class="date"><i class="fas fa-phone"></i>15-52</span>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class="block_space col-lg-4 col-md-6 desktop_version">-->
-        <!--<div class="news n_last">-->
-        <!--<div class="news_info">-->
-        <!--<span class="day">5</span>-->
-        <!--<span class="month">Грудня</span>-->
-        <!--<span class="year">2018</span>-->
-        <!--</div>-->
-        <!--<h6 class="main_title mb-0">Шановні науковці!</h6>-->
-        <!--<p class="lead">-->
-        <!--З 1 грудня 2018 року науковці ОНАХТ можуть скористатися можливостями-->
-        <!--наукометричних баз Web of Science (<a href="">webofscience.com</a>) та-->
-        <!--Scopus (<a href="">scopus.com</a>).<br>-->
-        <!--У разі виникнення труднощів з налаштуванням віддаленого доступу звертайтесь в А-140,-->
-        <!--за телефоном 15-52 або на електронну пошту index@onaft.edu.ua-->
-        <!--</p>-->
-        <!--<div class="logo">-->
-        <!--<a href="mailto:index@onaft.edu.ua?subject=Scopus and WOS" class="date"><i-->
-        <!--class="fas fa-at"></i>index@onaft.edu.ua</a>-->
-        <!--<span class="date"><i class="fas fa-phone"></i>15-52</span>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class="block_space col-lg-4 col-md-6 desktop_version">-->
-        <!--<div class="news">-->
-        <!--<div class="news_info">-->
-        <!--<span class="day">30</span>-->
-        <!--<span class="month">Жовтня</span>-->
-        <!--<span class="year">2018</span>-->
-        <!--</div>-->
-        <!--<h6 class="main_title mb-0">Корисна інформація</h6>-->
-        <!--<p class="lead">-->
-        <!--Ресурс для оформлення посилань ONAFT4ref згідно ДСТУ 8302:2015 розроблений співробітниками-->
-        <!--Координаційного центру видання наукової періодики ОНАХТ.-->
-        <!--Також, крім автоматичного оформлення літератури на ресурсі ще можлива автоматична-->
-        <!--транслітерація та завантаження отриманного результату у файл у форматі *.docx.<br>-->
-        <!--</p>-->
-        <!--<div class="logo">-->
-        <!--&lt;!&ndash;<span class="date"><i class="far fa-calendar"></i>20.12.19</span>&ndash;&gt;-->
-        <!--<a class="date"><i class="fas fa-link"></i>4ref.onaft.edu.ua</a>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!-- END  main info-->
-
-        <!--Mobile version-->
-        <!--<div class="more_info col-sm-12">-->
-        <!--<a class="btn col-1 col-sm-12 mobile_btn" data-toggle="collapse" href="#collapse" role="button" aria-expanded="false"-->
-        <!--aria-controls="collapseExample">-->
-        <!--<i class="fas fa-angle-down"></i>-->
-        <!--</a>-->
-        <!--</div>-->
-        <!--<div class="collapse col-sm-12" id="collapse" [ngStyle]="{'padding-left':'0','padding-right': '0'}">-->
-        <!--<div class="block_space col-sm-12">-->
-        <!--<div class="news">-->
-        <!--<div class="news_info">-->
-        <!--<span class="day">5</span>-->
-        <!--<span class="month">Грудня</span>-->
-        <!--<span class="year">2018</span>-->
-        <!--</div>-->
-        <!--<h6 class="main_title mb-0">Шановні науковці!</h6>-->
-        <!--<p class="lead">-->
-        <!--З 1 грудня 2018 року науковці ОНАХТ можуть скористатися можливостями-->
-        <!--наукометричних баз Web of Science (<a href="">webofscience.com</a>) та-->
-        <!--Scopus (<a href="">scopus.com</a>).<br>-->
-        <!--У разі виникнення труднощів з налаштуванням віддаленого доступу звертайтесь в А-140,-->
-        <!--за телефоном 15-52 або на електронну пошту index@onaft.edu.ua-->
-        <!--</p>-->
-        <!--<div class="logo">-->
-        <!--<a href="mailto:index@onaft.edu.ua?subject=Scopus and WOS" class="date"><i-->
-        <!--class="fas fa-at"></i>index@onaft.edu.ua</a>-->
-        <!--<span class="date"><i class="fas fa-phone"></i>15-52</span>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class="block_space col-sm-12">-->
-        <!--<div class="news">-->
-        <!--<div class="news_info">-->
-        <!--<span class="day">30</span>-->
-        <!--<span class="month">Жовтня</span>-->
-        <!--<span class="year">2018</span>-->
-        <!--</div>-->
-        <!--<h6 class="main_title mb-0">Корисна інформація</h6>-->
-        <!--<p class="lead">-->
-        <!--Ресурс для оформлення посилань ONAFT4ref згідно ДСТУ 8302:2015 розроблений співробітниками-->
-        <!--Координаційного центру видання наукової періодики ОНАХТ.-->
-        <!--Також, крім автоматичного оформлення літератури на ресурсі ще можлива автоматична-->
-        <!--транслітерація та завантаження отриманного результату у файл у форматі *.docx.<br>-->
-        <!--</p>-->
-        <!--<div class="logo">-->
-        <!--&lt;!&ndash;<span class="date"><i class="far fa-calendar"></i>20.12.19</span>&ndash;&gt;-->
-        <!--<a class="date"><i class="fas fa-link"></i>4ref.onaft.edu.ua</a>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
     </div>
-    <!-- END mobile main info-->
 </div>
-<!-- Info about structure of library-->
+<!--END main info-->
+
+<!--Info about structure of library-->
 <div class="container-fluid structure col-12">
-    <div class="col col-5 pl-0 pr-0">
+    <div class="col col-lg-5 col-md-12 col-sm-12pl-0 pr-0">
         <h1 class="display-4">Про бібліотеку</h1>
         <p class="lead structure_text">Діяльність науково-технічної бібліотеки академії спрямована на
             забезпечення її відповідності бібліотеці інноваційного типу
@@ -199,7 +83,7 @@
             </div>
         </div>
     </div>
-    <div class="col-7 pl-0 pr-0">
+    <div class="col-lg-7 pl-0 pr-0 hexagon-structure">
         <div class="row">
             <div class="rotate-hexagon">
                 <div class="hexagon">
@@ -295,27 +179,6 @@
                     <div class="hexTop"></div>
                     <div class="hexBottom"></div>
                     <div class="front-hexagon">
-                        <h4 class="mb-0 pb-0">Відділ<br> наукової обробки документів та організації каталогів</h4>
-                        <p class="text-center">Здійснює каталогізацію та систематизацію документів.</p>
-                        <button class="btn"> Детальніше <i class="fas fa-angle-double-right"></i></button>
-                    </div>
-                    <div class="back-hexagon">
-                        <p><b>Завідуюча:</b><br>Тимчишина Маргарита Веніамінівна<br>
-                            Відділ:<em> ауд. А–137/2</em></p>
-                        <!--<div class="front-hexagon-logo">-->
-                        <!--<span><i class="fas fa-phone mr-1"></i>12–48 (вн. тел.)</span>-->
-                        <!--</div>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row" style="margin-top:-3.75em;">
-            <div class="rotate-hexagon">
-                <div class="hexagon">
-                    <div class="hexTop"></div>
-                    <div class="hexBottom"></div>
-                    <div class="front-hexagon">
                         <h4 class="mb-0 pb-0">Координаційний<br> центр видання наукової періодики</h4>
                         <p class="text-center">Відповідає за сприяння, підтримку і супровід науково-періодичних
                             видань.</p>
@@ -330,7 +193,9 @@
                     </div>
                 </div>
             </div>
+        </div>
 
+        <div class="row" style="margin-top:-3.75em;">
             <div class="rotate-hexagon">
                 <div class="hexagon">
                     <div class="hexTop"></div>
@@ -346,6 +211,24 @@
                             Відділ:<em> ауд. А–137/3</em></p>
                         <!--<div class="front-hexagon-logo">-->
                         <!--<span><i class="fas fa-phone mr-1"></i>712-40-49</span>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="rotate-hexagon">
+                <div class="hexagon">
+                    <div class="hexTop"></div>
+                    <div class="hexBottom"></div>
+                    <div class="front-hexagon">
+                        <h4 class="mb-0 pb-0">Відділ<br> наукової обробки документів та організації каталогів</h4>
+                        <p class="text-center">Здійснює каталогізацію та систематизацію документів.</p>
+                        <button class="btn"> Детальніше <i class="fas fa-angle-double-right"></i></button>
+                    </div>
+                    <div class="back-hexagon">
+                        <p><b>Завідуюча:</b><br>Тимчишина Маргарита Веніамінівна<br>
+                            Відділ:<em> ауд. А–137/2</em></p>
+                        <!--<div class="front-hexagon-logo">-->
+                        <!--<span><i class="fas fa-phone mr-1"></i>12–48 (вн. тел.)</span>-->
                         <!--</div>-->
                     </div>
                 </div>
@@ -723,7 +606,7 @@
                         <button class="btn btn-link" type="button" data-toggle="collapse"
                                 data-target="#collapseSeven"
                                 aria-expanded="false" aria-controls="collapseSeven">
-                            Фахівцям
+                            Фахівцям харчової промисловості
                         </button>
                         <i class="fa fa-angle-down roll"></i>
                     </h2>

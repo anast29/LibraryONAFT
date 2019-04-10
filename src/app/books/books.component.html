@@ -7,9 +7,9 @@
     </nav>
     <h1 class="text-center">Видання</h1>
     <ul class="nav nav-pills" id="myTab" role="tablist">
-        <li class="nav-item active">
-            <a class="nav-link active" id="resource-library" data-toggle="pill" href="#resource-view" role="tab"
-               aria-controls="resource-view" aria-selected="true">Ресур НТБ</a>
+        <li class="nav-item ">
+            <a class="nav-link active" id="new-books" data-toggle="pill" href="#new-books-view" role="tab"
+               aria-controls="new-books-view" aria-selected="true">Нові надходження</a>
         </li>
         |
         <li class="nav-item">
@@ -18,30 +18,33 @@
         </li>
         |
         <li class="nav-item">
-            <a class="nav-link" id="new-books" data-toggle="pill" href="#new-books-view" role="tab"
-               aria-controls="new-books-view" aria-selected="true">Нові надходження</a>
+            <a class="nav-link" id="resource-library" data-toggle="pill" href="#resource-view" role="tab"
+               aria-controls="resource-view" aria-selected="true">Ресур НТБ</a>
         </li>
         |
+
         <li class="nav-item">
             <a class="nav-link" id="propose-liter" data-toggle="pill" href="#propose-liter-view" role="tab"
                aria-controls="propose-liter-view" aria-selected="true">Рекомендована літ.</a>
         </li>
     </ul>
+
+
     <!--*ngIf="book?.category === 'library'"-->
     <div class="tab-content" id="pills-tabContent">
-        <!--Resource library block-->
-        <div class="row tab-pane fade show active" id="resource-view" role="tabpanel"
-             aria-labelledby="resource-library">
+        <!--New books block-->
+        <div class="row tab-pane fade show active" id="new-books-view" role="tabpanel" aria-labelledby="new-books">
             <ng-container *ngFor="let book of books">
-                <div class="card-container" *ngIf="book?.category === 'library'">
+                <div class="card-container-books" *ngIf="book?.category === 'new'">
                     <div class="card">
                         <img [attr.src]="book?.image" alt="Books image"
-                             class="card-media"/>
+                             class="card-media-books"/>
                         <div class="card-body">
-                            <span class="card-author subtle">Науково-технічна бібілотека ОНАХТ</span>
+                            <span class="card-author subtle">Надходження за 2018-2019 р.</span>
                             <h2 class="card-title" [innerHTML]="book?.title"></h2>
-                            <span class="card-description" [innerHTML]="book?.references"></span>
-                            <a [attr.href]="book?.pdf_file" class="card-read" target="_blank">Переглянути</a>
+                            <span class="card-description subtle" [innerHTML]="book?.references"></span>
+                            <p class="short-description" [innerHTML]="book?.description">
+                            </p>
                         </div>
                     </div>
                     <div class="card-shadow"></div>
@@ -69,19 +72,19 @@
             </ng-container>
         </div>
 
-        <!--New books block-->
-        <div class="row tab-pane fade" id="new-books-view" role="tabpanel" aria-labelledby="new-books">
+        <!--Resource library block-->
+        <div class="row tab-pane fade" id="resource-view" role="tabpanel"
+             aria-labelledby="resource-library">
             <ng-container *ngFor="let book of books">
-                <div class="card-container-books" *ngIf="book?.category === 'new'">
+                <div class="card-container" *ngIf="book?.category === 'library'">
                     <div class="card">
                         <img [attr.src]="book?.image" alt="Books image"
-                             class="card-media-books"/>
+                             class="card-media"/>
                         <div class="card-body">
-                            <span class="card-author subtle">Надходження за 2018-2019 р.</span>
+                            <span class="card-author subtle">Науково-технічна бібілотека ОНАХТ</span>
                             <h2 class="card-title" [innerHTML]="book?.title"></h2>
-                            <span class="card-description subtle" [innerHTML]="book?.references"></span>
-                            <p class="short-description" [innerHTML]="book?.description">
-                            </p>
+                            <span class="card-description" [innerHTML]="book?.references"></span>
+                            <a [attr.href]="book?.pdf_file" class="card-read" target="_blank">Переглянути</a>
                         </div>
                     </div>
                     <div class="card-shadow"></div>

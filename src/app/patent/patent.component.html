@@ -242,8 +242,7 @@
                     <div *ngFor=" let patent of patents; let i = index;"
                          class="tab-pane fade" [attr.id]="'v-pills-'+i" role="tabpanel"
                          [attr.aria-labelledby]="'v-pills-'+i+'-tab'">
-                        <h3 class="display-4 text-center">Патенти</h3>
-                        <p class="name-patent text-center">{{patent?.year}}</p>
+                        <p class="name-patent text-center">Патенти за {{patent?.year}}</p>
                         <ol>
                             <li *ngFor="let info of patent?.info;" [innerHTML]="info?.references + ' (<a href='+info?.pdf_file+'>Зміст патенту</a>)'"></li>
                         </ol>

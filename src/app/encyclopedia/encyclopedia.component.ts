@@ -57,6 +57,15 @@ export class EncyclopediaComponent implements OnInit {
             text = text.substring(0, lastIndex) + '...'; // обрезаем до последнего слова
         }
         return text;
+
+
+    }
+    openNav() {
+        document.getElementById('aside').style.width = '50px';
+    }
+
+    closeNav() {
+        document.getElementById('aside').style.width = '0';
     }
 
 

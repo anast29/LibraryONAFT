@@ -22,6 +22,7 @@ h1 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    align-items: baseline;
 }
 
 .nav .nav-link {
@@ -179,5 +180,47 @@ h1 {
     }
     .card-title {
         font-size: 2.25rem;
+    }
+}
+@media screen and (max-width: 767px) {
+    .main_content{
+        padding: 1.5em 0.5em;
+    }
+    .card {
+        flex-flow: column;
+    }
+    .card-media-books {
+        height: 200px;
+    }
+    .card-title {
+        font-size: 1.5rem;
+    }
+    .row {
+        flex-flow: column;
+        margin: 0 !important;
+    }
+    .letter_card {
+        padding: 0 !important;
+    }
+    h1 {
+        font-size: 1.75em;
+        margin-bottom: 0;
+    }
+    .title, h4 {
+        font-size: 18px !important;
+    }
+
+    p {
+        font-size: 14px;
+    }
+    .nav-link {
+        color: white;
+        padding: 1em 0.25em !important;
+        font-size: 10px;
+    }
+
+    .breadcrumb {
+        padding-left: 0 !important;
+        font-size: 16px;
     }
 }

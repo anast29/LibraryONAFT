@@ -5,11 +5,10 @@
     padding: 1.5em 1.75em 1.5em 0;
     box-sizing: border-box;
 }
-
 .breadcrumb {
+    font-family: montserrat, sans-serif;
     padding-left: 3.75em !important;
 }
-
 .patents h1 {
     margin-bottom: 0.5em;
 }
@@ -74,8 +73,8 @@ p {
 }
 
 .name-patent {
-    font-size: 1.5rem;
-    margin: 1em auto;
+    font-size: 2.5rem;
+    margin: 0.5em auto;
     font-weight: bold;
 }
 
@@ -122,7 +121,11 @@ ol li {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 767px) {
     .row {
         margin: 0 !important;
     }
@@ -175,11 +178,13 @@ ol li {
         height: 70px;
         width: 40px;
         border-radius: 0 30px 30px 0;
-        background: #020207;
+        background: #050512;
         padding: 0 !important;
         z-index: 10;
     }
-
+    .name-patent {
+        font-size: 1.5rem;
+    }
 
     .breadcrumb {
         padding-left: 0 !important;
@@ -212,7 +217,7 @@ ol li {
         top: 80px;
         position: fixed;
         padding-top: 1em;
-        background-color: #020207;
+        background-color:  #050512;
         overflow-x: hidden;
         transition: 0.5s;
         z-index: 100;
