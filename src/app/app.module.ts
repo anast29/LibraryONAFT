@@ -16,6 +16,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import {NgxPageScrollCoreModule} from 'ngx-page-scroll-core';
 import {NgxPageScrollModule} from 'ngx-page-scroll';
+import { ErrorComponent } from './error/error.component';
 
 const rout: Routes = [
     {path: '', component: HomeComponent},
@@ -24,7 +25,9 @@ const rout: Routes = [
     {path: 'patent', component: PatentComponent},
     {path: 'jubilee', component: JubileeComponent},
     {path: 'exhibition', component: ExhibitionComponent},
-    {path: 'photo', component: PhotoComponent}
+    {path: 'photo', component: PhotoComponent},
+    {path: '404', component: ErrorComponent},
+    {path: '**', redirectTo: '404'}
 ];
 
 @NgModule({
@@ -38,7 +41,8 @@ const rout: Routes = [
         PhotoComponent,
         PatentComponent,
         JubileeComponent,
-        ExhibitionComponent
+        ExhibitionComponent,
+        ErrorComponent
     ],
     imports: [
         BrowserModule,

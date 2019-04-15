@@ -21,9 +21,7 @@ export class HomeComponent implements OnInit {
         }).on('hidden.bs.collapse', function () {
             $(this).parent().find('.fa-angle-up').removeClass('fa-angle-up').addClass('fa-angle-down').delay(200).fadeIn(500);
         });
-
-        this.http.get('http://192.168.1.39:8000/news/').subscribe((data: News) => this.news = data);
-
+        this.http.get('//library.onaft.edu.ua/api/news').subscribe((data: News) => this.news = data);
     }
 
 }

@@ -17,7 +17,7 @@ export class PatentComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.httpService.get('http://192.168.1.39:8000/patents/').subscribe((data: Patent) => this.patents = data);
+        this.httpService.get('//library.onaft.edu.ua/api/patents/').subscribe((data: Patent) => this.patents = data);
         if (window.pageYOffset > document.body.scrollTop) {
             document.getElementById('aside').style.top = '0';
         }

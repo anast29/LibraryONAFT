@@ -24,14 +24,17 @@ export class EncyclopediaComponent implements OnInit {
     bio;
     works;
     ngOnInit() {
-        //  const size = 255,
-        //     newsContent = $('.bottom-txt'),
-        //     newsText = newsContent.text();
-        // console.log(newsContent.text());
-        // if (newsText.length > size) {
-        //     newsContent.text(newsText.slice(0, size) + '...');
-        // }
-        this.httpservice.get('http://192.168.1.39:8000/scientists/').subscribe((data: Scientists) => this.scientists = data);
+        $(function () {
+            $(window).scroll(function () {
+                const winTop = $(window).scrollTop();
+                if (winTop >= 1000) {
+                    $('.arrow-up').css({'opacity': '1', 'position': 'fixed'});
+                } else {
+                    $('.arrow-up').css({'opacity': '0'});
+                }
+            });
+        });
+      this.httpservice.get('//library.onaft.edu.ua/api/scientists/').subscribe((data: Scientists) => this.scientists = data);
     }
 
     viewBio() {
@@ -66,6 +69,12 @@ export class EncyclopediaComponent implements OnInit {
 
     closeNav() {
         document.getElementById('aside').style.width = '0';
+    }
+    scrollTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     }
 
 

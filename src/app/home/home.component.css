@@ -1,6 +1,7 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200i,300,400,500,600,700,800&subset=cyrillic,cyrillic-ext,latin-ext');
 
+
 /*#f3d95c yellow color*/
 
 .main {
@@ -29,12 +30,13 @@
 
 /**Cards*/
 
-/deep/.timeline a{
+/deep/ .timeline a {
     transition: 0.6s ease-in;
     color: #e4e4e4 !important;
     text-decoration: none;
 }
-/deep/ .timeline  a:hover {
+
+/deep/ .timeline a:hover {
     color: #d7702b !important;
     text-decoration: none;
 }
@@ -64,6 +66,7 @@
     font-weight: 800;
     font-size: 2rem;
 }
+
 .timeline p {
     font-weight: 300;
     line-height: 1.75;
@@ -81,14 +84,16 @@
     margin-bottom: 0;
     border: none;
 }
+
 .timeline .event:before,
 .timeline .event:after {
     position: absolute;
     display: block;
     top: 0;
 }
+
 .timeline .event:before {
-    right:0;
+    right: 0;
     color: rgba(255, 255, 255, 0.4);
     content: attr(data-date);
     font-weight: 100;
@@ -96,6 +101,7 @@
     width: 100px;
     text-align: center;
 }
+
 .timeline .event:after {
     box-shadow: 0 0 0 4px #d78737;
     left: -57.85px;
@@ -143,7 +149,6 @@
     padding: 1em 0;
     color: white;
     font-size: 18px;
-    letter-spacing: 0.07em;
     margin-bottom: 1.75em;
     text-align: justify;
 }
@@ -270,7 +275,7 @@
     overflow: hidden;
     -webkit-transform: scaleY(0.5774) rotate(-45deg);
     -ms-transform: scaleY(0.5774) rotate(-45deg);
-    -moz-transform:  scaleY(0.5774) rotate(-45deg);
+    -moz-transform: scaleY(0.5774) rotate(-45deg);
     transform: scaleY(0.5774) rotate(-45deg);
     background: inherit;
     left: 35.15px;
@@ -289,7 +294,7 @@
     -webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-69.2820px);
     -ms-transform: rotate(45deg) scaleY(1.7321) translateY(-69.2820px);
     transform: rotate(45deg) scaleY(1.7321) translateY(-69.2820px);
-    -moz-transform:rotate(45deg) scaleY(1.7321) translateY(-69.2820px);
+    -moz-transform: rotate(45deg) scaleY(1.7321) translateY(-69.2820px);
     -webkit-transform-origin: 0 0;
     -ms-transform-origin: 0 0;
     -moz-transform-origin: 0 0;
@@ -391,11 +396,13 @@
     padding: 0.25em 1.25em;
     width: 100%;
 }
+
 .front-hexagon {
     transform: rotateY(0deg);
     -moz-transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
 }
+
 .back-hexagon {
     align-items: center;
     padding: 0 1em;
@@ -419,9 +426,7 @@
 }
 
 /**About us style*/
-.mob_version {
-    display: none;
-}
+
 .about {
     position: relative;
     display: flex;
@@ -431,6 +436,10 @@
     background: #F2F3F4;
     padding: 4.75em 1.5em;
     text-align: left;
+}
+
+.mob_version {
+    display: none;
 }
 
 .row-flex, .row-flex > div[class*='col-'] {
@@ -671,10 +680,9 @@ textarea {
     }
 
     /*.card {*/
-        /*width: 350px;*/
-        /*margin-bottom: 2em;*/
+    /*width: 350px;*/
+    /*margin-bottom: 2em;*/
     /*}*/
-
     .first-card {
         height: auto;
         margin-bottom: 2em;
@@ -719,6 +727,7 @@ textarea {
     .timeline .event:after {
         left: -67px;
     }
+
     /**Block with structure library*/
     .structure {
         padding: 4.75em 3em;
@@ -852,41 +861,51 @@ textarea {
     .display-3 {
         font-size: 3rem;
     }
+
     .structure .display-4 {
         text-align: center;
     }
+
     .display-4 {
         font-size: 2.25rem;
     }
+
     .hexagon-structure {
         display: none;
     }
+
     .structure,
     .about,
     .faq {
         padding: 2em;
     }
+
     /**News*/
     .timeline {
         width: 95%;
         font-size: 14px;
     }
+
     .timeline h3 {
         font-size: 1.75rem;
     }
+
     .timeline .event:after {
         left: -50px;
     }
+
     /**Structure*/
-    .structure_text{
+    .structure_text {
         margin-bottom: 0;
         padding: 0.5em 0;
     }
-   .lib-img {
-       height: 54px;
-       width: 54px;
-   }
-   /**About*/
+
+    .lib-img {
+        height: 54px;
+        width: 54px;
+    }
+
+    /**About*/
     .row {
         margin: 0 !important;
     }
@@ -940,12 +959,14 @@ textarea {
     .input-group textarea {
         height: 310px;
     }
+
     .icon-link {
         width: 100%;
     }
 
 
 }
+
 @media screen and (max-width: 767px) {
     /**Start info */
     .main {
@@ -976,50 +997,61 @@ textarea {
     .timeline {
         padding: 1em;
         width: 95%;
+        font-size: 14px;
+        text-indent: 0 !important;
     }
+    .timeline p {
+        margin-bottom: 0.25rem;
+    }
+
     .timeline .event {
         padding-bottom: 10px;
         margin-bottom: 25px;
     }
 
     .timeline .event:after {
-        left: -25px;
+        left: -22px;
     }
+
     .timeline h3 {
-        font-size: 1rem;
+        font-size: 18px;
+        letter-spacing: 0.5px;
     }
+
     .timeline p {
         font-size: 14px;
         line-height: 1.5;
     }
-    .timeline .event:before{
+
+    .timeline .event:before {
         display: none;
     }
+
     .hexagon-structure {
         display: none;
     }
+
     /**Structure section*/
     .structure {
         padding: 2.25em 15px;
     }
+
     .lib-img {
         height: 54px;
         width: 54px;
     }
+
     .structure_text {
         margin-bottom: 0;
         padding: 0.5em 0 1em;
+        font-size: 16px;
     }
+
     .structure-department .col-4 p {
         font-size: 12px;
     }
+
     /**Section About for mobile devices*/
-    .desk_version {
-        display: none;
-    }
-    .mob_version {
-        display: block;
-    }
     .col-sm-12 {
         padding-right: 0 !important;
         padding-left: 0 !important;
@@ -1029,7 +1061,15 @@ textarea {
         margin: 0 !important;
     }
 
-     .about {
+    .desktop_version {
+        display: none;
+    }
+
+    .mob_version {
+        display: block;
+    }
+
+    .about {
         padding: 2.25em 0;
     }
 
@@ -1053,7 +1093,7 @@ textarea {
     }
 
     .about p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .icon-link {
@@ -1078,13 +1118,16 @@ textarea {
     .input-group textarea {
         height: 250px;
     }
+
     /**Section FAQ for mobile devices*/
     .faq {
         padding: 2em 1.5em;
     }
+
     .faq h1 {
         padding-bottom: 0.5em;
     }
+
     .accordion {
         padding-left: 0;
         padding-right: 0;

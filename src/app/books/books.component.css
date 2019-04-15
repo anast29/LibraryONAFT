@@ -1,3 +1,31 @@
+.arrow-up {
+    opacity:0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
+    width: 100px;
+    height: 50px;
+    color: #555555;
+    z-index: 2000;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0.75em;
+    bottom: 1.75em;
+    font-size: 16px;
+    font-weight: 600;
+}
+.arrow-up i {
+    font-size: 28px;
+}
+.arrow-up:hover {
+    transform: scale(1.15);
+    color: #d78737;
+}
+
 .main_content {
     background: #fff;
     color: #212529;
@@ -28,7 +56,7 @@ h1 {
 .nav .nav-link {
     font-family: montserrat, sans-serif;
     text-transform: uppercase;
-    letter-spacing: 0.2rem;
+    letter-spacing: 1px;
     color: #212529;
     background: none;
     border: 0;
@@ -189,11 +217,23 @@ h1 {
     .card {
         flex-flow: column;
     }
+    .card-description-books {
+        font-size: 18px;
+    }
     .card-media-books {
         height: 200px;
     }
     .card-title {
         font-size: 1.5rem;
+    }
+    .card-body {
+        padding: 0.25em 0.5rem;
+    }
+    .card-body p {
+        font-size: 14px;
+    }
+    .card-container {
+        flex: 0 0 100% !important;
     }
     .row {
         flex-flow: column;

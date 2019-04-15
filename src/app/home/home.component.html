@@ -1,3 +1,4 @@
+<div class="no-scroll">
 <!-- Main info about site-->
 <div class="container-fluid main col-12 col-sm-12">
     <h1 class="display-3 col-12">Науково-технічна бібліотека</h1>
@@ -8,27 +9,9 @@
             <ng-container *ngFor="let item of news ">
             <li class="event" [attr.data-date]="item?.add_date">
                 <h3>{{item?.title}}</h3>
-                <div [innerHTML]="item?.content"></div>
+                <div class="text-justify" [innerHTML]="item?.content"></div>
             </li>
             </ng-container>
-            <!--<li class="event" data-date="02/04/2019">-->
-                <!--<h3>Шановні користувачі!</h3>-->
-                <!--<p>Інформуємо, що у читальних залах #libONAFT Ви маєте можливість скористатись послугою індивідуального-->
-                    <!--обслуговування.-->
-                    <!--Один раз на місяць Ви зможете отримувати електронного листа із переліком актуальних книжкових-->
-                    <!--надходжень із заявленої Вами теми.-->
-                    <!--Для запису на індивідуальне обслуговування, зверніться до працівників НТБ у читальних залах, залиште-->
-                    <!--свої контактні дані та перелік тем, які Вас цікавлять.</p>-->
-            <!--</li>-->
-            <!--<li class="event" data-date="03/04/2019">-->
-                <!--<h3>Шановні науковці!</h3>-->
-                <!--<p>Звертаємо вашу увагу, що з 1 грудня 2018 року науковці ОНАХТ можуть скористатися можливостями-->
-                    <!--наукометричних баз Web of Science та Scopus за посиланнями:-->
-                    <!--Web of Science webofscience.com-->
-                    <!--Scopus scopus.com-->
-                    <!--У разі виникнення труднощів з налаштуванням віддаленого доступу звертайтесь в А-140, за телефоном-->
-                    <!--15-52 або на електронну пошту index@onaft.edu.ua</p>-->
-            <!--</li>-->
         </ul>
     </div>
 </div>
@@ -36,7 +19,7 @@
 
 <!--Info about structure of library-->
 <div class="container-fluid structure col-12">
-    <div class="col col-lg-5 col-md-12 col-sm-12pl-0 pr-0">
+    <div class="col col-lg-5 col-md-12 col-sm-12 pl-0 pr-0">
         <h1 class="display-4">Про бібліотеку</h1>
         <p class="lead structure_text">Діяльність науково-технічної бібліотеки академії спрямована на
             забезпечення її відповідності бібліотеці інноваційного типу
@@ -185,7 +168,7 @@
                         <button class="btn"> Детальніше <i class="fas fa-angle-double-right"></i></button>
                     </div>
                     <div class="back-hexagon">
-                        <p><b>Керівник:</b><br>Ольшевська Ольга Володимірівна<br>
+                        <p><b>Керівник:</b><br>Ольшевська Ольга Володимирівна<br>
                             Центр:<em> ауд. А–140</em></p>
                         <!--<div class="front-hexagon-logo">-->
                         <!--<span><i class="fas fa-phone mr-1"></i>15-52 (вн. тел.)</span>-->
@@ -240,14 +223,13 @@
 </div>
 <!--END info about structure-->
 
-
 <!--About us section-->
 <div class="container-fluid about col-12 col-sm-12">
     <div class="row">
         <div class="about-info col-lg-6 col-md-6 col-sm-12">
             <h1 class="display-4">Віртуальна довідка</h1>
             <p class="lead text-justify desktop_version">
-                Якщо у вас виникли питання, заохочення та пропозиції, щодо роботи бібіліотеки, зверніться за
+                Якщо у вас виникли питання, зауваження та пропозиції, щодо роботи бібіліотеки, зверніться за
                 наведенною
                 формою до співробітника бібліотеки. Для цього необхідно заповнити наведені поля та відправити ваше
                 повідомлення.
@@ -255,8 +237,8 @@
                 бібліотеки ОНАХТ.
             </p>
             <p class="lead text-justify mob_version">
-                Якщо у вас виникли питання, щодо роботи бібіліотеки, зверніться за наведенною
-                формою до співробітника бібліотеки.
+                Якщо у вас виникли питання, зауваження та пропозиції, щодо роботи бібіліотеки, зверніться за
+                наведенною формою до співробітника бібліотеки.
             </p>
             <div class="icon-about">
                 <p class="lead text-justify"><i class="fas fa-map-marker-alt"></i> Україна, 65039,
@@ -274,7 +256,7 @@
         <div class="about-form col-lg-6 col-md-6 col-sm-12">
             <form>
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                    <input type="text" class="form-control" placeholder="Ваше ім'я" aria-label="Username"
                            aria-describedby="basic-addon1">
                     <div class="input-group-append">
                         <i class="fas fa-user"></i>
@@ -288,7 +270,7 @@
                     </div>
                 </div>
                 <div class="input-group">
-                    <textarea class="form-control" aria-label="With textarea" placeholder="Your message"></textarea>
+                    <textarea class="form-control" aria-label="With textarea" placeholder="Ваше повідомлення"></textarea>
                 </div>
                 <div class="input-group justify-content-start" style="padding-bottom: 0;">
                     <button type="button" class="btn btn-light">Відправити</button>
@@ -691,7 +673,7 @@
                                     href="http://www.od.ukrstat.gov.ua/" target="_blank">od.ukrstat.gov.ua;</a></li>
                             <li>статистичні публікації – збірники, бюлетені, доповіді з усіх аспектів
                                 соціально-економічного становища Одеської області (Каталог статистичних видань,
-                                передбачених до випуску у 2017 році <a
+                                передбачених до випуску у 2018 році <a
                                         href="http://www.od.ukrstat.gov.ua/katalog_2018.htm" target="_blank">od.ukrstat.gov.ua/katalog_2018</a>);
                             </li>
                             <li>відповіді на запити щодо надання статистичної інформації.</li>
@@ -724,3 +706,5 @@
     </div>
 </div>
 <!--END FAQ section-->
+
+</div>

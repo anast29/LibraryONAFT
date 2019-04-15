@@ -1,3 +1,58 @@
+.arrow-up {
+    opacity:0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
+    width: 100px;
+    height: 50px;
+    color: #555555;
+    z-index: 2000;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0.75em;
+    bottom: 1.75em;
+    font-size: 16px;
+    font-weight: 600;
+}
+.arrow-up i {
+    font-size: 28px;
+}
+.arrow-up:hover {
+    transform: scale(1.15);
+    color: #d78737;
+}
+.arrow-up {
+    opacity:0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
+    width: 100px;
+    height: 50px;
+    color: #212529;
+    border-radius: 100%;
+    z-index: 2000;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0.75em;
+    bottom: 1.75em;
+    font-size: 16px;
+    font-weight: 600;
+}
+.arrow-up i {
+    font-size: 28px;
+}
+.arrow-up:hover {
+    transform: scale(1.15);
+    color:#d7702b;
+}
 .main_content {
     background: #fff;
     color: #212529;
@@ -213,6 +268,7 @@ h5{
     justify-content: center;
     align-items: center;
     padding: 0 0.5em;
+    text-align: center;
 }
 .bio-name span{
     font-weight: 500;
@@ -327,6 +383,9 @@ input:focus {
     }
 }
 @media screen and (max-width: 767px) {
+    .col-12 {
+        padding: 0 5px !important;
+    }
     .main_content{
         padding: 1.5em 0.5em;
     }
@@ -359,5 +418,23 @@ input:focus {
     .breadcrumb {
         padding-left: 0 !important;
         font-size: 16px;
+    }
+    .bio-profile {
+        flex-flow: column wrap;
+    }
+    .bio-img {
+        flex: 1;
+        width: 150px;
+        height: 150px;
+    }
+    .bio-name h2 {
+        margin-top: 0.5em;
+        font-size: 1.5rem;
+    }
+    .bio p {
+        font-size: 16px;
+    }
+    .bio span {
+        font-size: 18px;
     }
 }

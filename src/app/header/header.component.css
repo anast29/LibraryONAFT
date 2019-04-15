@@ -78,6 +78,9 @@
 .nav-link:hover > .dropdown-menu {
     display: block;
 }
+.dropdown-item:active {
+    color: #555555 !important;
+}
 .dropdown_language {
     display: flex;
     flex-flow: row nowrap;
@@ -323,6 +326,7 @@ input {
         padding: 0.75em 1em !important;
     }
     .nav-link {
+        font-size: 16px;
         padding: 0.15rem 0 !important;
     }
     .bg-dark {
