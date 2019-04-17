@@ -25,9 +25,10 @@
         i['GoogleAnalyticsObject'] = r;
         i[r] = i[r] || function () {
             (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
+        }
+        i[r].l = 1 * new Date();
+        a = s.createElement(o);
+        m = s.getElementsByTagName(o)[0];
         a.async = 1;
         a.src = g;
         m.parentNode.insertBefore(a, m)
@@ -39,99 +40,7 @@
 <!-- End Google Analitics -->
 <app-root>
     <style>
-        .cube-wrapper {
-            position: fixed;
-            left: 50%;
-            top: 50%;
-            margin-top: -50px;
-            margin-left: -50px;
-            width: 100px;
-            height: 100px;
-            text-align: center;
-        }
-
-        .cube-wrapper:after {
-            content: '';
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: -20px;
-            margin: auto;
-            width: 90px;
-            height: 6px;
-            background-color: rgba(0, 0, 0, 0.1);
-            -webkit-filter: blur(2px);
-            filter: blur(2px);
-            -moz-border-radius: 100%;
-            -webkit-border-radius: 100%;
-            border-radius: 100%;
-            z-index: 1;
-            -moz-animation: shadow 0.5s ease infinite alternate;
-       -webkit-animation: shadow 0.5s ease infinite alternate;
-   animation: shadow 0.5s ease infinite alternate;
-
-        }
-
-        .cube-wrapper .loading {
-            font-size: 12px;
-            letter-spacing: 0.1em;
-            display: block;
-            color: white;
-            position: relative;
-            top: 25px;
-            z-index: 2;
-            -moz-animation: text 0.5s ease infinite alternate;
-            -webkit-animation: text 0.5s ease infinite alternate;
-            animation: text 0.5s ease infinite alternate;
-        }
-
-        @-moz-keyframes text {
-            100% {
-                top: 35px;
-            }
-        }
-
-        @-webkit-keyframes text {
-            100% {
-                top: 35px;
-            }
-        }
-
-        @keyframes text {
-            100% {
-                top: 35px;
-            }
-        }
-
-        @-moz-keyframes shadow {
-            100% {
-                bottom: -18px;
-                width: 100px;
-            }
-        }
-
-        @-webkit-keyframes shadow {
-            100% {
-                bottom: -18px;
-                width: 100px;
-            }
-        }
-
-        @keyframes shadow {
-            100% {
-                bottom: -18px;
-                width: 100px;
-            }
-        }
-
-        html, body {
-            min-height: 100%;
-        }
-
     </style>
-    <div class="cube-wrapper">
-        <span class="loading" data-name="Loading">Loading</span>
-    </div>
 </app-root>
 </body>
 </html>
