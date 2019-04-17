@@ -14,7 +14,7 @@ export class JubileeComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.httpservice.get('//library.onaft.edu.ua/api/scientists/').subscribe((data: Scientists) => this.scientists = data);
+        this.httpservice.getScientists().subscribe((data: Scientists) => this.scientists = data);
 
     }
 

@@ -1,13 +1,25 @@
 <!doctype html>
 <html lang="en">
+<!--manifest="manifest.cache"-->
 <head>
     <meta charset="utf-8">
     <title>LibraryONAFT</title>
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="бібліотека, бибилиотека, library, ОНАХТ, ОНАПТ, ONAFT, науково-технічна бібліотека, Одеська національна академія харчових технологій, Odessa national academy of food technologies">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="LibraryONAFT">
+    <meta property="og:description" content="Науково-технічна бібліотека Одеської національної академії харчових технологій">
+    <meta property="og:image" content="http://library.onaft.edu.ua/assets/img/logo.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta property="og:title" content="LibraryONAFT">
+    <meta property="og:description" content="Науково-технічна бібліотека Одеської національної академії харчових технологій">
+    <meta property="og:image" content="http://library.onaft.edu.ua/assets/img/logo.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1976d2">
 </head>
 <body>
 <!-- Google Analitics -->
@@ -31,72 +43,73 @@
 <!-- End Google Analitics -->
 <app-root>
     <!--<style>-->
-        <!--#preloader {-->
-            <!--transition: 600ms;-->
-            <!--display: flex;-->
-            <!--align-items: center;-->
-            <!--justify-content: center;-->
-            <!--background: #050512;-->
-            <!--overflow: hidden;-->
-            <!--position: fixed;-->
-            <!--left: 0;-->
-            <!--top: 0;-->
-            <!--right: 0;-->
-            <!--bottom: 0;-->
-            <!--font-size: 42px;-->
-            <!--font-weight: 400 !important;-->
-            <!--font-family: 'Montserrat', sans-serif !important;-->
-        <!--}-->
+    <!--#preloader {-->
+    <!--transition: 600ms;-->
+    <!--display: flex;-->
+    <!--align-items: center;-->
+    <!--justify-content: center;-->
+    <!--background: #050512;-->
+    <!--overflow: hidden;-->
+    <!--position: fixed;-->
+    <!--left: 0;-->
+    <!--top: 0;-->
+    <!--right: 0;-->
+    <!--bottom: 0;-->
+    <!--font-size: 42px;-->
+    <!--font-weight: 400 !important;-->
+    <!--font-family: 'Montserrat', sans-serif !important;-->
+    <!--}-->
 
-        <!--.prePreloader {-->
-            <!--transition: 600ms;-->
-            <!--display: flex;-->
-            <!--flex-flow: row nowrap;-->
-            <!--align-items: center;-->
-            <!--justify-content: center;-->
-            <!--color: white;-->
-            <!-- -webkit-animation: prePreloader 3s linear infinite;-->
-            <!--animation: prePreloader 3s linear infinite;-->
-        <!--}-->
+    <!--.prePreloader {-->
+    <!--transition: 600ms;-->
+    <!--display: flex;-->
+    <!--flex-flow: row nowrap;-->
+    <!--align-items: center;-->
+    <!--justify-content: center;-->
+    <!--color: white;-->
+    <!-- -webkit-animation: prePreloader 3s linear infinite;-->
+    <!--animation: prePreloader 3s linear infinite;-->
+    <!--}-->
 
-        <!--.prePreloader img {-->
-            <!--padding-right: 0.25em;-->
-        <!--}-->
+    <!--.prePreloader img {-->
+    <!--padding-right: 0.25em;-->
+    <!--}-->
 
-        <!--@-webkit-keyframes prePreloader {-->
-            <!--from {-->
-                <!--opacity: 1;-->
-            <!--}-->
-            <!--to {-->
-                <!--opacity: 0;-->
-            <!--}-->
-        <!--}-->
+    <!--@-webkit-keyframes prePreloader {-->
+    <!--from {-->
+    <!--opacity: 1;-->
+    <!--}-->
+    <!--to {-->
+    <!--opacity: 0;-->
+    <!--}-->
+    <!--}-->
 
-        <!--@keyframes prePreloader {-->
-            <!--from {-->
-                <!--opacity: 1;-->
-            <!--}-->
-            <!--to {-->
-                <!--opacity: 0;-->
-            <!--}-->
-        <!--}-->
+    <!--@keyframes prePreloader {-->
+    <!--from {-->
+    <!--opacity: 1;-->
+    <!--}-->
+    <!--to {-->
+    <!--opacity: 0;-->
+    <!--}-->
+    <!--}-->
 
-        <!--@media only screen and (min-width: 320px) and (max-width: 480px) {-->
-            <!--.prePreloader h1 {-->
-                <!--font-size: 32px;-->
-            <!--}-->
+    <!--@media only screen and (min-width: 320px) and (max-width: 480px) {-->
+    <!--.prePreloader h1 {-->
+    <!--font-size: 32px;-->
+    <!--}-->
 
-            <!--.prePreloader img {-->
-                <!--height: 34px;-->
-                <!--width: 34px;-->
-            <!--}-->
-        <!--}-->
+    <!--.prePreloader img {-->
+    <!--height: 34px;-->
+    <!--width: 34px;-->
+    <!--}-->
+    <!--}-->
     <!--</style>-->
     <!--<div id="preloader">-->
-        <!--<div class="prePreloader"><img src="assets/img/logo.png" height="76px" width="106px">-->
-            <!--<h1 class="display-4">LibraryONAFT</h1></div>-->
+    <!--<div class="prePreloader"><img src="assets/img/logo.png" height="76px" width="106px">-->
+    <!--<h1 class="display-4">LibraryONAFT</h1></div>-->
     <!--</div>-->
 
 </app-root>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
 </body>
 </html>

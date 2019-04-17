@@ -11,13 +11,13 @@ import {Patent} from '../patent';
 })
 export class PatentComponent implements OnInit {
 
-    // patents: Patent[] = [];
-    patents: Patent;
+    public patents: Patent[] = [];
+    // patents: Patent;
     constructor(private httpService: HttpService) {
     }
 
     ngOnInit() {
-        this.httpService.get('//library.onaft.edu.ua/api/patents/').subscribe((data: Patent) => this.patents = data);
+        this.httpService.getPatentes().subscribe((data: Patent[]) => this.patents = data);
         if (window.pageYOffset > document.body.scrollTop) {
             document.getElementById('aside').style.top = '0';
         }

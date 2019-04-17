@@ -26,7 +26,7 @@ export class BooksComponent implements OnInit {
                 }
             });
         });
-        this.http.get('//library.onaft.edu.ua/api/books/').subscribe((data: Books) => this.books = data);
+        this.http.getBooks().subscribe((data: Books) => this.books = data);
     }
     scrollTop() {
         window.scrollTo({

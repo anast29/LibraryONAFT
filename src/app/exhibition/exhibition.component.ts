@@ -16,7 +16,7 @@ export class ExhibitionComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.http.get('//library.onaft.edu.ua/api/virtualexhibition/').subscribe((data: Exhibition) => this.exhibitions = data);
+        this.http.getExhibitions().subscribe((data: Exhibition) => this.exhibitions = data);
         $(function () {
             $(window).scroll(function () {
                 const winTop = $(window).scrollTop();

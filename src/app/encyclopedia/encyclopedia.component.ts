@@ -34,7 +34,7 @@ export class EncyclopediaComponent implements OnInit {
                 }
             });
         });
-      this.httpservice.get('//library.onaft.edu.ua/api/scientists/').subscribe((data: Scientists) => this.scientists = data);
+      this.httpservice.getScientists().subscribe((data: Scientists) => this.scientists = data);
     }
 
     viewBio() {
