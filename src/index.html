@@ -1,12 +1,10 @@
 <!doctype html>
 <html lang="en">
-<!--manifest="manifest.cache"-->
 <head>
     <meta charset="utf-8">
     <title>LibraryONAFT</title>
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="бібліотека, бибилиотека, library, ОНАХТ, ОНАПТ, ONAFT, науково-технічна бібліотека, Одеська національна академія харчових технологій, Odessa national academy of food technologies">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <meta property="og:type" content="article">
@@ -18,9 +16,7 @@
     <meta property="og:title" content="LibraryONAFT">
     <meta property="og:description" content="Науково-технічна бібліотека Одеської національної академії харчових технологій">
     <meta property="og:image" content="http://library.onaft.edu.ua/assets/img/logo.png">
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#1976d2">
-</head>
+  </head>
 <body>
 <!-- Google Analitics -->
 <script async="" src="https://www.google-analytics.com/analytics.js"></script>
@@ -42,74 +38,100 @@
 </script>
 <!-- End Google Analitics -->
 <app-root>
-    <!--<style>-->
-    <!--#preloader {-->
-    <!--transition: 600ms;-->
-    <!--display: flex;-->
-    <!--align-items: center;-->
-    <!--justify-content: center;-->
-    <!--background: #050512;-->
-    <!--overflow: hidden;-->
-    <!--position: fixed;-->
-    <!--left: 0;-->
-    <!--top: 0;-->
-    <!--right: 0;-->
-    <!--bottom: 0;-->
-    <!--font-size: 42px;-->
-    <!--font-weight: 400 !important;-->
-    <!--font-family: 'Montserrat', sans-serif !important;-->
-    <!--}-->
+    <style>
+        .cube-wrapper {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            margin-top: -50px;
+            margin-left: -50px;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+        }
 
-    <!--.prePreloader {-->
-    <!--transition: 600ms;-->
-    <!--display: flex;-->
-    <!--flex-flow: row nowrap;-->
-    <!--align-items: center;-->
-    <!--justify-content: center;-->
-    <!--color: white;-->
-    <!-- -webkit-animation: prePreloader 3s linear infinite;-->
-    <!--animation: prePreloader 3s linear infinite;-->
-    <!--}-->
+        .cube-wrapper:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -20px;
+            margin: auto;
+            width: 90px;
+            height: 6px;
+            background-color: rgba(0, 0, 0, 0.1);
+            -webkit-filter: blur(2px);
+            filter: blur(2px);
+            -moz-border-radius: 100%;
+            -webkit-border-radius: 100%;
+            border-radius: 100%;
+            z-index: 1;
+            -moz-animation: shadow 0.5s ease infinite alternate;
+       -webkit-animation: shadow 0.5s ease infinite alternate;
+   animation: shadow 0.5s ease infinite alternate;
 
-    <!--.prePreloader img {-->
-    <!--padding-right: 0.25em;-->
-    <!--}-->
+        }
 
-    <!--@-webkit-keyframes prePreloader {-->
-    <!--from {-->
-    <!--opacity: 1;-->
-    <!--}-->
-    <!--to {-->
-    <!--opacity: 0;-->
-    <!--}-->
-    <!--}-->
+        .cube-wrapper .loading {
+            font-size: 12px;
+            letter-spacing: 0.1em;
+            display: block;
+            color: white;
+            position: relative;
+            top: 25px;
+            z-index: 2;
+            -moz-animation: text 0.5s ease infinite alternate;
+            -webkit-animation: text 0.5s ease infinite alternate;
+            animation: text 0.5s ease infinite alternate;
+        }
 
-    <!--@keyframes prePreloader {-->
-    <!--from {-->
-    <!--opacity: 1;-->
-    <!--}-->
-    <!--to {-->
-    <!--opacity: 0;-->
-    <!--}-->
-    <!--}-->
+        @-moz-keyframes text {
+            100% {
+                top: 35px;
+            }
+        }
 
-    <!--@media only screen and (min-width: 320px) and (max-width: 480px) {-->
-    <!--.prePreloader h1 {-->
-    <!--font-size: 32px;-->
-    <!--}-->
+        @-webkit-keyframes text {
+            100% {
+                top: 35px;
+            }
+        }
 
-    <!--.prePreloader img {-->
-    <!--height: 34px;-->
-    <!--width: 34px;-->
-    <!--}-->
-    <!--}-->
-    <!--</style>-->
-    <!--<div id="preloader">-->
-    <!--<div class="prePreloader"><img src="assets/img/logo.png" height="76px" width="106px">-->
-    <!--<h1 class="display-4">LibraryONAFT</h1></div>-->
-    <!--</div>-->
+        @keyframes text {
+            100% {
+                top: 35px;
+            }
+        }
 
+        @-moz-keyframes shadow {
+            100% {
+                bottom: -18px;
+                width: 100px;
+            }
+        }
+
+        @-webkit-keyframes shadow {
+            100% {
+                bottom: -18px;
+                width: 100px;
+            }
+        }
+
+        @keyframes shadow {
+            100% {
+                bottom: -18px;
+                width: 100px;
+            }
+        }
+
+        html, body {
+            min-height: 100%;
+        }
+
+    </style>
+    <div class="cube-wrapper">
+        <span class="loading" data-name="Loading">Loading</span>
+    </div>
 </app-root>
-  <noscript>Please enable JavaScript to continue using this application.</noscript>
 </body>
 </html>
