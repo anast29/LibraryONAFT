@@ -1,7 +1,6 @@
-import {Component, OnChanges, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {HttpService} from '../http.service';
 import {Scientists} from '../scientists';
-import {forEach} from '@angular/router/src/utils/collection';
 import $ from 'jquery';
 
 @Component({
@@ -15,7 +14,7 @@ export class EncyclopediaComponent implements OnInit {
     }
 
     letters = ['А', 'Б', 'В', 'Г', 'Д', 'Ж', 'З', 'І', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'Ф', 'Х', 'Ч', 'Ш', 'Я'];
-    scientists: Scientists;
+    scientists: Scientists[] = [];
     img;
     name;
     birth_day;
@@ -23,7 +22,9 @@ export class EncyclopediaComponent implements OnInit {
     short_desc;
     bio;
     works;
+
     ngOnInit() {
+        this.httpservice.getScientists().subscribe((data: Scientists[]) => this.scientists = data);
         $(function () {
             $(window).scroll(function () {
                 const winTop = $(window).scrollTop();
@@ -34,7 +35,7 @@ export class EncyclopediaComponent implements OnInit {
                 }
             });
         });
-      this.httpservice.getScientists().subscribe((data: Scientists) => this.scientists = data);
+
     }
 
     viewBio() {
@@ -63,6 +64,7 @@ export class EncyclopediaComponent implements OnInit {
 
 
     }
+
     openNav() {
         document.getElementById('aside').style.width = '50px';
     }
@@ -70,13 +72,13 @@ export class EncyclopediaComponent implements OnInit {
     closeNav() {
         document.getElementById('aside').style.width = '0';
     }
+
     scrollTop() {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
         });
     }
-
 
 
 }

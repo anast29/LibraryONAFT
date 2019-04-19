@@ -10,7 +10,7 @@ import $ from 'jquery';
 })
 export class BooksComponent implements OnInit {
 
-    books: Books;
+    books: Books[] = [];
 
     constructor(private http: HttpService) {
     }
@@ -26,7 +26,7 @@ export class BooksComponent implements OnInit {
                 }
             });
         });
-        this.http.getBooks().subscribe((data: Books) => this.books = data);
+        this.http.getBooks().subscribe((data: Books[]) => this.books = data);
     }
     scrollTop() {
         window.scrollTo({

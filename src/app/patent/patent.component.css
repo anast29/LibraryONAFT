@@ -60,11 +60,13 @@
     z-index: 1;
 }
 
-.tab-content a {
-    color: #212529;
+/deep/ .tab-content a {
+    color: #313534;
     text-decoration: underline;
 }
-
+/deep/ .tab-content a:hover {
+    color: #212529;
+}
 p {
     margin: 0;
     text-indent: 2em;
@@ -89,6 +91,7 @@ ol {
 
 ol li {
     padding-bottom: 0.5em;
+    line-height: 1.75em;
 }
 
 .mob_open {

@@ -8,20 +8,19 @@ import {HttpService} from '../http.service';
     styleUrls: ['./jubilee.component.css']
 })
 export class JubileeComponent implements OnInit {
-    scientists: Scientists;
+    scientists: Scientists[] = [];
 
     constructor(private httpservice: HttpService) {
     }
 
     ngOnInit() {
-        this.httpservice.getScientists().subscribe((data: Scientists) => this.scientists = data);
+        this.httpservice.getScientists().subscribe((data: Scientists[]) => this.scientists = data);
 
     }
 
     searchDate(date) {
         const TODAY = new Date();
         const NEW_DATE = TODAY.getFullYear() - Number(date);
-        console.log(NEW_DATE);
         return NEW_DATE;
     }
 

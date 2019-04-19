@@ -84,7 +84,7 @@
 .dropdown_language {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
 }
 .dropdown:hover > .dropdown-menu {

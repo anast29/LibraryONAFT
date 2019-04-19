@@ -4,7 +4,7 @@
     align-items: center;
     text-align: center;
     flex-flow: column wrap;
-    min-height: calc(100vh - 140px);
+    min-height: calc(100vh - 104px);
     color:white;
     z-index: 5;
 }
@@ -17,7 +17,7 @@ p {
 }
 
 h1 {
-    font-size: 15rem;
+    font-size: 10rem;
     margin-bottom: 1rem;
     font-weight: 600;
 }
@@ -42,7 +42,14 @@ button:hover {
     transform: scale(1.05);
     background: #d7702b;
 }
-
+@media screen and (min-width: 1800px) {
+    .main {
+        min-height: calc(100vh - 140px);
+    }
+    h1 {
+        font-size: 15rem;
+    }
+}
 @media screen and (max-width:767px) {
     .main {
         min-height: calc(100vh - 80px);

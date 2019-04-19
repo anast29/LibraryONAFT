@@ -11,7 +11,7 @@ declare var $: $;
     styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-    news: News;
+    news: News[] = [];
     constructor(private http: HttpService) {
     }
 
@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
         }).on('hidden.bs.collapse', function () {
             $(this).parent().find('.fa-angle-up').removeClass('fa-angle-up').addClass('fa-angle-down').delay(200).fadeIn(500);
         });
-        this.http.getNews().subscribe((data: News) => this.news = data);
+        this.http.getNews().subscribe((data: News[]) => this.news = data);
     }
 
 }

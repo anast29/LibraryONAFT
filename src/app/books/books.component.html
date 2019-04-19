@@ -77,7 +77,7 @@
              aria-labelledby="resource-library">
             <ng-container *ngFor="let book of books">
                 <div class="card-container" *ngIf="book?.category === 'library'">
-                    <div class="card">
+                    <div class="card" [ngStyle]="{'height':'355px'}">
                         <img [attr.src]="book?.image" alt="Books image"
                              class="card-media"/>
                         <div class="card-body">

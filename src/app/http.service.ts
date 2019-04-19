@@ -1,13 +1,14 @@
 import {Injectable} from '@angular/core';
 import {Observable, of} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
+import {delay} from 'rxjs/internal/operators';
 
 @Injectable({
     providedIn: 'root'
 })
 
 export class HttpService {
-    url = 'http://library.onaft.edu.ua/api';
+    url = 'https://library.onaft.edu.ua/api';
     public responseCache = new Map();
     constructor(private httpClient: HttpClient) {
     }

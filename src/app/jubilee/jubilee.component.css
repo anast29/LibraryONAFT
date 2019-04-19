@@ -23,7 +23,7 @@ h1 {
     transition: 600ms;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     height: 350px;
     overflow: hidden;
@@ -52,7 +52,7 @@ h1 {
     flex: auto;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 }
 

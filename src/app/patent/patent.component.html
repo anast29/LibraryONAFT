@@ -244,11 +244,10 @@
                          [attr.aria-labelledby]="'v-pills-'+i+'-tab'">
                         <p class="name-patent text-center">Патенти за {{patent?.year}}</p>
                         <ol>
-                            <li *ngFor="let info of patent?.info;" [innerHTML]="info?.references + ' (<a href='+info?.pdf_file+'>Зміст патенту</a>)'"></li>
+                            <li *ngFor="let info of patent?.info;" [innerHTML]="info?.references + ' (<a href='+info?.pdf_file+' target=\'_blank\'>Зміст патенту</a>)'"></li>
                         </ol>
                     </div>
                 <!--END Patents for years-->
-
             </div>
         </div>
     </div>

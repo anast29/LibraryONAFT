@@ -134,7 +134,7 @@ span {
     flex: auto;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 }
 .bottom-txt {
@@ -148,7 +148,7 @@ span {
     display: flex;
     flex-flow: row;
     align-items: baseline;
-    justify-content: start;
+    justify-content: flex-start;
     background: rgba(255, 255, 255, 0.5);
 }
 
