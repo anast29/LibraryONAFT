@@ -4,7 +4,7 @@ This project was created for scientific and technical library ONAFT. For detaile
 
 ## Technologies
 
-This project was designed with HTML5/CSS3, with framework Angular 7 and CSS framework Bootstrap 4, supports technologies PWA(Progressive Web Applications). The site is cross browser and cross platform.
+This project was designed with HTML5/CSS3, with framework Angular 7 and CSS framework Bootstrap 4, supports technologies PWA(Progressive Web Applications). Server side created with Python web framework Django. The site is cross browser and cross platform.
 
 
 
