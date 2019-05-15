@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {enableProdMode} from '@angular/core';
-import $ from 'jquery';
+import * as $ from 'jquery';
 
 
 enableProdMode();

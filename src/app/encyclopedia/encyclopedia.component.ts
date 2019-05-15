@@ -1,7 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpService} from '../http.service';
 import {Scientists} from '../scientists';
-import $ from 'jquery';
+import * as $ from 'jquery';
+import {Router} from '@angular/router';
 
 @Component({
     selector: 'app-encyclopedia',
@@ -10,18 +11,36 @@ import $ from 'jquery';
 })
 export class EncyclopediaComponent implements OnInit {
 
-    constructor(private httpservice: HttpService) {
+    constructor(private httpservice: HttpService, private router: Router) {
     }
 
     letters = ['А', 'Б', 'В', 'Г', 'Д', 'Ж', 'З', 'І', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'Ф', 'Х', 'Ч', 'Ш', 'Я'];
     scientists: Scientists[] = [];
-    img;
-    name;
-    birth_day;
-    death_day;
-    short_desc;
-    bio;
-    works;
+
+
+    static addSubstr(text) {
+        if (text.length >= 144) {
+            text = text.substring(0, 144);
+            const lastIndex = text.lastIndexOf(' ');       // позиция последнего пробела
+            text = text.substring(0, lastIndex) + '...'; // обрезаем до последнего слова
+        }
+        return text;
+    }
+
+    static openNav() {
+        document.getElementById('aside').style.width = '50px';
+    }
+
+    static closeNav() {
+        document.getElementById('aside').style.width = '0';
+    }
+
+    static scrollTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
 
     ngOnInit() {
         this.httpservice.getScientists().subscribe((data: Scientists[]) => this.scientists = data);
@@ -38,46 +57,18 @@ export class EncyclopediaComponent implements OnInit {
 
     }
 
-    viewBio() {
-        $('.letter_card').css({'display': 'none'});
-        $('.bio').css({'display': 'flex'});
-        $('.vertical').css({'display': 'none'});
-        $('.breadcrumb-list').css({'display': 'none'});
-        $('.breadcrumb-bio').css({'display': 'flex'});
-    }
-
-    returnPage() {
-        $('.letter_card').css({'display': 'flex'});
-        $('.bio').css({'display': 'none'});
-        $('.vertical').css({'display': 'flex'});
-        $('.breadcrumb-list').css({'display': 'flex'});
-        $('.breadcrumb-bio').css({'display': 'none'});
-    }
-
-    addSubstr(text) {
-        if (text.length >= 144) {
-            text = text.substring(0, 144);
-            const lastIndex = text.lastIndexOf(' ');       // позиция последнего пробела
-            text = text.substring(0, lastIndex) + '...'; // обрезаем до последнего слова
-        }
-        return text;
-
-
-    }
-
-    openNav() {
-        document.getElementById('aside').style.width = '50px';
-    }
-
-    closeNav() {
-        document.getElementById('aside').style.width = '0';
-    }
-
-    scrollTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
+    viewBio(person) {
+      this.router.navigate(['/bio'], {
+          queryParams: {
+              'img': person.image,
+              'name': person.name,
+              'birth_day': person.birthday,
+              'death_day': person.deathday,
+              'short_desc': person.short_description,
+              'bio': person.bio,
+              'works': person.works
+          }
+      });
     }
 
 

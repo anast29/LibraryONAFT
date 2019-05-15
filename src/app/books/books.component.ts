@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpService} from '../http.service';
 import {Books} from '../books';
-import $ from 'jquery';
+import * as $ from 'jquery';
 
 @Component({
     selector: 'app-books',
@@ -10,9 +10,15 @@ import $ from 'jquery';
 })
 export class BooksComponent implements OnInit {
 
-    books: Books[] = [];
-
     constructor(private http: HttpService) {
+    }
+
+    books: Books[] = [];
+    static scrollTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     }
 
     ngOnInit() {
@@ -27,11 +33,5 @@ export class BooksComponent implements OnInit {
             });
         });
         this.http.getBooks().subscribe((data: Books[]) => this.books = data);
-    }
-    scrollTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
     }
 }

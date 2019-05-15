@@ -25,6 +25,7 @@
 
 .logo_name {
     padding-left: 0.25em;
+    font-weight: 400;
 }
 
 .navbar-light {
@@ -35,10 +36,11 @@
     position: relative;
     transition: 600ms;
     color: white;
-    font-size: 18px;
+    font-size: 19px;
     padding: 0.5em 0.75em;
     letter-spacing: 0.05em;
     font-variant: all-small-caps;
+    font-weight: 400;
 }
 
 .fa-user {
@@ -99,13 +101,14 @@
 .language {
     display: flex;
     flex-flow: row wrap;
+    font-weight: 200;
     transition: 600ms;
     margin-left: 1em;
     color:white;
     align-items: center;
 }
 .language .nav-link {
-    padding: 0.5em 0.25em;
+    padding: 0.5em 0.5em;
 }
 .dropdown_language i {
     transition: 600ms;
@@ -238,7 +241,7 @@ input {
         height: 124px !important;
     }
     .navbar-nav .nav-link {
-        font-size: 18px;
+        font-size: 20px;
         padding: 0.5em 0.75em;
     }
     .nav-border {
@@ -266,7 +269,7 @@ input {
         word-break: break-all;
     }
     .navbar {
-        padding: 1.75em 2em !important;
+        padding: 1.25em 2em !important;
     }
     .nav-link {
         padding: 0.15rem 0 !important;
@@ -295,19 +298,37 @@ input {
         position: relative;
     }
     .nav-item a {
-        color: white !important;
+        color: white;
         vertical-align: middle;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+        padding-left: 0;
+        padding-right: 0;
     }
     .dropdown-header {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+        padding-left: 0;
+        padding-right: 0;
     }
     .fa-chevron-down {
         font-size: 12px;
     }
 
+}
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+    .desk-nav {
+        display: flex;
+    }
+
+    .mob-nav {
+        display: none;
+    }
+    .navbar-nav .nav-link  {
+        padding: 0.15rem 0.5em !important;
+        font-size: 14px;
+    }
+    .nav-item a{
+        padding: 0.3rem 1.25rem;
+        font-size: 14px;
+        color: #1b1e21;
+    }
 }
 @media screen and (max-width: 767px) {
     .desk-nav {
@@ -331,7 +352,6 @@ input {
     }
     .bg-dark {
         background: rgb(8, 10, 25) !important;
-        /*border-bottom: 1px solid #080a19;*/
     }
 
     .logo_img {
@@ -355,14 +375,14 @@ input {
         position: relative;
     }
     .nav-item a {
-        color: white !important;
+        color: white;
         vertical-align: middle;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+        padding-left: 0;
+        padding-right: 0;
     }
     .dropdown-header {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+        padding-left: 0;
+        padding-right: 0;
     }
     .fa-chevron-down {
         font-size: 12px;

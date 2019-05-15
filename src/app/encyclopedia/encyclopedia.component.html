@@ -5,22 +5,14 @@
             <li class="breadcrumb-item active" aria-current="page">Енциклопедія вчених</li>
         </ol>
     </nav>
-    <nav aria-label="breadcrumb" class="breadcrumb-bio">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a routerLink="/">Головна</a></li>
-            <li class="breadcrumb-item">
-                <button (click)="returnPage()">Енциклопедія вчених</button>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">{{name}}</li>
-        </ol>
-    </nav>
+
     <h1 class="text-center">Енциклопедія вчених</h1>
     <!--<p class="lead text-center title" [ngStyle]="{'font-size':'22px'}">Довідкова інформація про видатних вчених Одеської-->
     <!--національної академії харчових технологій</p>-->
-    <aside class="vertical">
+    <aside class="vertical justify-content-center">
         <i class="fas fa-search"></i>
         <div *ngFor="let letter of letters" >
-        <a pageScroll="" class="nav-letter" href="#{{letter}}"> {{letter}}</a>
+        <a class="nav-letter" href="encyclopedia_of_scientists#{{letter}}" pageScroll> {{letter}}</a>
         </div>
         <!--<form>-->
             <!--<input type="search" placeholder="Искать здесь...">-->
@@ -30,17 +22,16 @@
     <div *ngFor="let letter of letters" class="letter_card container-fluid col-12">
         <span>{{letter}}</span>
         <div class="row" [attr.id]="letter">
-            <div *ngFor="let scientist of scientists" class="contents">
+            <ng-container *ngFor="let scientist of scientists">
                 <div *ngIf="scientist?.name.charAt(0)===letter"
-                     class="my-2 shadow-1 blue-hover card shadow-lg">
+                     class="my-2 shadow-1 blue-hover card col-lg-4 col-md-6 col-sm-12">
                     <div class="top-card pl-2 pr-2">
                         <img class="img_content shadow-1" [attr.src]="scientist?.image" alt="?">
-
                         <div class="top-text">
                             <h5 class="font-weight-normal text-center">
                                 {{scientist?.name}}
                             </h5>
-                            <p class="text-center birthday" [ngStyle]="{'font-size':'18px'}">
+                            <p class="text-center birthday">
                                 ({{scientist?.birthday}} - {{scientist?.deathday}})
                             </p>
                         </div>
@@ -50,33 +41,13 @@
                             {{addSubstr(scientist?.short_description)}}</p>
                     </div>
                     <div class="py-2" [ngStyle]="{'width':'100%'}">
-                        <button (click)="viewBio(); img = scientist?.image; name = scientist?.name; birth_day = scientist?.birthday;
-                        death_day = scientist?.deathday; short_desc = scientist?.short_description; bio = scientist?.bio;
-                        works = scientist?.works"
+                        <button (click)="viewBio(scientist)"
                                 class="text-left text-uppercase bottom-nav lts-2px styled-link pt-1 pl-3 pr-3">
                             Детальніше
                         </button>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="bio col-12 pl-3 pr-3 my-4">
-        <div class="bio-profile col-12">
-            <img [attr.src]="img" class="bio-img shadow-13" alt="?">
-            <div class="bio-name col-lg-9 col-md-9 col-sm-12">
-                <h2>{{name}}</h2>
-                <span>({{birth_day}} - {{death_day}})</span>
-                <p class="text-center">{{short_desc}}</p>
-            </div>
-        </div>
-        <div class="line"></div>
-        <h2>Біографія</h2>
-        <div class="bio-txt col-12" [innerHTML]="bio">
-        </div>
-        <div class="line"></div>
-        <h2>Основні роботи</h2>
-        <div class="works-txt col-12" [innerHTML]="works">
+            </ng-container>
         </div>
     </div>
     <div class="arrow-up" (click)="scrollTop();">

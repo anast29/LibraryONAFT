@@ -1,7 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Observable, of} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
-import {delay} from 'rxjs/internal/operators';
 
 @Injectable({
     providedIn: 'root'
@@ -45,11 +44,25 @@ export class HttpService {
         return response;
     }
 
-    public getPatentes() {
-        return this.httpClient.get(this.url + '/patents');
+    public getPatentes(): Observable<any>  {
+        // return this.httpClient.get(this.url + '/patents');
+        const newsCache = this.responseCache.get(this.url + '/patents');
+        if (newsCache) {
+            return of(newsCache);
+        }
+        const response = this.httpClient.get<any>(this.url + '/patents');
+        response.subscribe(data => this.responseCache.set(this.url + '/patents', data));
+        return response;
     }
 
-    public getExhibitions() {
-        return this.httpClient.get(this.url + '/virtualexhibition');
+    public getExhibitions(): Observable<any>  {
+        // return this.httpClient.get(this.url + '/virtualexhibition');
+        const newsCache = this.responseCache.get(this.url + '/virtualexhibition');
+        if (newsCache) {
+            return of(newsCache);
+        }
+        const response = this.httpClient.get<any>(this.url +  '/virtualexhibition');
+        response.subscribe(data => this.responseCache.set(this.url +  '/virtualexhibition', data));
+        return response;
     }
 }

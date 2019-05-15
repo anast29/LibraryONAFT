@@ -42,6 +42,7 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
+              "outputPath": "dist/LibraryONAFT/ua/",
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -52,7 +53,38 @@
               "vendorChunk": false,
               "buildOptimizer": true,
               "serviceWorker": true,
-              "ngswConfigPath": "src/ngsw-config.json"
+              "ngswConfigPath": "src/ngsw-config.json",
+              "baseHref": "/ua/",
+              "i18nFile": "src/translate/messages.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "ua",
+              "i18nMissingTranslation": "error"
+            },
+
+            "production-en": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "outputPath": "dist/LibraryONAFT/en/",
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "serviceWorker": true,
+              "ngswConfigPath": "src/ngsw-config.json",
+              "baseHref": "/en/",
+              "i18nFile": "src/translate/messages.en.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "en",
+              "i18nMissingTranslation": "error"
             }
           }
         },
@@ -64,6 +96,9 @@
           "configurations": {
             "production": {
               "browserTarget": "LibraryONAFT:build:production"
+            },
+            "en": {
+              "browserTarget": "LibraryONAFT:build:production-en"
             }
           }
         },

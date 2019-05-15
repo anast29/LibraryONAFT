@@ -1,8 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpService} from '../http.service';
 import {Exhibition} from '../../exhibition';
-import {Books} from '../books';
-import $ from 'jquery';
+import * as $ from 'jquery';
 @Component({
     selector: 'app-exhibition',
     templateUrl: './exhibition.component.html',
@@ -10,9 +9,16 @@ import $ from 'jquery';
 })
 export class ExhibitionComponent implements OnInit {
 
+    constructor(private http: HttpService) {
+    }
+
     exhibitions: Exhibition;
 
-    constructor(private http: HttpService) {
+    static scrollTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     }
 
     ngOnInit() {
@@ -26,13 +32,6 @@ export class ExhibitionComponent implements OnInit {
                     $('.arrow-up').css({'opacity': '0'});
                 }
             });
-        });
-    }
-
-    scrollTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
         });
     }
 

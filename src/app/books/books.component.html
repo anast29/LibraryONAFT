@@ -9,7 +9,7 @@
     <ul class="nav nav-pills" id="myTab" role="tablist">
         <li class="nav-item ">
             <a class="nav-link active" id="new-books" data-toggle="pill" href="#new-books-view" role="tab"
-               aria-controls="new-books-view" aria-selected="true">Нові надходження</a>
+               aria-controls="new-books-view" aria-selected="true">Надходження</a>
         </li>
         |
         <li class="nav-item">
@@ -21,12 +21,11 @@
             <a class="nav-link" id="resource-library" data-toggle="pill" href="#resource-view" role="tab"
                aria-controls="resource-view" aria-selected="true">Ресурc НТБ</a>
         </li>
-        |
-
-        <li class="nav-item">
-            <a class="nav-link" id="propose-liter" data-toggle="pill" href="#propose-liter-view" role="tab"
-               aria-controls="propose-liter-view" aria-selected="true">Рекомендована літ.</a>
-        </li>
+        <!--|-->
+        <!--<li class="nav-item">-->
+            <!--<a class="nav-link" id="propose-liter" data-toggle="pill" href="#propose-liter-view" role="tab"-->
+               <!--aria-controls="propose-liter-view" aria-selected="true">Рекомендована літ.</a>-->
+        <!--</li>-->
     </ul>
 
 
@@ -77,7 +76,7 @@
              aria-labelledby="resource-library">
             <ng-container *ngFor="let book of books">
                 <div class="card-container" *ngIf="book?.category === 'library'">
-                    <div class="card" [ngStyle]="{'height':'355px'}">
+                    <div class="card">
                         <img [attr.src]="book?.image" alt="Books image"
                              class="card-media"/>
                         <div class="card-body">
@@ -93,23 +92,23 @@
         </div>
 
         <!--Propose literature block-->
-        <div class="row tab-pane fade" id="propose-liter-view" role="tabpanel" aria-labelledby="propose-liter">
-            <ng-container *ngFor="let book of books">
-                <div class="card-container-books" *ngIf="book?.category === 'recommended'">
-                <div class="card">
-                    <img [attr.src]="book?.image" alt="Books image"
-                         class="card-media-books"/>
-                    <div class="card-body">
-                        <span class="card-author subtle">Рекомендована література для аспірантів та дипломників</span>
-                        <div class="card-description-books my-3" [innerHTML]="book?.references"></div>
-                        <p class="short-description" [innerHTML]="book?.description"></p>
-                        <a [attr.href]="book?.pdf_file" target="_blank" class="card-read">Зміст книги</a>
-                    </div>
-                </div>
-                <div class="card-shadow"></div>
-            </div>
-            </ng-container>
-        </div>
+        <!--<div class="row tab-pane fade" id="propose-liter-view" role="tabpanel" aria-labelledby="propose-liter">-->
+            <!--<ng-container *ngFor="let book of books">-->
+                <!--<div class="card-container-books" *ngIf="book?.category === 'recommended'">-->
+                <!--<div class="card">-->
+                    <!--<img [attr.src]="book?.image" alt="Books image"-->
+                         <!--class="card-media-books"/>-->
+                    <!--<div class="card-body">-->
+                        <!--<span class="card-author subtle">Рекомендована література для аспірантів та дипломників</span>-->
+                        <!--<div class="card-description-books my-3" [innerHTML]="book?.references"></div>-->
+                        <!--<p class="short-description" [innerHTML]="book?.description"></p>-->
+                        <!--<a [attr.href]="book?.pdf_file" target="_blank" class="card-read">Зміст книги</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="card-shadow"></div>-->
+            <!--</div>-->
+            <!--</ng-container>-->
+        <!--</div>-->
     </div>
 </div>
 <div class="arrow-up" (click)="scrollTop();">

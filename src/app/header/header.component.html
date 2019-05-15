@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" routerLink="/"><img src="../../assets/img/logo.png" class="logo_img">
+    <a class="navbar-brand" routerLink="/"><img src="assets/img/logo.png" alt="Logo image" class="logo_img">
         <span class="logo_name">LibraryONAFT</span></a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
@@ -17,13 +17,12 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="resource">
                     <div class="triangle"></div>
-                    <a class="dropdown-item" href="http://library.onaft.edu.ua/elc/" target="_blank">Електроний
+                    <a class="dropdown-item" href="http://refman.onaft.edu.ua/elc/" target="_blank">Електроний
                         каталог</a>
                     <a class="dropdown-item" href="https://card-file.onaft.edu.ua/" target="_blank">Електроний
-                        архів
-                        (репозитарій)</a>
+                        архів (репозитарій)</a>
                     <a class="dropdown-item" href="http://kci.onaft.edu.ua/" target="_blank">Центр наукової
-                        періодики</a>
+                        періодики (КЦВ)</a>
                     <a class="dropdown-item" routerLink="/patent">Патенти</a>
                 </div>
             </li>
@@ -68,7 +67,7 @@
                     <a class="dropdown-item" href="../../assets/pdf/Regulations/polojeniya.pdf" target="_blank">Положення
                         НТБ</a>
                     <a class="dropdown-item" href="../../assets/pdf/Regulations/ZVIT2018.pdf" target="_blank">Звіт
-                        про роботу(2018 р.)</a>
+                        про роботу (2018 р.)</a>
                     <a class="dropdown-item" href="../../assets/pdf/library_history.pdf" target="_blank">Історія
                         бібліотеки</a>
                     <a class="dropdown-item" routerLink="/exhibition">Виставки</a>
@@ -78,19 +77,19 @@
             <!--<a class="nav-link" href="#"><i class="far fa-user"></i> Авторизуватись</a>-->
             <!--</li>-->
             <li class="nav-item language">
-                <a class="nav-link" href="#" role="button" data-toggle="dropdown"
+                <a class="nav-link" href="/ua/" role="button" data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
                     <i class="fas fa-globe-americas"></i>
-                    UA </a>|<a class="nav-link" href="#">EN</a>|<a class="nav-link" href="#">RU</a>
+                    UA </a>|<a class="nav-link" href="/en/">EN</a>|<a class="nav-link" href="#">RU</a>
             </li>
         </ul>
         <ul class="navbar-nav mob-nav mr-auto">
             <li class="nav-item">
                 <a class="nav-link" href="#" data-target="#resources" role="button" data-toggle="collapse"
-                   aria-expanded="false">
+                   aria-expanded="true" aria-controls="resources" >
                     Ресурси <i class="fas fa-chevron-down"></i>
                 </a>
-                <div class="collapse navbar-collapse" id="resources">
+                <div class="collapse navbar-collapse"  id="resources">
                     <a class="dropdown-item ml-1" href="http://library.onaft.edu.ua/elc/" target="_blank">Електроний
                         каталог</a>
                     <a class="dropdown-item ml-1" href="https://card-file.onaft.edu.ua/" target="_blank">Електроний
@@ -103,7 +102,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#" data-target="#propose" role="button" data-toggle="collapse"
-                   aria-expanded="false">
+                   aria-expanded="true" aria-controls="propose" id="proposeHeader">
                     Рекомендації <i class="fas fa-chevron-down"></i>
                 </a>
                 <div class="collapse navbar-collapse" id="propose">

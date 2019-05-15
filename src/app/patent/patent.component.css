@@ -2,34 +2,34 @@
     position: relative;
     background: #fff;
     color: #212529;
-    padding: 1.5em 1.75em 1.5em 0;
+    padding: 0 1.75em 0 0;
     box-sizing: border-box;
 }
 .breadcrumb {
     font-family: montserrat, sans-serif;
-    padding-left: 3.75em !important;
+    padding-left: 0 !important;
 }
 .patents h1 {
     margin-bottom: 0.5em;
 }
 
 .menu-title {
-    position: sticky;
-    top: 0;
-    bottom: 0;
-    font-size: 20px;
+    font-size: 18px;
     padding: 1em 0;
-    border-right: 5px solid #f1f1f1;
-    border-bottom: 5px solid #f1f1f1;
-    border-top: 5px solid #f1f1f1;
-    height: 100%;
+    border-right: 1px solid #f1f1f1;
 }
-
+.sidenav {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    position: sticky;
+    top: 2.75em;
+    bottom: 0;
+}
 .menu-title h2 {
-    padding: 0.5em 0;
-    color: #555555;
+    color: #555;
+    text-align: center;
 }
-
 .nav-link{
     border-radius: 0;
     color: #555555;
@@ -37,7 +37,7 @@
     align-items: center;
     justify-content: flex-start;
     display: flex;
-    padding: 0.5em 1.75em;
+    padding: 1em 1.75em;
 
 }
 
@@ -51,7 +51,8 @@
 }
 
 .nav-pills .nav-link.active {
-    background-color: rgba(215, 135, 55, 0.5);
+    background: none;
+    color: rgb(215, 135, 55);
 }
 
 .main-content {
@@ -108,7 +109,7 @@ ol li {
     }
 
     .menu-title {
-        font-size: 24px !important;
+        font-size: 20px !important;
     }
 
     .display-4 {
@@ -126,6 +127,14 @@ ol li {
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
+    .main-content {
+        padding: 0 0.25em 0.5em;
+    }
+    .sidenav a {
+        padding-right: 0;
+        padding-left: 1.5em;
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 767px) {

@@ -1,17 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700,700i,800,800i&subset=cyrillic,cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,200i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=cyrillic,cyrillic-ext');
-body {
-    min-height: 100vh;
+html,body {
     width: 100%;
-    font-family: 'Open Sans', sans-serif;
-    /*letter-spacing: 0.05em;*/
-    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 .breadcrumb {
     background: none;
-    margin-bottom: 0 !important;
-    padding: 1em 0 1em 2em !important;
+    margin-bottom: 0;
+    padding: 1em 0 1em 2em;
     font-size: 18px;
 }
 .breadcrumb-item a{
@@ -21,9 +21,8 @@ body {
 .breadcrumb-item a:hover {
     color: #d7702b;
 }
-
 @media screen and (min-width: 1800px){
     .breadcrumb {
-        font-size: 20px !important;
+        font-size: 20px;
     }
 }

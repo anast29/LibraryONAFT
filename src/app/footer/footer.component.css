@@ -60,26 +60,31 @@ p {
         justify-content: space-between;
         padding: 2em 15px !important;
     }
-
+    .footer div {
+        padding: 5px !important;
+    }
+    .footer div i {
+        font-size: 11px !important;
+    }
     h5 {
-        font-size: 1.3rem;
+        font-size: 16px;
     }
     h3 {
-        font-size: 1.2rem;
+        font-size: 18px;
     }
 
     .footer p {
-        font-size: 14px;
+        font-size: 12px !important;
     }
     .main-logo {
-        font-size: 20px;
+        vertical-align: middle;
     }
     .footer img {
         height: 22px;
         width: 44px;
     }
     .main-logo a {
-      font-size: 14px;
+      font-size: 12px;
     }
 }
 @media screen and (max-width: 767px){
@@ -108,7 +113,13 @@ p {
     h5 {
         text-align: center;
         margin-top:1rem;
-        font-size: 1.3rem;
+        font-size: 16px;
+    }
+    p{
+        font-size: 14px;
+    }
+    i {
+        font-size: 12px !important;
     }
 
 }

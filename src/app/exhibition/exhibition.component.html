@@ -37,7 +37,7 @@
                         <h2 class="text-center">День українського козацтва</h2>
                     </div>
                 </div>
-                <div class="align-content col-lg-6 col-md-6 col-sm-12">
+                <div class="align-content col-lg-6 col-md-12 col-sm-12">
                     <div class="card justify-content-around"
                          [ngStyle]="{'background-image':'url(\'../../assets/img/exhibition/Den_poezii.jpg\')'}">
                         <div class="title-align justify-content-center" [ngStyle]="{'display': 'flex'}">
@@ -83,7 +83,7 @@
             </div>
 
             <div class="row">
-                <div class="align-content col-lg-6 col-md-6 col-sm-12" >
+                <div class="align-content col-lg-6 col-md-12 col-sm-12" >
                     <div class="card justify-content-around"
                          [ngStyle]="{'background-image':'url(\'../../assets/img/exhibition/7.jpg\')'}">
                         <div class="title-align justify-content-center" [ngStyle]="{'display': 'flex'}">
@@ -199,7 +199,7 @@
                         </blockquote>
                     </div>
                 </div>
-                <div class="align-content col-lg-5 col-md-6 col-sm-12">
+                <div class="align-content col-lg-5 col-md-12 col-sm-12">
                     <div class="card justify-content-around"
                          [ngStyle]="{'background-image':'url(\'../../assets/img/exhibition/Folkner.jpg\')'}">
                         <div class="title-align justify-content-center" [ngStyle]="{'display': 'flex'}">
@@ -212,7 +212,7 @@
             </div>
 
             <div class="row">
-                <div class="align-content col-lg-6 col-md-6 col-sm-12">
+                <div class="align-content col-lg-6 col-md-12 col-sm-12">
                     <div class="card justify-content-around"
                          [ngStyle]="{'background-image':'url(\'../../assets/img/exhibition/DSC_5152.JPG\')'}">
                         <div class="title-align justify-content-center" [ngStyle]="{'display': 'flex'}">
@@ -305,7 +305,7 @@
              aria-labelledby="virtual">
             <div class="row">
                 <ng-container *ngFor="let exhibition of exhibitions">
-                    <div class="card-container">
+                    <div class="card-container col-lg-6 col-md-12 col-sm-12">
                         <div class="card-virtual">
                             <div [ngStyle]="{'background-image':'url('+exhibition?.image+')'}"
                                  class="card-media"></div>

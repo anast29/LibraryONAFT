@@ -894,11 +894,8 @@ textarea {
     }
 
     /**News*/
-    .content {
-        padding: 0;
-    }
     .timeline {
-        width: 100%;
+        width: 95%;
         font-size: 14px;
     }
 
