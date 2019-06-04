@@ -14,11 +14,11 @@ export class PatentComponent implements OnInit {
 
     public patents: Patent[] = [];
 
-    static openNav() {
+    openNav() {
         document.getElementById('aside').style.width = '250px';
     }
 
-    static closeNav() {
+    closeNav() {
         document.getElementById('aside').style.width = '0';
     }
 

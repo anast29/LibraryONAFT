@@ -65,4 +65,8 @@ export class HttpService {
         response.subscribe(data => this.responseCache.set(this.url +  '/virtualexhibition', data));
         return response;
     }
+
+    public postMessage(body)  {
+        return this.httpClient.post('https://library.onaft.edu.ua/api', body);
+    }
 }

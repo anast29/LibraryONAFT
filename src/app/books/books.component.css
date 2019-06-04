@@ -86,15 +86,19 @@ h1 {
 }
 
 .card-container,
-.card-container-books{
+.card-container-books,
+.card-container-periodical{
     margin: 1.5em auto;
     position: relative;
 }
 .card-container {
-    flex: 0 0 50%;
+    flex: 1 0 50%;
+}
+.card-container-periodical {
+    flex: 1 0 25%;
 }
 .card-container-books {
-    flex: 0 0 100%;
+    flex: 1 0 100%;
 }
 .tab-pane.active {
     display: flex;
@@ -104,7 +108,7 @@ h1 {
     width: 100%;
 }
 
-.card {
+.card, .card-periodical  {
     display: flex;
     flex-flow: row;
     align-items: center;
@@ -117,7 +121,11 @@ h1 {
     font-weight: 400;
     margin: 0 0.5em;
 }
-.card-container .card {
+.card-periodical {
+    flex-flow: column;
+}
+.card-container .card,
+.card-container-periodical .card-periodical{
     height: 355px;
 }
 .card-author {
@@ -127,7 +135,6 @@ h1 {
     margin: 15px 0 0;
     text-transform: uppercase;
 }
-
 .card-body {
     flex: auto;
     padding: 0.25em 1.25rem;
@@ -154,6 +161,19 @@ h1 {
 }
 .short-description {
     line-height: 1.75em;
+}
+.periodical {
+    color: #d78737;
+    margin: 0.15em;
+}
+
+.periodical-place {
+    font-size: 18px;
+    margin: 0;
+}
+.fa-map-marker-alt {
+    color: #d78737;
+    padding-right: 0.25em;
 }
 .card-read {
     transition: 0.5s;

@@ -1,31 +1,34 @@
 <div class="main_content container-fluid">
     <nav aria-label="breadcrumb" class=" breadcrumb-list">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a routerLink="/">Головна</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Видання</li>
+            <li i18n="@@main-breadcrumb" class="breadcrumb-item"><a routerLink="/">Головна</a></li>
+            <li i18n="@@books-breadcrumb" class="breadcrumb-item active" aria-current="page">Надходження</li>
         </ol>
     </nav>
-    <h1 class="text-center">Видання</h1>
+    <h1 i18n="@@books-title" class="text-center">Надходження</h1>
     <ul class="nav nav-pills" id="myTab" role="tablist">
         <li class="nav-item ">
-            <a class="nav-link active" id="new-books" data-toggle="pill" href="#new-books-view" role="tab"
-               aria-controls="new-books-view" aria-selected="true">Надходження</a>
+            <a i18n="@@new-books" class="nav-link active" id="new-books" data-toggle="pill" href="#new-books-view"
+               role="tab"
+               aria-controls="new-books-view" aria-selected="true">Видання 2018-2019 рр.</a>
         </li>
         |
         <li class="nav-item">
-            <a class="nav-link" id="books-scientists" data-toggle="pill" href="#books-view" role="tab"
+            <a i18n="@@scientists-books" class="nav-link" id="books-scientists" data-toggle="pill" href="#books-view"
+               role="tab"
                aria-controls="books-view" aria-selected="true">Книги вчених</a>
         </li>
         |
         <li class="nav-item">
-            <a class="nav-link" id="resource-library" data-toggle="pill" href="#resource-view" role="tab"
-               aria-controls="resource-view" aria-selected="true">Ресурc НТБ</a>
+            <a i18n="@@library-books" class="nav-link" id="resource-library" data-toggle="pill" href="#resource-view"
+               role="tab"
+               aria-controls="resource-view" aria-selected="true">Видання НТБ</a>
         </li>
-        <!--|-->
-        <!--<li class="nav-item">-->
-            <!--<a class="nav-link" id="propose-liter" data-toggle="pill" href="#propose-liter-view" role="tab"-->
-               <!--aria-controls="propose-liter-view" aria-selected="true">Рекомендована літ.</a>-->
-        <!--</li>-->
+        |
+        <li class="nav-item">
+            <a class="nav-link" id="propose-liter" data-toggle="pill" href="#propose-liter-view" role="tab"
+               aria-controls="propose-liter-view" aria-selected="true">Періодика</a>
+        </li>
     </ul>
 
 
@@ -91,24 +94,25 @@
             </ng-container>
         </div>
 
-        <!--Propose literature block-->
-        <!--<div class="row tab-pane fade" id="propose-liter-view" role="tabpanel" aria-labelledby="propose-liter">-->
-            <!--<ng-container *ngFor="let book of books">-->
-                <!--<div class="card-container-books" *ngIf="book?.category === 'recommended'">-->
-                <!--<div class="card">-->
-                    <!--<img [attr.src]="book?.image" alt="Books image"-->
-                         <!--class="card-media-books"/>-->
-                    <!--<div class="card-body">-->
-                        <!--<span class="card-author subtle">Рекомендована література для аспірантів та дипломників</span>-->
-                        <!--<div class="card-description-books my-3" [innerHTML]="book?.references"></div>-->
-                        <!--<p class="short-description" [innerHTML]="book?.description"></p>-->
-                        <!--<a [attr.href]="book?.pdf_file" target="_blank" class="card-read">Зміст книги</a>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="card-shadow"></div>-->
-            <!--</div>-->
-            <!--</ng-container>-->
-        <!--</div>-->
+        <!--Periodical literature block-->
+        <div class="row tab-pane fade" id="propose-liter-view" role="tabpanel" aria-labelledby="propose-liter">
+            <ng-container *ngFor="let book of books">
+                <div class="card-container-periodical" *ngIf="book?.category === 'periodical'">
+                    <div class="card-periodical">
+                        <img [attr.src]="book?.image" alt="Books image"
+                             class="card-media"/>
+                        <div class="card-body" [ngStyle]="{'width': '100%'}">
+                            <span class="card-author subtle">Періодика ОНАХТ</span>
+                            <h2 class="card-title" [innerHTML]="book?.title"></h2>
+                            <p class="periodical" [innerHTML]="book?.description">
+                                <p class="periodical-place"><i class="fas fa-map-marker-alt"></i>{{book?.references}}</p>
+                        </div>
+                    </div>
+                    <div class="card-shadow"></div>
+                </div>
+
+            </ng-container>
+        </div>
     </div>
 </div>
 <div class="arrow-up" (click)="scrollTop();">

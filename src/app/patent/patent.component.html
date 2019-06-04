@@ -4,9 +4,9 @@
             <button class="mob_open" (click)="openNav()"><i class="fas fa-angle-double-right"></i></button>
             <div class="nav flex-column nav-pills sidenav" id="aside">
                 <button class="closebtn" (click)="closeNav()">&times;</button>
-                <h2><i class="fas fa-align-left"></i></h2>
+                <h2 i18n="@@category-aside"><i class="fas fa-align-left"></i> Категорія</h2>
                 <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
-                   aria-controls="v-pills-home" aria-selected="true"><i class="fas fa-search"></i> Патентний пошук</a>
+                   aria-controls="v-pills-home" aria-selected="true"><i class="fas fa-search"></i> <span i18n="@@patent-search">Патентний пошук</span></a>
                 <a *ngFor="let patent of patents; let i = index;"
                    class="nav-link" [attr.id]="'v-pills-'+i+'-tab'" data-toggle="pill" [attr.href]="'#v-pills-'+i"
                    role="tab"
@@ -16,18 +16,17 @@
         <div class="main-content col-md-9 col-lg-9">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a routerLink="/">Головна</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Патенти</li>
+                    <li i18n="@@main-breadcrumb" class="breadcrumb-item"><a routerLink="/">Головна</a></li>
+                    <li i18n="@@patents-breadcrumb" class="breadcrumb-item active" aria-current="page">Патенти</li>
                 </ol>
             </nav>
             <div class="tab-content" id="v-pills-tabContent">
                 <!--Patents search-->
                 <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                      aria-labelledby="v-pills-home-tab">
-                    <h3 class="display-4 text-center">Патентний пошук</h3>
+                    <h3 i18n="@@patent-search" class="display-4 text-center">Патентний пошук</h3>
                     <p><b>Патентний пошук</b> — вивчення масиву охоронних документів різних країн з метою виявлення
-                        серед них патенту на
-                        винахід чи відкриття, аналогічне зробленому чи дослідженому.</p>
+                        серед них патенту на винахід чи відкриття, аналогічне зробленому чи дослідженому.</p>
                     <p>Патентні дослідження проводяться на основі аналізу джерел патентної інформації із залученням
                         інших видів інформації, яка містить відомості про останні науково-технічні досягнення,
                         пов'язані з розробленням промислової продукції, а також про стан і перспективи розвитку ринку

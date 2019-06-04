@@ -2,6 +2,9 @@ import {Component, OnInit} from '@angular/core';
 import * as $ from 'jquery';
 import {HttpService} from '../http.service';
 import {News} from '../news';
+import {FormControl} from '@angular/forms';
+import {jsonpCallbackContext} from '@angular/common/http/src/module';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
     selector: 'app-home',
@@ -10,6 +13,10 @@ import {News} from '../news';
 })
 export class HomeComponent implements OnInit {
     news: News;
+    email = new FormControl('');
+    username = new FormControl('');
+    text = new FormControl('');
+
     constructor(private http: HttpService) {
     }
 
@@ -21,5 +28,17 @@ export class HomeComponent implements OnInit {
         });
         this.http.getNews().subscribe((data: News) => this.news = data);
     }
+
+    sendEmail() {
+        const message = {'email': '',
+            'username': '',
+            'text': ''};
+        message.email = this.email.value;
+        message.username = this.username.value;
+        message.text = this.text.value;
+        alert(JSON.stringify(message));
+        this.http.postMessage(JSON.stringify(message));
+    }
+
 
 }

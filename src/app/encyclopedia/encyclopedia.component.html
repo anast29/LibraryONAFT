@@ -1,14 +1,12 @@
 <div class="main_content">
     <nav aria-label="breadcrumb" class=" breadcrumb-list">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a routerLink="/">Головна</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Енциклопедія вчених</li>
+            <li i18n="@@main-breadcrumb" class="breadcrumb-item"><a routerLink="/">Головна</a></li>
+            <li i18n="@@encyclopedia-breadcrumb" class="breadcrumb-item active" aria-current="page">Енциклопедія вчених</li>
         </ol>
     </nav>
 
-    <h1 class="text-center">Енциклопедія вчених</h1>
-    <!--<p class="lead text-center title" [ngStyle]="{'font-size':'22px'}">Довідкова інформація про видатних вчених Одеської-->
-    <!--національної академії харчових технологій</p>-->
+    <h1 i18n="@@encyclopedia-title" class="text-center">Енциклопедія вчених</h1>
     <aside class="vertical justify-content-center">
         <i class="fas fa-search"></i>
         <div *ngFor="let letter of letters" >

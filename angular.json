@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/LibraryONAFT",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -42,7 +42,6 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "outputPath": "dist/LibraryONAFT/ua/",
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -53,22 +52,11 @@
               "vendorChunk": false,
               "buildOptimizer": true,
               "serviceWorker": true,
-              "ngswConfigPath": "src/ngsw-config.json",
-              "baseHref": "/ua/",
-              "i18nFile": "src/translate/messages.xlf",
-              "i18nFormat": "xlf",
-              "i18nLocale": "ua",
-              "i18nMissingTranslation": "error"
+              "ngswConfigPath": "src/ngsw-config.json"
             },
 
             "production-en": {
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
-              "outputPath": "dist/LibraryONAFT/en/",
+              "outputPath": "dist/en/",
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -85,6 +73,26 @@
               "i18nFormat": "xlf",
               "i18nLocale": "en",
               "i18nMissingTranslation": "error"
+            },
+
+            "production-ua": {
+              "outputPath": "dist/ua/",
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "serviceWorker": true,
+              "ngswConfigPath": "src/ngsw-config.json",
+              "baseHref": "/ua/",
+              "i18nFile": "src/translate/messages.ua.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "ua",
+              "i18nMissingTranslation": "error"
             }
           }
         },
@@ -99,6 +107,9 @@
             },
             "en": {
               "browserTarget": "LibraryONAFT:build:production-en"
+            },
+            "ua": {
+              "browserTarget": "LibraryONAFT:build:production-ua"
             }
           }
         },

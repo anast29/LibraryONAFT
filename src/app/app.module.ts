@@ -1,5 +1,5 @@
 import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
+import {LOCALE_ID, NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 import {HeaderComponent} from './header/header.component';
 import {PreloadAllModules, RouterModule, Routes} from '@angular/router';
@@ -7,7 +7,7 @@ import {FooterComponent} from './footer/footer.component';
 import {HomeComponent} from './home/home.component';
 import {PhotoComponent} from './photo/photo.component';
 import {HttpClientModule} from '@angular/common/http';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {NgxPageScrollCoreModule} from 'ngx-page-scroll-core';
 import {NgxPageScrollModule} from 'ngx-page-scroll';
 import {ErrorComponent} from './error/error.component';
@@ -50,9 +50,10 @@ const routes: Routes = [
         }),
         NgxPageScrollCoreModule.forRoot({duration: 1000}),
         NgxPageScrollModule,
-        ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production})
+        ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production}),
+        ReactiveFormsModule
     ],
-    providers: [],
+    providers: [{ provide: LOCALE_ID, useValue: 'production-ua' }],
     bootstrap: [AppComponent]
 })
 export class AppModule {

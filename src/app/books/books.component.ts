@@ -14,12 +14,6 @@ export class BooksComponent implements OnInit {
     }
 
     books: Books[] = [];
-    static scrollTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    }
 
     ngOnInit() {
         $(function () {
@@ -33,5 +27,11 @@ export class BooksComponent implements OnInit {
             });
         });
         this.http.getBooks().subscribe((data: Books[]) => this.books = data);
+    }
+    scrollTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     }
 }

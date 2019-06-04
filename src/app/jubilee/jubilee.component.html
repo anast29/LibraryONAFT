@@ -1,11 +1,11 @@
 <div class="main_content">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a routerLink="/">Головна</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Ювіляри</li>
+            <li i18n="@@main-breadcrumb" class="breadcrumb-item"><a routerLink="/">Головна</a></li>
+            <li i18n="@@jubilee-breadcrumb" class="breadcrumb-item active" aria-current="page">Ювіляри</li>
         </ol>
     </nav>
-    <h1 class="text-center">Ювіляри</h1>
+    <h1 i18n="@@jubilee-title" class="text-center">Ювіляри</h1>
     <div class="container-fluid" [ngStyle]="{'margin-top': '2em'}">
         <div class="row">
         <ng-container *ngFor="let scientist of scientists">

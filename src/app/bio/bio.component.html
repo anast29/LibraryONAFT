@@ -1,8 +1,8 @@
 <div class="main_content">
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a routerLink="/">Головна</a></li>
-      <li class="breadcrumb-item">
+      <li i18n="@@main-breadcrumb" class="breadcrumb-item"><a routerLink="/">Головна</a></li>
+      <li i18n="@@encyclopedia-breadcrumb" class="breadcrumb-item">
         <a routerLink="/encyclopedia_of_scientists">Енциклопедія вчених</a>
       </li>
       <li class="breadcrumb-item active" aria-current="page">{{name}}</li>
@@ -18,11 +18,11 @@
       </div>
     </div>
     <div class="line"></div>
-    <h2 class="text-center my-2">Біографія</h2>
+    <h2 i18n="@@bio-title" class="text-center my-2">Біографія</h2>
     <div class="bio-txt col-12" [innerHTML]="bio">
     </div>
     <div class="line"></div>
-    <h2 class="text-center my-2">Основні роботи</h2>
+    <h2 i18n="@@bio-works" class="text-center my-2">Основні роботи</h2>
     <div class="works-txt col-12" [innerHTML]="works">
     </div>
   </div>

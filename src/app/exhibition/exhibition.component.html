@@ -1,24 +1,45 @@
 <div class="main_content">
     <nav aria-label="breadcrumb" class=" breadcrumb-list">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a routerLink="/">Головна</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Енциклопедія вчених</li>
+            <li i18n="@@main-breadcrumb" class="breadcrumb-item"><a routerLink="/">Головна</a></li>
+            <li i18n="@@exhibition-breadcrumb" class="breadcrumb-item active" aria-current="page">Виставки</li>
         </ol>
     </nav>
-    <h1 class="text-center">Виставки НТБ ОНАХТ</h1>
+    <h1 i18n="@@exhibition-title" class="text-center">Виставки НТБ ОНАХТ</h1>
     <ul class="nav nav-pills" id="myTab" role="tablist">
         <li class="nav-item active">
-            <a class="nav-link active" id="thematic" data-toggle="pill" href="#thematic-exhibition" role="tab"
-               aria-controls="thematic-exhibition" aria-selected="true">Тематичні виставки</a>
+            <a i18n="@@virtual-exhibition" class="nav-link active" id="virtual" data-toggle="pill" href="#virtual-exhibition" role="tab"
+               aria-controls="virtual-exhibition" aria-selected="true">Віртуальні виставки</a>
         </li>
         |
         <li class="nav-item">
-            <a class="nav-link" id="virtual" data-toggle="pill" href="#virtual-exhibition" role="tab"
-               aria-controls="virtual-exhibition" aria-selected="true">Віртуальні виставки</a>
+            <a i18n="@@thematic-exhibition" class="nav-link" id="thematic" data-toggle="pill" href="#thematic-exhibition" role="tab"
+               aria-controls="thematic-exhibition" aria-selected="true">Тематичні виставки</a>
         </li>
     </ul>
     <div class="tab-content" id="pills-tabContent">
-        <div class="container-fluid justify-content-center tab-pane fade show active" id="thematic-exhibition" role="tabpanel"  aria-labelledby="thematic">
+        <div class="container-fluid justify-content-center tab-pane fade show active" id="virtual-exhibition" role="tabpanel"
+             aria-labelledby="virtual">
+            <div class="row">
+                <ng-container *ngFor="let exhibition of exhibitions">
+                    <div class="card-container col-lg-6 col-md-12 col-sm-12">
+                        <div class="card-virtual">
+                            <div [ngStyle]="{'background-image':'url('+exhibition?.image+')'}"
+                                 class="card-media"></div>
+                            <div class="card-body">
+                                <div class="card-description my-3" [innerHTML]="exhibition?.title"></div>
+                                <div class="short-description" [innerHTML]="exhibition?.description"></div>
+                                <div class="my-3">
+                                    <a [attr.href]="exhibition?.pdf_file" target="_blank" class="card-read">Дивитись</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+        <div class="container-fluid justify-content-center tab-pane fade" id="thematic-exhibition" role="tabpanel"  aria-labelledby="thematic">
             <div class="row">
                 <div class="align-content col-lg-3 col-md-6 col-sm-12">
                     <div class="card justify-content-end"
@@ -299,27 +320,6 @@
                         <h2 class="text-center">Народження нової України</h2>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="container-fluid justify-content-center tab-pane fade" id="virtual-exhibition" role="tabpanel"
-             aria-labelledby="virtual">
-            <div class="row">
-                <ng-container *ngFor="let exhibition of exhibitions">
-                    <div class="card-container col-lg-6 col-md-12 col-sm-12">
-                        <div class="card-virtual">
-                            <div [ngStyle]="{'background-image':'url('+exhibition?.image+')'}"
-                                 class="card-media"></div>
-                            <div class="card-body">
-                                <div class="card-description my-3" [innerHTML]="exhibition?.title"></div>
-                                <div class="short-description" [innerHTML]="exhibition?.description"></div>
-                                <div class="my-3">
-                                    <a [attr.href]="exhibition?.pdf_file" target="_blank" class="card-read">Дивитись</a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </ng-container>
             </div>
         </div>
     </div>

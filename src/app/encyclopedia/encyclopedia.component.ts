@@ -18,7 +18,7 @@ export class EncyclopediaComponent implements OnInit {
     scientists: Scientists[] = [];
 
 
-    static addSubstr(text) {
+    addSubstr(text) {
         if (text.length >= 144) {
             text = text.substring(0, 144);
             const lastIndex = text.lastIndexOf(' ');       // позиция последнего пробела
@@ -27,15 +27,15 @@ export class EncyclopediaComponent implements OnInit {
         return text;
     }
 
-    static openNav() {
+    openNav() {
         document.getElementById('aside').style.width = '50px';
     }
 
-    static closeNav() {
+    closeNav() {
         document.getElementById('aside').style.width = '0';
     }
 
-    static scrollTop() {
+    scrollTop() {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'

@@ -14,7 +14,7 @@ export class ExhibitionComponent implements OnInit {
 
     exhibitions: Exhibition;
 
-    static scrollTop() {
+    scrollTop() {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
