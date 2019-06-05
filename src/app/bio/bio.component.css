@@ -63,6 +63,7 @@
 .bio-txt,
 .works-txt {
     text-align: justify;
+    padding: 1.5em 0;
 }
 /deep/ ol {
     margin-top: 0;

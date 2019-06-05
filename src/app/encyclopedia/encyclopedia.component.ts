@@ -43,7 +43,7 @@ export class EncyclopediaComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.httpservice.getScientists().subscribe((data: Scientists[]) => this.scientists = data);
+        this.httpservice.getScientists();
         $(function () {
             $(window).scroll(function () {
                 const winTop = $(window).scrollTop();

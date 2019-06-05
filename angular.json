@@ -93,6 +93,25 @@
               "i18nFormat": "xlf",
               "i18nLocale": "ua",
               "i18nMissingTranslation": "error"
+            },
+            "production-ru": {
+              "outputPath": "dist/ru/",
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "serviceWorker": true,
+              "ngswConfigPath": "src/ngsw-config.json",
+              "baseHref": "/ru/",
+              "i18nFile": "src/translate/messages.ru.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "ru",
+              "i18nMissingTranslation": "error"
             }
           }
         },
@@ -110,6 +129,9 @@
             },
             "ua": {
               "browserTarget": "LibraryONAFT:build:production-ua"
+            },
+            "ru": {
+              "browserTarget": "LibraryONAFT:build:production-ru"
             }
           }
         },

@@ -237,7 +237,7 @@
                 <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Надходження<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
             </source>
         <target>
-          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Надходження<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Поступления<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/header/header.component.html</context>
@@ -443,7 +443,7 @@
       </trans-unit>
       <trans-unit id="about" datatype="html">
         <source>Про бібліотеку</source>
-        <target>Про бибилиотеку</target>
+        <target>Про библиотеку</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
           <context context-type="linenumber">23</context>
@@ -456,10 +456,7 @@
             обслуговування користувачів
         </source>
         <target>
-          Діяльність науково-технічної бібліотеки академії спрямована на
-          забезпечення її відповідності бібліотеці інноваційного типу
-          завдяки підвищенню якості інформаційного та бібліотечно-бібліографічного
-          обслуговування користувачів
+          Деятельность научно-технической библиотеки академии сосредоточена на обеспечении соответствию библиотеки инновационного типа, благодаря повышению качества информации и библиотечно-библиографического обслуживания пользователей.
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
@@ -470,8 +467,8 @@
         <source>Галузевий відділ <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
                     <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>вул. Дворянська 1/3, <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> ауд. 127<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>
                 </source>
-        <target>Галузевий відділ <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
-          <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>вул. Дворянська 1/3, <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> ауд. 127<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>
+        <target>Отраслевой отдел <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>ул. Дворянская 1/3, <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> ауд. 127<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
@@ -481,7 +478,7 @@
       <trans-unit id="organizational" datatype="html">
         <source>Організаційно-методичний відділ <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
                     <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>ауд. A-139<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/></source>
-        <target>Організаційно-методичний відділ <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        <target>Организационно-методический отдел  <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
           <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>ауд. A-139<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/></target>
 
         <context-group purpose="location">
@@ -492,7 +489,7 @@
       <trans-unit id="archives" datatype="html">
         <source>Відділ зберігання фондів<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
                     <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>ауд. А–137/3<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/></source>
-        <target>Відділ зберігання фондів<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        <target>Отдел хранения фондов <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
           <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>ауд. А–137/3<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/></target>
 
         <context-group purpose="location">
@@ -503,7 +500,7 @@
       <trans-unit id="electronic" datatype="html">
         <source>Зал електроних каталогів<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
                     <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>ауд. А-226<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/></source>
-        <target>Зал електроних каталогів<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        <target>Зал электронных каталогов<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
           <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>ауд. А-226<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/></target>
 
         <context-group purpose="location">
@@ -513,7 +510,7 @@
       </trans-unit>
       <trans-unit id="educational-literature" datatype="html">
         <source>Відділ<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> обслуговування навчальною літературою</source>
-        <target>Відділ<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> обслуговування навчальною літературою</target>
+        <target>Отдел<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> обслуживания учебной литературой</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
           <context context-type="linenumber">73</context>
@@ -521,7 +518,7 @@
       </trans-unit>
       <trans-unit id="educational-literature-description" datatype="html">
         <source>Здійснює інформаційне забезпечення навчального процесу академії.</source>
-        <target>Здійснює інформаційне забезпечення навчального процесу академії.</target>
+        <target>Выполняет информационное обеспечение учебного процесса.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
           <context context-type="linenumber">74</context>
@@ -529,7 +526,7 @@
       </trans-unit>
       <trans-unit id="more" datatype="html">
         <source> Детальніше <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
-        <target> Детальніше <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></target>
+        <target> Подробнее <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
           <context context-type="linenumber">75</context>
@@ -561,10 +558,10 @@
                             <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> ауд. А–137/9<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
                             Читальний зал:
                             <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> ауд. А–228<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/></source>
-        <target><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Завідуюча: <x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>Гриньків Світлана Йосипівна<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        <target><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Заведующая: <x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>Гринькив Светлана Йосифовна<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
           Абонемент:
           <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> ауд. А–137/9<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
-          Читальний зал:
+          Читательский зал:
           <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> ауд. А–228<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/></target>
 
         <context-group purpose="location">
@@ -574,7 +571,7 @@
       </trans-unit>
       <trans-unit id="scientific-literature" datatype="html">
         <source>Відділ<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> обслуговування науковою літературою</source>
-        <target>Відділ<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> обслуговування науковою літературою</target>
+        <target>Отдел<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> осблуживания научной литературой</target>
 
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
@@ -584,8 +581,8 @@
       <trans-unit id="scientific-literature-description" datatype="html">
         <source>Забезпечує інформаційні потреби користувачів на наукову та художню
                             літературу</source>
-        <target>Забезпечує інформаційні потреби користувачів на наукову та художню
-          літературу</target>
+        <target>Обеспечивает информационные потребности пользователей в научной и художественной
+        литературе</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
           <context context-type="linenumber">97</context>
@@ -597,11 +594,11 @@
                             - наукової літ.:<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> ауд. А–137/7<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
                             - художньої літ.:<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> ауд. А–415<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
                             Читальний зал:<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> ауд. А–225<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/></source>
-        <target><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Завідуюча:<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Захарченко Ганна Іванівна<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        <target><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Заведующая:<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Захарченко Анна Ивановна<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
           Абонемент<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
-          - наукової літ.:<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> ауд. А–137/7<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
-          - художньої літ.:<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> ауд. А–415<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
-          Читальний зал:<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> ауд. А–225<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/></target>
+          - научная лит.:<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> ауд. А–137/7<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          - художественная лит.:<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> ауд. А–415<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          Читательский зал:<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> ауд. А–225<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/></target>
 
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
@@ -610,7 +607,7 @@
       </trans-unit>
       <trans-unit id="bibliography-department" datatype="html">
         <source>Інформаційно-бібліографічний відділ</source>
-        <target>Інформаційно-бібліографічний відділ</target>
+        <target>Информационно-библиографический отдел</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
           <context context-type="linenumber">121</context>
@@ -620,9 +617,7 @@
         <source>Забезпечує обслуговування студентів та викладачів, виконує
                             бібліографічні
                             довідки.</source>
-        <target>Забезпечує обслуговування студентів та викладачів, виконує
-          бібліографічні
-          довідки.</target>
+        <target>Обеспечивает обслуживание, выполняет бибилиографические справки.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
           <context context-type="linenumber">122</context>
@@ -633,9 +628,9 @@
                             Бібліографія:<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> ауд. А–229<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/> <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
                             Бібліограф. обслуговування:<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> вул. Дворянська, 1/3, ауд. 282<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>
                         </source>
-        <target><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Завідуюча:<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>Мазепа Тетяна Євгенівна<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
-          Бібліографія:<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> ауд. А–229<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/> <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
-          Бібліограф. обслуговування:<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> вул. Дворянська, 1/3, ауд. 282<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>
+        <target><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Заведующая:<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>Мазепа Татьяна Евгеньевна<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          Библиография:<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> ауд. А–229<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/> <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          Библиограф. обслуживание:<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> ул. Дворянская, 1/3, ауд. 282<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
@@ -644,7 +639,7 @@
       </trans-unit>
       <trans-unit id="admin" datatype="html">
         <source>Адміністрація</source>
-        <target>Адміністрація</target>
+        <target>Администрация</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
           <context context-type="linenumber">143</context>
@@ -652,7 +647,7 @@
       </trans-unit>
       <trans-unit id="admin-description" datatype="html">
         <source>Виконує загальне керівництво діяльністю бібіліотеки.</source>
-        <target>Виконує загальне керівництво діяльністю бібіліотеки.</target>
+        <target>Отвечает за руководство деятельностью библиотеки.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
           <context context-type="linenumber">144</context>
@@ -660,7 +655,7 @@
       </trans-unit>
       <trans-unit id="06ced0157c78a12bd466c7bcb8b4d212eead368f" datatype="html">
         <source> Детальніше <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
-        <target> Детальніше <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></target>
+        <target> Подробнее <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
           <context context-type="linenumber">145</context>
@@ -670,8 +665,8 @@
       <trans-unit id="admin-info" datatype="html">
         <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Директор:<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Зінченко Ірина Іванівна<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
                             Кабінет:<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> А-227<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/></source>
-        <target><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Директор:<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Зінченко Ірина Іванівна<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
-          Кабінет:<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> А-227<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/></target>
+        <target><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Директор:<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Зинченко Ирина Ивановна<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          Кабинет:<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> А-227<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/></target>
 
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
@@ -680,7 +675,7 @@
       </trans-unit>
       <trans-unit id="kci" datatype="html">
         <source>Координаційний<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> центр видання наукової періодики</source>
-        <target>Координаційний<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> центр видання наукової періодики</target>
+        <target>Координационный<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> центр издания научной периодики</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
           <context context-type="linenumber">162</context>
@@ -689,8 +684,7 @@
       <trans-unit id="kci-description" datatype="html">
         <source>Відповідає за сприяння, підтримку і супровід науково-періодичних
                             видань.</source>
-        <target>Відповідає за сприяння, підтримку і супровід науково-періодичних
-          видань.</target>
+        <target>Отвечает за содействие, поддержку и сопровождение научных периодических изданий.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
           <context context-type="linenumber">163</context>
@@ -699,7 +693,7 @@
       <trans-unit id="kci-info" datatype="html">
         <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Керівник:<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>Ольшевська Ольга Володимирівна<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
                             Центр:<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> ауд. А–140<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/></source>
-        <target><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Керівник:<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>Ольшевська Ольга Володимирівна<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        <target><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Руководитель:<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>Ольшевськая Ольга Владимировна<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
           Центр:<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> ауд. А–140<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/></target>
 
         <context-group purpose="location">
@@ -709,7 +703,7 @@
       </trans-unit>
       <trans-unit id="department-document" datatype="html">
         <source>Відділ<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> комплектування документів</source>
-        <target>Відділ<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> комплектування документів</target>
+        <target>Отдел<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> комплектования документов</target>
 
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
@@ -719,8 +713,7 @@
       <trans-unit id="department-document-description" datatype="html">
         <source>Здійснює комплектування бібліотечного фонду документами відповідно до
                             навчальних планів</source>
-        <target>Здійснює комплектування бібліотечного фонду документами відповідно до
-          навчальних планів</target>
+        <target>Выполняет комплектование библиотечного фонда документов соответственно учебным планам</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
           <context context-type="linenumber">185</context>
@@ -729,8 +722,8 @@
       <trans-unit id="department-document-info" datatype="html">
         <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Завідуюча:<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Скутаренко Олена Леонідівна<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
                             Відділ:<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> ауд. А–137/3<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/></source>
-        <target><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Завідуюча:<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Скутаренко Олена Леонідівна<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
-          Відділ:<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> ауд. А–137/3<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/></target>
+        <target><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Заведующая:<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Скутаренко Елена Леонидовна<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          Отдел:<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> ауд. А–137/3<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/></target>
 
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
@@ -739,7 +732,7 @@
       </trans-unit>
       <trans-unit id="department-science" datatype="html">
         <source>Відділ<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> наукової обробки документів та організації каталогів</source>
-        <target>Відділ<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> наукової обробки документів та організації каталогів</target>
+        <target>Отдел<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> научной обработки документов и организации каталогов</target>
 
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
@@ -748,7 +741,7 @@
       </trans-unit>
       <trans-unit id="department-science-description" datatype="html">
         <source>Здійснює каталогізацію та систематизацію документів.</source>
-        <target>Здійснює каталогізацію та систематизацію документів.</target>
+        <target>Выполняет каталогализацию и систематизацию документов.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
           <context context-type="linenumber">204</context>
@@ -757,8 +750,8 @@
       <trans-unit id="department-science-info" datatype="html">
         <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Завідуюча:<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>Тимчишина Маргарита Веніамінівна<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
                             Відділ:<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> ауд. А–137/2<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/></source>
-        <target><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Завідуюча:<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>Тимчишина Маргарита Веніамінівна<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
-          Відділ:<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> ауд. А–137/2<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/></target>
+        <target><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Заведующая:<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>Тимчишина Маргарита Вениаминовна<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          Отдел:<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/> ауд. А–137/2<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/></target>
 
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
@@ -767,7 +760,7 @@
       </trans-unit>
       <trans-unit id="form" datatype="html">
         <source>Віртуальна довідка</source>
-        <target>Віртуальна довідка</target>
+        <target>Виртуальная справка</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
           <context context-type="linenumber">224</context>
@@ -783,12 +776,11 @@
                 бібліотеки ОНАХТ.
             </source>
         <target>
-          Якщо у вас виникли питання, зауваження та пропозиції, щодо роботи бібіліотеки, зверніться за
-          наведенною
-          формою до співробітника бібліотеки. Для цього необхідно заповнити наведені поля та відправити ваше
-          повідомлення.
-          За більш детальною інформацією звертайтесь до співробітників та адміністрації науково-технічної
-          бібліотеки ОНАХТ.
+          Если у вас возникли вопросы, замечания и предложения по работе библиотеки, обратитесь
+          по указаной форме к сотруднику библиотеки. Для этого необходимо заполнить представленные поля и отправить ваше
+          сообщения.
+          За более подробной информацией обращайтесь к сотрудникам и администрации научно-технической
+          библиотеки ОНАПТ.
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
@@ -801,8 +793,8 @@
                 наведенною формою до працівника бібліотеки.
             </source>
         <target>
-          Якщо у вас виникли питання, зауваження та пропозиції, щодо роботи бібіліотеки, зверніться за
-          наведенною формою до працівника бібліотеки.
+          Если у вас возникли вопросы, замечания и предложения по работе библиотеки, обратитесь
+          по указаной форме к сотруднику библиотеки.
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
@@ -811,7 +803,7 @@
       </trans-unit>
       <trans-unit id="form-placeholder" datatype="html">
         <source>Ваше ім&apos;я</source>
-        <target>Ваше ім&apos;я</target>
+        <target>Ваше имя</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
           <context context-type="linenumber">253</context>
@@ -819,7 +811,7 @@
       </trans-unit>
       <trans-unit id="message-placeholder" datatype="html">
         <source>Ваше повідомлення</source>
-        <target>Ваше повідомлення</target>
+        <target>Ваше сообщение</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
           <context context-type="linenumber">267</context>
@@ -827,7 +819,7 @@
       </trans-unit>
       <trans-unit id="submit-button" datatype="html">
         <source>Відправити</source>
-        <target>Відправити</target>
+        <target>Отправить</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
           <context context-type="linenumber">270</context>
@@ -836,8 +828,8 @@
       <trans-unit id="address" datatype="html">
         <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Україна, 65039,
                     м. Одеса, вул. Канатна, 112</source>
-        <target><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Україна, 65039,
-          м. Одеса, вул. Канатна, 112</target>
+        <target><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Украина, 65039,
+          г. Одесса, ул. Канатная, 112</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
           <context context-type="linenumber">238</context>
@@ -845,7 +837,7 @@
       </trans-unit>
       <trans-unit id="faq" datatype="html">
         <source>Питання-Відповідь</source>
-        <target>Питання-Відповідь</target>
+        <target>Вопрос-Ответ</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
           <context context-type="linenumber">281</context>
@@ -860,7 +852,7 @@
                     </source>
         <target>
           <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>
-          Як стати читачем?
+          Как стать читателем?
           <x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
           <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>
         </target>
@@ -936,7 +928,7 @@
                     </source>
         <target>
           <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>
-          Що необхідно знати першокурснику
+          Что необходимо знать первокурснику
           <x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
           <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>
         </target>
@@ -1034,7 +1026,7 @@
                     </source>
         <target>
           <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>
-          Карткові каталоги, картотеки
+         Карточные каталоги, картотеки
           <x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
           <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>
         </target>
@@ -1134,7 +1126,7 @@
                     </source>
         <target>
           <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>
-          Електрона доставка документів
+         Электронная доставка документов
           <x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
           <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>
         </target>
@@ -1286,7 +1278,7 @@
                     </source>
         <target>
           <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>
-          Що таке УДК?
+          Что такое УДК?
           <x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
           <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>
         </target>
@@ -1362,7 +1354,7 @@
                     </source>
         <target>
           <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>
-          Обхідний лист
+          Обходной лист
           <x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
           <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>
         </target>
@@ -1404,7 +1396,7 @@
                     </source>
         <target>
           <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>
-          Фахівцям харчової промисловості
+          Специалистам пищевой промышленности
           <x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
           <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>
         </target>
@@ -1536,7 +1528,7 @@
                     </source>
         <target>
           <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>
-          Статистична інформація
+          Статистическая информация
           <x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
           <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>
         </target>
@@ -1629,9 +1621,13 @@
       </trans-unit>
       <trans-unit id="main-breadcrumb" datatype="html">
         <source><x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Головна<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
-        <target><x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Головна<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
+        <target><x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Главная<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/bio/bio.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/dstu/dstu.component.html</context>
           <context context-type="linenumber">4</context>
         </context-group>
         <context-group purpose="location">
@@ -1657,7 +1653,7 @@
       </trans-unit>
       <trans-unit id="encyclopedia-breadcrumb" datatype="html">
         <source>Енциклопедія вчених</source>
-        <target>Енциклопедія вчених</target>
+        <target>Энциклопедия ученых</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/bio/bio.component.html</context>
           <context context-type="linenumber">5</context>
@@ -1669,7 +1665,7 @@
       </trans-unit>
       <trans-unit id="bio-title" datatype="html">
         <source>Біографія</source>
-        <target>Біографія</target>
+        <target>Биография</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/bio/bio.component.html</context>
           <context context-type="linenumber">21</context>
@@ -1677,15 +1673,23 @@
       </trans-unit>
       <trans-unit id="bio-works" datatype="html">
         <source>Основні роботи</source>
-        <target>Основні роботи</target>
+        <target>Основные работы</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/bio/bio.component.html</context>
           <context context-type="linenumber">25</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="dstu-breadcrumb" datatype="html">
+        <source>ДСТУ ГОСТ</source>
+        <target>ДСТУ ГОСТ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/dstu/dstu.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="books-breadcrumb" datatype="html">
         <source>Надходження</source>
-        <target>Надходження</target>
+        <target>Поступления</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/books/books.component.html</context>
           <context context-type="linenumber">5</context>
@@ -1693,7 +1697,7 @@
       </trans-unit>
       <trans-unit id="books-title" datatype="html">
         <source>Надходження</source>
-        <target>Надходження</target>
+        <target>Поступления</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/books/books.component.html</context>
           <context context-type="linenumber">8</context>
@@ -1701,7 +1705,7 @@
       </trans-unit>
       <trans-unit id="new-books" datatype="html">
         <source>Видання 2018-2019 рр.</source>
-        <target>Видання 2018-2019 рр.</target>
+        <target>Издания 2018-2019 гг.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/books/books.component.html</context>
           <context context-type="linenumber">12</context>
@@ -1709,7 +1713,7 @@
       </trans-unit>
       <trans-unit id="scientists-books" datatype="html">
         <source>Книги вчених</source>
-        <target>Книги вчених</target>
+        <target>Книги ученых</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/books/books.component.html</context>
           <context context-type="linenumber">17</context>
@@ -1717,15 +1721,23 @@
       </trans-unit>
       <trans-unit id="library-books" datatype="html">
         <source>Видання НТБ</source>
-        <target>Видання НТБ</target>
+        <target>Издания НТБ</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/books/books.component.html</context>
           <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
+        <trans-unit id="periodic-books" datatype="html">
+            <source>Періодика</source>
+            <target>Периодика</target>
+            <context-group purpose="location">
+                <context context-type="sourcefile">app/books/books.component.html</context>
+                <context context-type="linenumber">30</context>
+            </context-group>
+        </trans-unit>
       <trans-unit id="encyclopedia-title" datatype="html">
         <source>Енциклопедія вчених</source>
-        <target>Енциклопедія вчених</target>
+        <target>Энциклопедия ученых</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/encyclopedia/encyclopedia.component.html</context>
           <context context-type="linenumber">9</context>
@@ -1733,7 +1745,7 @@
       </trans-unit>
       <trans-unit id="exhibition-breadcrumb" datatype="html">
         <source>Виставки</source>
-        <target>Виставки</target>
+        <target>Выставки</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/exhibition/exhibition.component.html</context>
           <context context-type="linenumber">5</context>
@@ -1741,7 +1753,7 @@
       </trans-unit>
       <trans-unit id="exhibition-title" datatype="html">
         <source>Виставки НТБ ОНАХТ</source>
-        <target>Виставки НТБ ОНАХТ</target>
+        <target>Выставки НТБ ОНАПТ</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/exhibition/exhibition.component.html</context>
           <context context-type="linenumber">8</context>
@@ -1749,7 +1761,7 @@
       </trans-unit>
       <trans-unit id="thematic-exhibition" datatype="html">
         <source>Тематичні виставки</source>
-        <target>Тематичні виставки</target>
+        <target>Тематические выставки</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/exhibition/exhibition.component.html</context>
           <context context-type="linenumber">12</context>
@@ -1757,7 +1769,7 @@
       </trans-unit>
       <trans-unit id="virtual-exhibition" datatype="html">
         <source>Віртуальні виставки</source>
-        <target>Віртуальні виставки</target>
+        <target>Виртуальные выставки</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/exhibition/exhibition.component.html</context>
           <context context-type="linenumber">17</context>
@@ -1765,7 +1777,7 @@
       </trans-unit>
       <trans-unit id="jubilee-breadcrumb" datatype="html">
         <source>Ювіляри</source>
-        <target>Ювіляри</target>
+        <target>Юбиляры</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/jubilee/jubilee.component.html</context>
           <context context-type="linenumber">5</context>
@@ -1773,7 +1785,7 @@
       </trans-unit>
       <trans-unit id="jubilee-title" datatype="html">
         <source>Ювіляри</source>
-        <target>Ювіляри</target>
+        <target>Юбиляры</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/jubilee/jubilee.component.html</context>
           <context context-type="linenumber">8</context>
@@ -1781,7 +1793,7 @@
       </trans-unit>
       <trans-unit id="category-aside" datatype="html">
         <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Категорія</source>
-        <target><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Категорія</target>
+        <target><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Категория</target>
 
         <context-group purpose="location">
           <context context-type="sourcefile">app/patent/patent.component.html</context>
@@ -1790,7 +1802,7 @@
       </trans-unit>
       <trans-unit id="patent-search" datatype="html">
         <source>Патентний пошук</source>
-        <target>Патентний пошук</target>
+        <target>Патентный поиск</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/patent/patent.component.html</context>
           <context context-type="linenumber">9</context>
@@ -1802,7 +1814,7 @@
       </trans-unit>
       <trans-unit id="patents-breadcrumb" datatype="html">
         <source>Патенти</source>
-        <target>Патенти</target>
+        <target>Патенты</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/patent/patent.component.html</context>
           <context context-type="linenumber">20</context>

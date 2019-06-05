@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
         }).on('hidden.bs.collapse', function () {
             $(this).parent().find('.fa-angle-up').removeClass('fa-angle-up').addClass('fa-angle-down').delay(200).fadeIn(500);
         });
-        this.http.getNews().subscribe((data: News) => this.news = data);
+        this.http.getNews();
     }
 
     sendEmail() {
@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit {
         message.email = this.email.value;
         message.username = this.username.value;
         message.text = this.text.value;
-        alert(JSON.stringify(message));
+        // alert(JSON.stringify(message));
         this.http.postMessage(JSON.stringify(message));
     }
 

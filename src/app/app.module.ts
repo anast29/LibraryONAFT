@@ -14,7 +14,7 @@ import {ErrorComponent} from './error/error.component';
 import {ServiceWorkerModule} from '@angular/service-worker';
 import {environment} from '../environments/environment';
 import { BioComponent } from './bio/bio.component';
-import { HomeEnComponent } from './home-en/home-en.component';
+import { DstuComponent } from './dstu/dstu.component';
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -24,6 +24,7 @@ const routes: Routes = [
     {path: 'jubilee', loadChildren: './jubilee/jubilee.module#JubileeModule'},
     {path: 'exhibition', loadChildren: './exhibition/exhibition.module#ExhibitionModule'},
     {path: 'bio', component: BioComponent},
+    {path: 'standards', component: DstuComponent },
     {path: '404', component: ErrorComponent},
     {path: '**', redirectTo: '404'}
 ];
@@ -37,7 +38,7 @@ const routes: Routes = [
         HomeComponent,
         ErrorComponent,
         BioComponent,
-        HomeEnComponent
+        DstuComponent
     ],
     imports: [
         BrowserModule,
