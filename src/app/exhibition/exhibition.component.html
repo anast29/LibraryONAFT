@@ -21,16 +21,16 @@
         <div class="container-fluid justify-content-center tab-pane fade show active" id="virtual-exhibition" role="tabpanel"
              aria-labelledby="virtual">
             <div class="row">
-                <ng-container *ngFor="let exhibition of exhibitions">
+                <ng-container *ngFor="let exhibition of exhibitionObservable | async">
                     <div class="card-container col-lg-6 col-md-12 col-sm-12">
                         <div class="card-virtual">
-                            <div [ngStyle]="{'background-image':'url('+exhibition?.image+')'}"
+                            <div [ngStyle]="{'background-image':'url('+exhibition.image+')'}"
                                  class="card-media"></div>
                             <div class="card-body">
-                                <div class="card-description my-3" [innerHTML]="exhibition?.title"></div>
-                                <div class="short-description" [innerHTML]="exhibition?.description"></div>
+                                <div class="card-description my-3" [innerHTML]="exhibition.title"></div>
+                                <div class="short-description" [innerHTML]="exhibition.description"></div>
                                 <div class="my-3">
-                                    <a [attr.href]="exhibition?.pdf_file" target="_blank" class="card-read">Дивитись</a>
+                                    <a [attr.href]="exhibition.pdf_file" target="_blank" class="card-read">Дивитись</a>
                                 </div>
 
                             </div>

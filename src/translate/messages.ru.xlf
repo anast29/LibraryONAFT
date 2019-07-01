@@ -7,7 +7,7 @@
                     Ресурси
                 </source>
         <target>
-          Ресурси
+          Ресурсы
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/header/header.component.html</context>
@@ -17,7 +17,7 @@
       <trans-unit id="elec-catalog-menu" datatype="html">
         <source>Електроний
                         каталог</source>
-        <target>Електроный
+        <target>Электронный
           каталог</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/header/header.component.html</context>
@@ -395,14 +395,14 @@
             абонементи 9:00 - 18:00<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
             читальні зали 9:00 - 18:00<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
             сб.:<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
-            читальні зали 9:00 - 16:00
+            читальні зали 9:00 - 15:00
         </source>
         <target>
           пн.-пт.:<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
           абонементы 9:00 - 18:00<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
           читательные залы 9:00 - 18:00<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
           сб.:<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
-          читательные залы 9:00 - 16:00
+          читательные залы 9:00 - 15:00
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/footer/footer.component.html</context>
@@ -1619,6 +1619,23 @@
           <context context-type="linenumber">662</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="404-info" datatype="html">
+        <source>Cторінка не знайдена...<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>Ви загубились?</source>
+        <target>Cтраница не найдена...<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>Вы потерялись?</target>
+
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/error/error.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="404-btn" datatype="html">
+        <source>На головну</source>
+        <target>На главную</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/error/error.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="main-breadcrumb" datatype="html">
         <source><x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Головна<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
         <target><x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Главная<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
@@ -1672,7 +1689,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="bio-works" datatype="html">
-        <source>Основні роботи</source>
+        <source>Основні праці</source>
         <target>Основные работы</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/bio/bio.component.html</context>

@@ -11,7 +11,6 @@ import {Observable} from 'rxjs';
     styleUrls: ['./jubilee.component.css']
 })
 export class JubileeComponent implements OnInit {
-    scientists: Scientists[] = [];
     img;
     name;
     birth_day;
@@ -19,12 +18,12 @@ export class JubileeComponent implements OnInit {
     short_desc;
     bio;
     works;
-    private scientistsObservable: Observable<Scientists[]> ;
-    constructor(private httpservice: HttpService, private router: Router) {
+    public encyclopediaObservable: Observable<Scientists[]>;
+    constructor(private http: HttpService, private router: Router) {
     }
 
     ngOnInit() {
-        this.httpservice.getScientists().subscribe((data: Scientists[]) => this.scientists = data);
+        this.encyclopediaObservable = this.http.getScientists();
     }
 
     viewBio(person) {

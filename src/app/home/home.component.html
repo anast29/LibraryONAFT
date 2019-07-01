@@ -6,10 +6,10 @@
     <hr class="my-4">
     <div class="container-fluid content col-12">
         <ul class="timeline">
-            <ng-container *ngFor="let item of news ">
-            <li class="event" [attr.data-date]="item?.add_date">
-                <h3>{{item?.title}}</h3>
-                <div class="text-justify" [innerHTML]="item?.content"></div>
+            <ng-container *ngFor="let item of newsObservable | async">
+            <li class="event" [attr.data-date]="item.add_date">
+                <h3>{{item.title}}</h3>
+                <div class="text-justify" [innerHTML]="item.content"></div>
             </li>
             </ng-container>
         </ul>

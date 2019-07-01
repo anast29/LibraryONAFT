@@ -8,23 +8,23 @@
     <h1 i18n="@@jubilee-title" class="text-center">Ювіляри</h1>
     <div class="container-fluid" [ngStyle]="{'margin-top': '2em'}">
         <div class="row">
-        <ng-container *ngFor="let scientist of scientists">
-            <div *ngIf="searchDate(scientist?.birthday)%5 === 0"
+        <ng-container *ngFor="let scientist of encyclopediaObservable | async">
+            <div *ngIf="searchDate(scientist.birthday)%5 === 0"
                  class="my-2 shadow-1 blue-hover card">
                 <div class="top-card pl-2 pr-2">
-                    <img class="img_content shadow-1" [attr.src]="scientist?.image" alt="?">
+                    <img class="img_content shadow-1" [attr.src]="scientist.image" alt="?">
                     <div class="top-text">
                         <h5 class="font-weight-normal text-center">
-                            {{scientist?.name}}
+                            {{scientist.name}}
                         </h5>
                         <p class="text-center birthday" [ngStyle]="{'font-size':'18px'}">
-                            ({{scientist?.birthday}} - {{scientist?.deathday}})
+                            ({{scientist.birthday}} - {{scientist.deathday}})
                         </p>
                     </div>
                 </div>
                 <div class="bottom-txt">
                     <p class="pl-2 pr-2">
-                        {{addSubstr(scientist?.short_description)}}</p>
+                        {{addSubstr(scientist.short_description)}}</p>
                 </div>
                 <div class="py-2" [ngStyle]="{'width':'100%'}">
                     <button (click)="viewBio(scientist)"

@@ -56,6 +56,12 @@
             },
 
             "production-en": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
               "outputPath": "dist/en/",
               "optimization": true,
               "outputHashing": "all",
@@ -67,7 +73,7 @@
               "vendorChunk": false,
               "buildOptimizer": true,
               "serviceWorker": true,
-              "ngswConfigPath": "src/ngsw-config.json",
+              "ngswConfigPath": "src/ngsw-config-en.json",
               "baseHref": "/en/",
               "i18nFile": "src/translate/messages.en.xlf",
               "i18nFormat": "xlf",
@@ -76,6 +82,12 @@
             },
 
             "production-ua": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
               "outputPath": "dist/ua/",
               "optimization": true,
               "outputHashing": "all",

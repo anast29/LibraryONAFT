@@ -5,8 +5,7 @@ import {HeaderComponent} from './header/header.component';
 import {PreloadAllModules, RouterModule, Routes} from '@angular/router';
 import {FooterComponent} from './footer/footer.component';
 import {HomeComponent} from './home/home.component';
-import {PhotoComponent} from './photo/photo.component';
-import {HttpClientModule} from '@angular/common/http';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {NgxPageScrollCoreModule} from 'ngx-page-scroll-core';
 import {NgxPageScrollModule} from 'ngx-page-scroll';
@@ -15,6 +14,8 @@ import {ServiceWorkerModule} from '@angular/service-worker';
 import {environment} from '../environments/environment';
 import { BioComponent } from './bio/bio.component';
 import { DstuComponent } from './dstu/dstu.component';
+import {CacheService} from './cache.service';
+import {Interceptor} from './interceptor';
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -34,7 +35,6 @@ const routes: Routes = [
         AppComponent,
         HeaderComponent,
         FooterComponent,
-        PhotoComponent,
         HomeComponent,
         ErrorComponent,
         BioComponent,
@@ -54,7 +54,15 @@ const routes: Routes = [
         ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production}),
         ReactiveFormsModule
     ],
-    providers: [{ provide: LOCALE_ID, useValue: 'production-ua' }],
+    providers: [
+        { provide: LOCALE_ID, useValue: 'production-ua' },
+        CacheService,
+        {
+            provide: HTTP_INTERCEPTORS,
+            useClass: Interceptor,
+            multi: true
+        }
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule {

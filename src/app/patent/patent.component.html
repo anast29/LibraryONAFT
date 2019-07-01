@@ -7,10 +7,10 @@
                 <h2 i18n="@@category-aside"><i class="fas fa-align-left"></i> Категорія</h2>
                 <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
                    aria-controls="v-pills-home" aria-selected="true"><i class="fas fa-search"></i> <span i18n="@@patent-search">Патентний пошук</span></a>
-                <a *ngFor="let patent of patents; let i = index;"
+                <a *ngFor="let patent of patentsObservable | async; let i = index;"
                    class="nav-link" [attr.id]="'v-pills-'+i+'-tab'" data-toggle="pill" [attr.href]="'#v-pills-'+i"
                    role="tab"
-                   [attr.aria-controls]="'v-pills-'+i" aria-selected="false"><i class="fas fa-award"></i> {{patent?.year}}</a>
+                   [attr.aria-controls]="'v-pills-'+i" aria-selected="false"><i class="fas fa-award"></i> {{patent.year}}</a>
             </div>
         </aside>
         <div class="main-content col-md-9 col-lg-9">
@@ -238,12 +238,12 @@
                 </div>
                 <!--END Patents search-->
                 <!--Patents for years-->
-                    <div *ngFor=" let patent of patents; let i = index;"
+                    <div *ngFor=" let patent of patentsObservable | async; let i = index;"
                          class="tab-pane fade" [attr.id]="'v-pills-'+i" role="tabpanel"
                          [attr.aria-labelledby]="'v-pills-'+i+'-tab'">
-                        <p class="name-patent text-center">Патенти за {{patent?.year}}</p>
+                        <p class="name-patent text-center">Патенти за {{patent.year}}</p>
                         <ol>
-                            <li *ngFor="let info of patent?.info;" [innerHTML]="info?.references + ' (<a href='+info?.pdf_file+' target=\'_blank\'>Зміст патенту</a>)'"></li>
+                            <li *ngFor="let info of patent.info;" [innerHTML]="info.references + ' (<a href='+info.pdf_file+' target=\'_blank\'>Зміст патенту</a>)'"></li>
                         </ol>
                     </div>
                 <!--END Patents for years-->

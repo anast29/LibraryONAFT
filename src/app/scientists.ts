@@ -1,9 +1,9 @@
 export interface Scientists {
-    image: string;
-    name: string;
+    image: Array<string>;
+    name: Array<string>;
     birthday: string;
     deathday: string;
-    short_description: string;
-    bio: string;
-    works: string;
+    short_description: Array<string>;
+    bio: Array<string>;
+    works: Array<string>;
 }

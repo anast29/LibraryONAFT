@@ -91,12 +91,10 @@ h1 {
     margin: 1.5em auto;
     position: relative;
 }
-.card-container {
+.card-container, .card-container-periodical {
     flex: 1 0 50%;
 }
-.card-container-periodical {
-    flex: 1 0 25%;
-}
+
 .card-container-books {
     flex: 1 0 100%;
 }
@@ -121,11 +119,11 @@ h1 {
     font-weight: 400;
     margin: 0 0.5em;
 }
-.card-periodical {
-    flex-flow: column;
+.card-container-periodical .card-periodical {
+    height: 250px;
 }
-.card-container .card,
-.card-container-periodical .card-periodical{
+.card-container .card
+{
     height: 355px;
 }
 .card-author {
@@ -201,6 +199,10 @@ h1 {
     height: 300px;
     width: auto;
 }
+.card-media-periodical{
+    flex: 1 0 15%;
+    height: 200px;
+}
 .card-shadow {
     background-color: #fff;
     box-shadow: 0 2px 25px 2px rgba(0, 0, 0, 1), 0 2px 50px 2px rgba(0, 0, 0, 1), 0 0 100px 3px rgba(0, 0, 0, .25);
@@ -253,14 +255,21 @@ h1 {
     .main_content {
         padding: 1.5em 0.5em;
     }
-    .card {
+    .card-container, .card-container-periodical {
+        height: auto;
+    }
+    .card, .card-periodical {
         flex-flow: column;
+    }
+    .card-media , .card-media-periodical {
+        flex: auto;
+        height: 150px;
     }
     .card-author {
         font-size: 10px;
     }
     .card-title {
-        font-size: 22px;
+        font-size: 20px;
     }
     .card-read {
         font-size: 13px;
@@ -280,7 +289,7 @@ h1 {
     .card-body p {
         font-size: 14px;
     }
-    .card-container {
+    .card-container, .card-container-periodical{
         flex: 0 0 100% !important;
     }
     .row {

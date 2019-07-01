@@ -20,23 +20,23 @@
     <div *ngFor="let letter of letters" class="letter_card container-fluid col-12">
         <span>{{letter}}</span>
         <div class="row" [attr.id]="letter">
-            <ng-container *ngFor="let scientist of scientists">
-                <div *ngIf="scientist?.name.charAt(0)===letter"
+            <ng-container *ngFor="let scientist of encyclopediaObservable | async">
+                <div *ngIf="scientist.name.charAt(0)===letter"
                      class="my-2 shadow-1 blue-hover card col-lg-4 col-md-6 col-sm-12">
                     <div class="top-card pl-2 pr-2">
-                        <img class="img_content shadow-1" [attr.src]="scientist?.image" alt="?">
+                        <img class="img_content shadow-1" [attr.src]="scientist.image" alt="?">
                         <div class="top-text">
                             <h5 class="font-weight-normal text-center">
-                                {{scientist?.name}}
+                                {{scientist.name}}
                             </h5>
                             <p class="text-center birthday">
-                                ({{scientist?.birthday}} - {{scientist?.deathday}})
+                                ({{scientist.birthday}} - {{scientist.deathday}})
                             </p>
                         </div>
                     </div>
                     <div class="bottom-txt">
                         <p class="pl-2 pr-2">
-                            {{addSubstr(scientist?.short_description)}}</p>
+                            {{addSubstr(scientist.short_description)}}</p>
                     </div>
                     <div class="py-2" [ngStyle]="{'width':'100%'}">
                         <button (click)="viewBio(scientist)"

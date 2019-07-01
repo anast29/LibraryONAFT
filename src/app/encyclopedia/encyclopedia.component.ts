@@ -3,6 +3,7 @@ import {HttpService} from '../http.service';
 import {Scientists} from '../scientists';
 import * as $ from 'jquery';
 import {Router} from '@angular/router';
+import {Observable} from 'rxjs';
 
 @Component({
     selector: 'app-encyclopedia',
@@ -10,13 +11,27 @@ import {Router} from '@angular/router';
     styleUrls: ['./encyclopedia.component.css']
 })
 export class EncyclopediaComponent implements OnInit {
-
-    constructor(private httpservice: HttpService, private router: Router) {
+    public encyclopediaObservable: Observable<Scientists[]>;
+    constructor(private http: HttpService, private router: Router) {
     }
 
     letters = ['А', 'Б', 'В', 'Г', 'Д', 'Ж', 'З', 'І', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'Ф', 'Х', 'Ч', 'Ш', 'Я'];
     scientists: Scientists[] = [];
 
+    ngOnInit() {
+        this.encyclopediaObservable = this.http.getScientists();
+        $(function () {
+            $(window).scroll(function () {
+                const winTop = $(window).scrollTop();
+                if (winTop >= 1000) {
+                    $('.arrow-up').css({'opacity': '1', 'position': 'fixed'});
+                } else {
+                    $('.arrow-up').css({'opacity': '0'});
+                }
+            });
+        });
+
+    }
 
     addSubstr(text) {
         if (text.length >= 144) {
@@ -42,20 +57,6 @@ export class EncyclopediaComponent implements OnInit {
         });
     }
 
-    ngOnInit() {
-        this.httpservice.getScientists();
-        $(function () {
-            $(window).scroll(function () {
-                const winTop = $(window).scrollTop();
-                if (winTop >= 1000) {
-                    $('.arrow-up').css({'opacity': '1', 'position': 'fixed'});
-                } else {
-                    $('.arrow-up').css({'opacity': '0'});
-                }
-            });
-        });
-
-    }
 
     viewBio(person) {
       this.router.navigate(['/bio'], {

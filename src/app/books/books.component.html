@@ -36,16 +36,16 @@
     <div class="tab-content" id="pills-tabContent">
         <!--New books block-->
         <div class="row tab-pane fade show active" id="new-books-view" role="tabpanel" aria-labelledby="new-books">
-            <ng-container *ngFor="let book of books">
-                <div class="card-container-books" *ngIf="book?.category === 'new'">
+            <ng-container *ngFor="let book of booksObservable | async">
+                <div class="card-container-books" *ngIf="book.category === 'new'">
                     <div class="card">
-                        <img [attr.src]="book?.image" alt="Books image"
+                        <img [attr.src]="book.image" alt="Books image"
                              class="card-media-books"/>
                         <div class="card-body">
                             <span class="card-author subtle">Надходження за 2018-2019 р.</span>
-                            <h2 class="card-title" [innerHTML]="book?.title"></h2>
-                            <span class="card-description subtle" [innerHTML]="book?.references"></span>
-                            <p class="short-description" [innerHTML]="book?.description">
+                            <h2 class="card-title" [innerHTML]="book.title"></h2>
+                            <span class="card-description subtle" [innerHTML]="book.references"></span>
+                            <p class="short-description" [innerHTML]="book.description">
                             </p>
                         </div>
                     </div>
@@ -56,16 +56,16 @@
 
         <!--Books scientists block-->
         <div class="row tab-pane fade" id="books-view" role="tabpanel" aria-labelledby="books-scientists">
-            <ng-container *ngFor="let book of books">
-                <div class="card-container-books" *ngIf="book?.category === 'scientist'">
+            <ng-container *ngFor="let book of booksObservable | async">
+                <div class="card-container-books" *ngIf="book.category === 'scientist'">
                     <div class="card">
-                        <img [attr.src]="book?.image" alt="Books image"
+                        <img [attr.src]="book.image" alt="Books image"
                              class="card-media-books"/>
                         <div class="card-body">
                             <span class="card-author subtle">Книги вчених ОНАХТ</span>
-                            <h2 class="card-title" [innerHTML]="book?.title"></h2>
-                            <span class="card-description subtle" [innerHTML]="book?.references"></span>
-                            <p class="short-description" [innerHTML]="book?.description">
+                            <h2 class="card-title" [innerHTML]="book.title"></h2>
+                            <span class="card-description subtle" [innerHTML]="book.references"></span>
+                            <p class="short-description" [innerHTML]="book.description">
                             </p>
                         </div>
                     </div>
@@ -77,16 +77,16 @@
         <!--Resource library block-->
         <div class="row tab-pane fade" id="resource-view" role="tabpanel"
              aria-labelledby="resource-library">
-            <ng-container *ngFor="let book of books">
-                <div class="card-container" *ngIf="book?.category === 'library'">
+            <ng-container *ngFor="let book of booksObservable | async">
+                <div class="card-container" *ngIf="book.category === 'library'">
                     <div class="card">
-                        <img [attr.src]="book?.image" alt="Books image"
+                        <img [attr.src]="book.image" alt="Books image"
                              class="card-media"/>
                         <div class="card-body">
                             <span class="card-author subtle">Науково-технічна бібілотека ОНАХТ</span>
-                            <h2 class="card-title" [innerHTML]="book?.title"></h2>
-                            <span class="card-description" [innerHTML]="book?.references"></span>
-                            <a [attr.href]="book?.pdf_file" class="card-read" target="_blank">Переглянути</a>
+                            <h2 class="card-title" [innerHTML]="book.title"></h2>
+                            <span class="card-description" [innerHTML]="book.references"></span>
+                            <a [attr.href]="book.pdf_file" class="card-read" target="_blank">Переглянути</a>
                         </div>
                     </div>
                     <div class="card-shadow"></div>
@@ -96,16 +96,16 @@
 
         <!--Periodical literature block-->
         <div class="row tab-pane fade" id="propose-liter-view" role="tabpanel" aria-labelledby="propose-liter">
-            <ng-container *ngFor="let book of books">
-                <div class="card-container-periodical" *ngIf="book?.category === 'periodical'">
+            <ng-container *ngFor="let book of booksObservable | async">
+                <div class="card-container-periodical" *ngIf="book.category === 'periodical'">
                     <div class="card-periodical">
-                        <img [attr.src]="book?.image" alt="Books image"
+                        <img [attr.src]="book.image" alt="Books image"
                              class="card-media"/>
                         <div class="card-body" [ngStyle]="{'width': '100%'}">
                             <span class="card-author subtle">Періодика ОНАХТ</span>
-                            <h2 class="card-title" [innerHTML]="book?.title"></h2>
-                            <p class="periodical" [innerHTML]="book?.description">
-                                <p class="periodical-place"><i class="fas fa-map-marker-alt"></i>{{book?.references}}</p>
+                            <h2 class="card-title" [innerHTML]="book.title"></h2>
+                            <p class="periodical" [innerHTML]="book.description">
+                                <p class="periodical-place"><i class="fas fa-map-marker-alt"></i>{{book.references}}</p>
                         </div>
                     </div>
                     <div class="card-shadow"></div>
