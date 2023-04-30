@@ -15,7 +15,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^7.1.0",
-    "@angular/cli": "^7.1.0",
+    "@angular/cli": "^15.2.7",
     "@angular/common": "^7.1.0",
     "@angular/compiler": "^7.1.0",
     "@angular/core": "^7.1.0",
@@ -34,7 +34,7 @@
     "font-awesome": "^4.7.0",
     "i18n": "^0.8.3",
     "jquery": "^3.4.0",
-    "npm": "^6.9.0",
+    "npm": "^9.6.5",
     "popper": "^1.0.1",
     "popper.js": "^1.14.6",
     "rxjs": "6.4.0",
